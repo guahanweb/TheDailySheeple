@@ -46,6 +46,6 @@ get_header(); ?>
 				</section>
 			</div>
 		</section>
-		<?php get_sidebar(); ?>
+		<?php get_sidebar('ads'); ?>
 <?php
 get_footer();
