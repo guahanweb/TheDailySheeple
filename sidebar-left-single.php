@@ -6,7 +6,7 @@
 
         <article class="mini">
             <header>
-                <h1><?php printf('<a href="%s">%s</a>', $post->permalink, $post->get_permalink()); ?></h1>
+                <h1><?php printf('<a href="%s">%s</a>', $post->permalink, get_permalink($post->ID)); ?></h1>
             </header>
         </article>
 
