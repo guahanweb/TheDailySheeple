@@ -327,9 +327,11 @@ footer {
       padding: 0 3px;
       font-size: 9px; }
 
-.articles.articles-side > article h1 {
-    font-family: 'PT Serif', serif;
-    font-size: 16px; }
+.articles.articles-side > article.mini {
+    min-height: 0; }
+    .articles.articles-side > article.mini h1 {
+        font-family: 'PT Serif', serif;
+        font-size: 16px; }
 
 /* Set a semblance of grid for column structure */
 .column {
