@@ -327,7 +327,8 @@ footer {
       padding: 0 3px;
       font-size: 9px; }
 .articles > article.mini {
-    padding: 6px 10px;}
+    padding: 8px 10px;
+    min-height: 0; }
     .articles > article.mini h1 {
         font-size: 14px; }
 
