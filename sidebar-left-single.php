@@ -5,7 +5,7 @@
     foreach ($posts as $k => $post): ?>
 
     <?php if ($k === 10): ?>
-        <article class="ads ads-side">
+        <article class="ad ad-holder">
             <p>Here go the ads!</p>
         </article>
     <?php endif; ?>

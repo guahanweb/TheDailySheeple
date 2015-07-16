@@ -336,7 +336,8 @@ footer {
         min-height: 240px;
         border: 1px solid #aaa;
         background-color: #efefef;
-        padding: 10px; }
+        padding: 10px;
+        margin: 8px 10px; }
 
 /* Set a semblance of grid for column structure */
 .column {
