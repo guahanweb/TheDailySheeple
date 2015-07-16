@@ -1,11 +1,14 @@
 <section class="articles articles-featured">
-<?php
-$posts = get_posts('numberposts=10&orderby=date&tag=featured');
-foreach ($posts as $post): ?>
+    <header><h1>Featured</h1></header>
+    <?php
+    $posts = get_posts('numberposts=10&orderby=date&tag=featured');
+    foreach ($posts as $post): ?>
 
-    <article>
-        <header><h1><?php echo $post->post_title; ?></h1></header>
-    </article>
+        <article class="mini">
+            <header>
+                <h1><?php printf('<a href="%s">%s</a>', $post->permalink, $post->get_permalink()); ?></h1>
+            </header>
+        </article>
 
-<?php endforeach; ?>
+    <?php endforeach; ?>
 </section>

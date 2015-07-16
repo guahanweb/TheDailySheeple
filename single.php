@@ -12,7 +12,6 @@ get_header(); ?>
     <section id="main-column" class="content-area column column-triple">
         <div class="container">
             <section class="column column-one-third left-column">
-                <header><h1>Left Column</h1></header>
                 <?php get_sidebar('left-single'); ?>
             </section>
             <section class="column column-two-third site-content" id="main" role="main">
