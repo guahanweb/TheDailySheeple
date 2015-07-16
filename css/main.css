@@ -332,6 +332,11 @@ footer {
     .articles.articles-side > article.post-mini h1 {
         font-family: 'PT Serif', serif;
         font-size: 16px; }
+    .articles.articles-side > article.ad {
+        min-height: 240px;
+        border: 1px solid #aaa;
+        background-color: #efefef;
+        padding: 10px; }
 
 /* Set a semblance of grid for column structure */
 .column {
