@@ -61,7 +61,7 @@ body {
   font-family: 'PT Serif', serif; }
   body > .wrapper {
     max-width: 1200px;
-    margin: 0 auto; 
+    margin: 0 auto;
     background: #fff;}
 
 header.masthead {
@@ -180,10 +180,10 @@ header.masthead {
         font-family: 'PT Serif', serif;
         font-size: 16px; }
   #main-column .news-popular > header {
-    margin-top: 10px; 
+    margin-top: 10px;
     border-top: 2px solid #000; }
     #main-column .news-popular > header:first-child {
-      margin-top: -10px; 
+      margin-top: -10px;
       border-top: none; }
 
 #right-column {
@@ -326,6 +326,10 @@ footer {
       display: inline-block;
       padding: 0 3px;
       font-size: 9px; }
+.articles > article.mini {
+    padding: 6px 10px;}
+    .articles > article.mini h1 {
+        font-size: 14px; }
 
 /* Set a semblance of grid for column structure */
 .column {
@@ -448,32 +452,32 @@ footer {
 
 /* Facebook Arrow Box */
 .icon-extended .like-count {
-	position: relative;
-	background: #ffffff;
-	border: 1px solid #999;
+    position: relative;
+    background: #ffffff;
+    border: 1px solid #999;
 }
 .icon-extended .like-count:after, .icon-extended:before {
-	right: 100%;
-	top: 50%;
-	border: solid transparent;
-	content: " ";
-	height: 0;
-	width: 0;
-	position: absolute;
-	pointer-events: none;
+    right: 100%;
+    top: 50%;
+    border: solid transparent;
+    content: " ";
+    height: 0;
+    width: 0;
+    position: absolute;
+    pointer-events: none;
 }
 
 .icon-extended .like-count:after {
-	border-color: rgba(255, 255, 255, 0);
-	border-right-color: #ffffff;
-	border-width: 3px;
-	margin-top: -3px;
+    border-color: rgba(255, 255, 255, 0);
+    border-right-color: #ffffff;
+    border-width: 3px;
+    margin-top: -3px;
 }
 .icon-extended .like-count:before {
-	border-color: rgba(153, 153, 153, 0);
-	border-right-color: #999;
-	border-width: 4px;
-	margin-top: -4px;
+    border-color: rgba(153, 153, 153, 0);
+    border-right-color: #999;
+    border-width: 4px;
+    margin-top: -4px;
 }
 /* End Facebook Arrow Box */
 
@@ -532,7 +536,7 @@ span.edit-link {
 .tbd-entry {
   margin-top: 10px;
   border: 1px solid #aaa;
-  background-color: #f4f4f4; 
+  background-color: #f4f4f4;
   height: 680px; }
   .tbd-entry h1 {
     line-height: 680px;
