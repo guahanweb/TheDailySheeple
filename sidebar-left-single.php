@@ -1,5 +1,5 @@
+<header><h1>Featured</h1></header>
 <section class="articles articles-featured">
-    <header><h1>Featured</h1></header>
     <?php
     $posts = get_posts('numberposts=10&orderby=date&tag=featured');
     foreach ($posts as $post): ?>
