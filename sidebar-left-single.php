@@ -1,7 +1,7 @@
 <header><h1>Featured</h1></header>
 <div class="articles articles-side articles-featured">
     <?php
-    $posts = get_posts('numberposts=25&orderby=date&tag=featured');
+    $posts = get_posts('numberposts=25&orderby=date&category=featuredreports');
     foreach ($posts as $k => $post): ?>
 
     <?php if ($k === 10): ?>
