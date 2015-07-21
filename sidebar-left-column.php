@@ -3,4 +3,6 @@
     <div class="articles">
         <article><p><a>content coming soon...</a><p></article>
     </div>
+
+<?php include dirname(__FILE__) . '/inc/sidebar/modules/popular.php'; ?>
 </section>
