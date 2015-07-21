@@ -6,27 +6,43 @@
 <?php
 $tmp_query = $wp_query;
 query_posts(array(
-	'category_name' => 'editors-choice',
-	'posts_per_page' => 10,
-	'post__not_in' => thedailysheeple_get_rendered_post_ids()
+    'category_name' => 'editors-choice',
+    'posts_per_page' => 10,
+    'post__not_in' => thedailysheeple_get_rendered_post_ids()
 ));
 ?>
 <header>
-	<a href="/category/editors-choice/">See more</a>
-	<h1><?php echo __('Editor\'s Picks', 'thedailysheeple'); ?></h1>
+    <a href="/category/editors-choice/">See more</a>
+    <h1><?php echo __('Editor\'s Picks', 'thedailysheeple'); ?></h1>
 </header>
 <div class="articles">
-	<?php
-	while (have_posts()):
-		the_post();
+    <?php
+    while (have_posts()):
+        the_post();
         get_template_part('content', 'list-minimal');
-	endwhile;
-	?>
+    endwhile;
+    ?>
 </div>
 <?php $wp_query = $tmp_query; ?>
 
 <header>
-	<!-- <a href="#">See all popular</a> -->
-	<h1><?php echo __('Popular&hellip;', 'thedailysheeple'); ?></h1>
+    <!-- <a href="#">See all popular</a> -->
+    <h1><?php echo __('Popular&hellip;', 'thedailysheeple'); ?></h1>
 </header>
 <!-- This is where we GET Popular posts via (widget?) -->
+<div class="articles">
+    <?php
+    $result = stats_get_csv('postviews', array(
+        'days' => -1,
+        'limit' => 50
+    ));
+
+    $posts = array();
+    foreach ($result as $data) {
+        if (count($posts) < 10 && $data['post_id'] && 'post' === get_post_type($data['post_id'])) {
+            $posts[] = get_post($data['post_id']);
+            get_template_part('content', 'list-minimal');
+        }
+    }
+    ?>
+</div>
