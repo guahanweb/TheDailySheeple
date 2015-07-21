@@ -25,8 +25,8 @@
                 esc_url( get_permalink($post->ID) ),
                 esc_attr( get_the_date( 'c', $post->ID ) ),
                 esc_html( get_the_date('D. F j, Y, g:ia', $post->ID) ),
-                esc_url( thedailysheeple_get_authorurl($post->ID) ),
-                thedailysheeple_get_authorname($post->ID)
+                esc_url( thedailysheeple_get_authorurl($post) ),
+                thedailysheeple_get_authorname($post)
             );
         }
         edit_post_link( __('Edit', 'thedailysheeple'), '<span class="edit-link">[', ']</span>');
