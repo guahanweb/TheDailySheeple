@@ -24,4 +24,4 @@ query_posts(array(
     ?>
 </div>
 <?php $wp_query = $tmp_query; ?>
-
+<?php include dirname(__FILE__) . '/inc/sidebar/modules/popular.php'; ?>
