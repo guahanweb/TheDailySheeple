@@ -14,6 +14,7 @@
     foreach ($result as $data) {
         if (count($posts) < 10 && $data['post_id'] && 'post' === get_post_type($data['post_id'])) {
             $post = get_post($data['post_id']);
+            $posts[] = $post;
     ?>
 <article id="post-<?php echo $post->ID; ?>" <?php echo get_post_class($post->ID); ?>>
     <?php if (in_array('category', get_object_taxonomies(get_post_type($post->ID)))): ?>
