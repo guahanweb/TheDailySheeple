@@ -25,24 +25,3 @@ query_posts(array(
 </div>
 <?php $wp_query = $tmp_query; ?>
 
-<header>
-    <!-- <a href="#">See all popular</a> -->
-    <h1><?php echo __('Popular&hellip;', 'thedailysheeple'); ?></h1>
-</header>
-<!-- This is where we GET Popular posts via (widget?) -->
-<div class="articles">
-    <?php
-    $result = stats_get_csv('postviews', array(
-        'days' => -1,
-        'limit' => 50
-    ));
-
-    $posts = array();
-    foreach ($result as $data) {
-        if (count($posts) < 10 && $data['post_id'] && 'post' === get_post_type($data['post_id'])) {
-            $posts[] = get_post($data['post_id']);
-            get_template_part('content', 'list-minimal');
-        }
-    }
-    ?>
-</div>
