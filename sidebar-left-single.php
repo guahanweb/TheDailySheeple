@@ -11,7 +11,9 @@
     $query = new WP_Query($args);
     while ($query->have_posts()):
         $query->the_post();
-        <?php if ($k === 10): ?>
+        $k = 0;
+        if ($k === 10):
+    ?>
             <article class="ad ad-holder">
                 <p>Here go the ads!</p>
             </article>
@@ -20,6 +22,7 @@
             <h1 class="entry-title"><?php printf('<a href="%s" rel="bookmark">%s</a>', get_permalink(get_the_ID()), the_title()); ?></h1>
         </article>
     <?php
+        $k++;
     endwhile;
     wp_reset_postdata();
     ?>
