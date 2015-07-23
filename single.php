@@ -17,7 +17,6 @@ get_header();
             </section>
             <section class="column column-two-third site-content" id="main" role="main">
             <?php
-                wp_reset_query();
                 // Start the Loop.
                 while ( have_posts() ) : the_post();
 

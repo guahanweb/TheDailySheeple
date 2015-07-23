@@ -1,22 +1,26 @@
 <header><h1>Featured</h1></header>
 <div class="articles articles-side articles-featured">
     <?php
-    $tmp_query = $wp_query;
-    $posts = get_posts('numberposts=25&orderby=date&category=featuredreports');
-    foreach ($posts as $k => $post): ?>
+    $args = array(
+        'post_type' => 'post',
+        'posts_per_page' => 25,
+        'orderby' => 'date',
+        'category' => 'featuredreports'
+    );
 
-    <?php if ($k === 10): ?>
-        <article class="ad ad-holder">
-            <p>Here go the ads!</p>
+    $query = new WP_Query($args);
+    while ($query->have_posts()):
+        $query->the_post();
+        <?php if ($k === 10): ?>
+            <article class="ad ad-holder">
+                <p>Here go the ads!</p>
+            </article>
+        <?php endif; ?>
+        <article id="post-<?php the_ID(); ?>" class="post-<?php the_ID(); ?> post post-mini type-post status-publish">
+            <h1 class="entry-title"><?php printf('<a href="%s" rel="bookmark">%s</a>', get_permalink(get_the_ID()), the_title()); ?></h1>
         </article>
-    <?php endif; ?>
-
-        <article id="post-<?php echo $post->ID; ?>" class="post-<?php echo $post->ID; ?> post post-mini type-post status-publish">
-            <h1 class="entry-title"><?php printf('<a href="%s" rel="bookmark">%s</a>', get_permalink($post->ID), $post->post_title); ?></h1>
-        </article>
-
     <?php
-    endforeach;
-    $wp_query = $tmp_query;
+    endwhile;
+    wp_reset_postdata();
     ?>
 </div>
