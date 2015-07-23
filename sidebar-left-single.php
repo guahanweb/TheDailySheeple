@@ -9,9 +9,9 @@
     );
 
     $query = new WP_Query($args);
+    $k = 0;
     while ($query->have_posts()):
         $query->the_post();
-        $k = 0;
         if ($k === 10):
     ?>
             <article class="ad ad-holder">
