@@ -8,7 +8,6 @@
  */
 
 get_header();
-var_dump(get_the_post());
 ?>
 
     <section id="main-column" class="content-area column column-triple">
@@ -18,6 +17,7 @@ var_dump(get_the_post());
             </section>
             <section class="column column-two-third site-content" id="main" role="main">
             <?php
+                wp_reset_query();
                 // Start the Loop.
                 while ( have_posts() ) : the_post();
 
