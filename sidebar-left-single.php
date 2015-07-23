@@ -1,6 +1,7 @@
 <header><h1>Featured</h1></header>
 <div class="articles articles-side articles-featured">
     <?php
+    $tmp_query = $wp_query;
     $posts = get_posts('numberposts=25&orderby=date&category=featuredreports');
     foreach ($posts as $k => $post): ?>
 
@@ -14,5 +15,8 @@
             <h1 class="entry-title"><?php printf('<a href="%s" rel="bookmark">%s</a>', get_permalink($post->ID), $post->post_title); ?></h1>
         </article>
 
-    <?php endforeach; ?>
+    <?php
+    endforeach;
+    $wp_query = $tmp_query;
+    ?>
 </div>
