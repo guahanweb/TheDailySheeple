@@ -7,7 +7,9 @@
  * @since The Daily Sheeple 1.0
  */
 
-get_header(); ?>
+get_header();
+var_dump(get_the_post());
+?>
 
     <section id="main-column" class="content-area column column-triple">
         <div class="container">
