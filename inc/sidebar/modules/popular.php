@@ -5,6 +5,7 @@
 <!-- This is where we GET Popular posts -->
 <div class="articles">
     <?php
+    $tmp_query = $wp_query;
     $result = stats_get_csv('postviews', array(
         'days' => -1,
         'limit' => 50
@@ -38,5 +39,6 @@
     <?php
         }
     }
+    $wp_query = $tmp_query;
     ?>
 </div>
