@@ -27,6 +27,7 @@ get_header();
                      */
                     get_template_part( 'content', get_post_format() );
 ?>
+<!-- START SHARE THIS -->
 <div style="padding: 0px 0px 10px 0px;">
     <span class='st_facebook_vcount' displayText='Facebook'></span>
     <span class='st_pinterest_vcount' displayText='Pinterest'></span>
@@ -38,6 +39,7 @@ get_header();
     <span class='st_sharethis_vcount' displayText='ShareThis'></span>
     <span class='st_email_vcount' displayText='Email'></span>
 </div>
+<!-- END SHARE THIS -->
 <?php
 
                     // Previous/next post navigation.
