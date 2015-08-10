@@ -26,6 +26,19 @@ get_header();
                      * (where ___ is the post format) and that will be used instead.
                      */
                     get_template_part( 'content', get_post_format() );
+?>
+<div style="padding: 0px 0px 10px 0px;">
+    <span class='st_facebook_vcount' displayText='Facebook'></span>
+    <span class='st_pinterest_vcount' displayText='Pinterest'></span>
+    <span class='st_twitter_vcount' displayText='Tweet'></span>
+    <span class='st_reddit_vcount' displayText='Reddit'></span>
+    <span class='st_stumbleupon_vcount' displayText='StumbleUpon'></span>
+    <span class='st_fblike_vcount' displayText='Facebook Like'></span>
+    <span class='st_plusone_vcount' displayText='Google +1'></span>
+    <span class='st_sharethis_vcount' displayText='ShareThis'></span>
+    <span class='st_email_vcount' displayText='Email'></span>
+</div>
+<?php
 
                     // Previous/next post navigation.
                     thedailysheeple_post_nav();
