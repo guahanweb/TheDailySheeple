@@ -566,6 +566,6 @@ span.edit-link {
     min-height: 22px;
 }
 
-.stBubble {
-    height: 44px;
+.st_facebook_vcount .stBubble_count, .st_fb_like_vcount .stBubble_count {
+    height: 41px;
 }
