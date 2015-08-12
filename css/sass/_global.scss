@@ -1,0 +1,14 @@
+body {
+    background-color: $background-gray;
+    font-family: $font-serif;
+
+    & > .wrapper {
+        max-width: 1200px;
+        margin: 0 auto;
+        background: $white;
+    }
+
+    & > div > footer {
+        clear: both;
+    }
+}

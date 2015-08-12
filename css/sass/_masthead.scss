@@ -1,0 +1,117 @@
+.masthead {
+    background-color: $white;
+    padding: 10px 10px 0;
+
+    & > div {
+        padding-bottom: 3px;
+        border-bottom: 3px solid $black;
+    }
+
+    .top {
+        padding: 5px;
+        margin-bottom: 3px;
+        border-bottom: 1px solid $black;
+
+        & > .tip-jar {
+            float: right;
+            text-align: right;
+            width: 250px;
+            padding-right: 60px;
+            background: url('../images/white-sheep.png') no-repeat 95% 50% transparent;
+        }
+
+        & > .edition {
+            float: left;
+            text-align: left;
+            width: 250px;
+            padding-left: 60px;
+            background: url('../images/black-sheep.png') no-repeat 5% 50% transparent;
+        }
+
+        & > .social-media {
+            ul {
+                margin-top: 3px;
+
+                li {
+                    display: inline-block;
+                    margin: 0;
+                    list-style-type: none;
+                    float: right;
+                    margin-left: 5px;
+
+                    a {
+                        display: inline-block;
+                        margin-top: -6px;
+                    }
+
+                    input.search {
+                        border: 1px solid lighten($black, 50%);
+                        border-radius: 2px;
+                        height: 28px;
+                        width: 160px;
+                        line-height: 28px;
+                        font-size: 11px;
+                        padding: 0 5px;
+                        text-transform: uppercase;
+                        background: url('../images/icons/bullseye.png') no-repeat 97% 50% transparent;
+                    }
+                }
+            }
+        }
+
+        p {
+            line-height: 14px;
+            font-size: 11px;
+            padding: 5px;
+            text-transform: uppercase;
+        }
+    }
+
+    .main {
+        border-top: 3px solid $black;
+        border-bottom: 3px solid $black;
+        min-height: 120px;
+        padding: 20px;
+        text-align: center;
+    }
+
+    .ad-holder {
+        margin: 3px 0 0;
+        border-top: 1px solid $black;
+        border-bottom: 1px solid $black;
+        text-align: center;
+
+        & > .highlights {
+            width: 160px;
+            font-size: 12px;
+            text-transform: uppercase;
+            text-align: center;
+            padding: 15px 20px;
+
+            &.right { float: right; }
+            &.left { float: left; }
+
+            & > ul li {
+                &:after {
+                    content: '';
+                    display: block;
+                    height: 1px;
+                    width: 50%;
+                    border-bottom: 1px solid lighten($black, 40%);
+                    margin: 4px auto;
+                }
+
+                &:last-child:after {
+                    display: none;
+                }
+            }
+        }
+
+        & > .third-party {
+            padding: 10px;
+            margin: 0 160px;
+            border-left: 1px solid $black;
+            border-right: 1px solid $black;
+        }
+    }
+}

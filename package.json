@@ -1,0 +1,28 @@
+{
+  "name": "thedailysheeple",
+  "version": "1.0.0",
+  "description": "WordPress theme for TheDailySheeple.com",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/guahanweb/TheDailySheeple.git"
+  },
+  "author": {
+    "name": "Garth Henson",
+    "email": "garth@guahanweb.com"
+  },
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/guahanweb/TheDailySheeple/issues"
+  },
+  "homepage": "https://github.com/guahanweb/TheDailySheeple#readme",
+  "devDependencies": {
+    "gulp": "^3.9.0",
+    "gulp-minify-css": "^1.2.0",
+    "gulp-rename": "^1.2.2",
+    "gulp-sass": "^2.0.4"
+  }
+}

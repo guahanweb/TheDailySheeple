@@ -1,0 +1,342 @@
+/* Include library */
+/* Based off Eric Meyer's HTML5 reset */
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -o-box-sizing: border-box; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after, q:before, q:after {
+  content: '';
+  content: none; }
+
+/* remember to define visible focus styles!
+:focus {
+    outline: ??????;
+} */
+/* remember to highlight inserts somehow! */
+ins {
+  text-decoration: none; }
+
+del {
+  text-decoration: line-through; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+.container:before,
+.container:after {
+  content: "";
+  display: table; }
+
+.container:after {
+  clear: both; }
+
+/* For IE 6/7 (trigger hasLayout) */
+.container {
+  zoom: 1; }
+
+/* Include modules */
+body {
+  background-color: #5d5d5d;
+  font-family: "PT Serif", serif; }
+  body > .wrapper {
+    max-width: 1200px;
+    margin: 0 auto;
+    background: #fff; }
+  body > div > footer {
+    clear: both; }
+
+.masthead {
+  background-color: #fff;
+  padding: 10px 10px 0; }
+  .masthead > div {
+    padding-bottom: 3px;
+    border-bottom: 3px solid #000; }
+  .masthead .top {
+    padding: 5px;
+    margin-bottom: 3px;
+    border-bottom: 1px solid #000; }
+    .masthead .top > .tip-jar {
+      float: right;
+      text-align: right;
+      width: 250px;
+      padding-right: 60px;
+      background: url("../images/white-sheep.png") no-repeat 95% 50% transparent; }
+    .masthead .top > .edition {
+      float: left;
+      text-align: left;
+      width: 250px;
+      padding-left: 60px;
+      background: url("../images/black-sheep.png") no-repeat 5% 50% transparent; }
+    .masthead .top > .social-media ul {
+      margin-top: 3px; }
+      .masthead .top > .social-media ul li {
+        display: inline-block;
+        margin: 0;
+        list-style-type: none;
+        float: right;
+        margin-left: 5px; }
+        .masthead .top > .social-media ul li a {
+          display: inline-block;
+          margin-top: -6px; }
+        .masthead .top > .social-media ul li input.search {
+          border: 1px solid gray;
+          border-radius: 2px;
+          height: 28px;
+          width: 160px;
+          line-height: 28px;
+          font-size: 11px;
+          padding: 0 5px;
+          text-transform: uppercase;
+          background: url("../images/icons/bullseye.png") no-repeat 97% 50% transparent; }
+    .masthead .top p {
+      line-height: 14px;
+      font-size: 11px;
+      padding: 5px;
+      text-transform: uppercase; }
+  .masthead .main {
+    border-top: 3px solid #000;
+    border-bottom: 3px solid #000;
+    min-height: 120px;
+    padding: 20px;
+    text-align: center; }
+  .masthead .ad-holder {
+    margin: 3px 0 0;
+    border-top: 1px solid #000;
+    border-bottom: 1px solid #000;
+    text-align: center; }
+    .masthead .ad-holder > .highlights {
+      width: 160px;
+      font-size: 12px;
+      text-transform: uppercase;
+      text-align: center;
+      padding: 15px 20px; }
+      .masthead .ad-holder > .highlights.right {
+        float: right; }
+      .masthead .ad-holder > .highlights.left {
+        float: left; }
+      .masthead .ad-holder > .highlights > ul li:after {
+        content: '';
+        display: block;
+        height: 1px;
+        width: 50%;
+        border-bottom: 1px solid #666666;
+        margin: 4px auto; }
+      .masthead .ad-holder > .highlights > ul li:last-child:after {
+        display: none; }
+    .masthead .ad-holder > .third-party {
+      padding: 10px;
+      margin: 0 160px;
+      border-left: 1px solid #000;
+      border-right: 1px solid #000; }
+
+#main-column {
+  background-color: #fff; }
+  #main-column.column {
+    padding-top: 0; }
+  #main-column .news-popular .articles > article {
+    min-height: 1px; }
+    #main-column .news-popular .articles > article h1 {
+      font-family: "PT Serif", serif;
+      font-size: 16px; }
+  #main-column .feature-holder .features {
+    background-color: #fff; }
+    #main-column .feature-holder .features .feature {
+      float: left;
+      margin: 8px; }
+  #main-column .feature-holder .ad-signature {
+    padding: 0 15px;
+    font-size: 8px;
+    font-weight: bold;
+    font-family: "Gudea", Helvetica, Arial, Verdana, sans-serif;
+    text-align: right;
+    text-transform: uppercase; }
+  #main-column .news-streams {
+    padding: 5px 10px; }
+    #main-column .news-streams .articles > article {
+      min-height: 1px;
+      margin: 0; }
+      #main-column .news-streams .articles > article .published {
+        font-size: 9px; }
+      #main-column .news-streams .articles > article h1 {
+        font-family: "PT Serif", serif;
+        font-size: 16px; }
+  #main-column .news-popular > header {
+    margin-top: 10px;
+    border-top: 2px solid #000; }
+    #main-column .news-popular > header:first-child {
+      margin-top: -10px;
+      border-top: none; }
+
+#right-column {
+  background-color: #fff;
+  padding: 10px; }
+  #right-column .ad-block > .ad {
+    margin-top: 20px; }
+    #right-column .ad-block > .ad:first-child {
+      margin-top: 0; }
+    #right-column .ad-block > .ad > a {
+      display: block; }
+  #right-column .ad-block .ad-email-signup {
+    background-color: #000;
+    color: #fff;
+    padding: 25px;
+    text-align: center;
+    text-transform: uppercase; }
+    #right-column .ad-block .ad-email-signup > h1 {
+      font-size: 24px;
+      line-height: 28px; }
+    #right-column .ad-block .ad-email-signup > h2 {
+      margin-top: 15px;
+      font-size: 14px;
+      line-height: 20px; }
+    #right-column .ad-block .ad-email-signup > .register {
+      margin: 10px 30px; }
+      #right-column .ad-block .ad-email-signup > .register input {
+        box-sizing: border-box;
+        width: 100%;
+        padding: 8px;
+        font-size: 12px;
+        text-transform: uppercase;
+        border-radius: 2px;
+        border: 1px solid gray;
+        background: url("../images/icons/bullseye.png") no-repeat 97% 50% #fff; }
+      #right-column .ad-block .ad-email-signup > .register .privacy {
+        padding-top: 5px;
+        font-size: 8px;
+        text-align: right; }
+        #right-column .ad-block .ad-email-signup > .register .privacy a {
+          color: #fff; }
+          #right-column .ad-block .ad-email-signup > .register .privacy a:hover {
+            text-decoration: underline; }
+
+#archives {
+  clear: both; }
+  #archives .archives {
+    background-color: #fff; }
+    #archives .archives.column > header > h1 {
+      font-size: 18px; }
+    #archives .archives .articles > article {
+      min-height: 1px;
+      margin: 0;
+      padding: 10px 5px; }
+      #archives .archives .articles > article h1 {
+        font-family: "PT Serif", serif;
+        line-height: 16px;
+        font-size: 13px; }
+
+#main > .entry-content {
+  padding: 0 5px 10px; }
+  #main > .entry-content p {
+    padding: 2px 0 12px;
+    font-size: 13px;
+    line-height: 1.5em; }
+
+#main > .navigation.post-navigation {
+  border-top: 1px solid #b3b3b3;
+  border-bottom: 1px solid #b3b3b3;
+  padding: 10px 0;
+  font-size: 12px; }
+  #main > .navigation.post-navigation .nav-links {
+    height: 100%; }
+  #main > .navigation.post-navigation span.prev-link {
+    float: left;
+    width: 50%; }
+  #main > .navigation.post-navigation span.next-link {
+    float: right;
+    width: 50%;
+    text-align: right; }
+  #main > .navigation.post-navigation span .meta-nav {
+    font-weight: bold; }
+
+.articles > article {
+  margin: 0 5px;
+  padding: 15px 10px;
+  border-bottom: 1px solid #aaa;
+  min-height: 126px;
+  position: relative; }
+  .articles > article .post-thumbnail {
+    float: left;
+    margin-right: 15px; }
+  .articles > article .published {
+    font-family: "PT Serif", serif;
+    font-size: 10px;
+    padding-bottom: 4px;
+    text-transform: uppercase; }
+  .articles > article h1 {
+    font-family: "PT Serif", serif;
+    font-size: 22px;
+    text-transform: uppercase; }
+    .articles > article h1 b {
+      font-weight: 600; }
+  .articles > article .icons {
+    position: absolute;
+    bottom: 10px;
+    right: 10px; }
+    .articles > article .icons li {
+      display: inline-block; }
+  .articles > article:last-child {
+    border-bottom: none; }
+  .articles > article footer {
+    margin-right: 56px;
+    padding: 5px 0;
+    clear: left; }
+    .articles > article footer .tag-links a {
+      display: inline-block;
+      padding: 0 3px;
+      font-size: 9px; }
+
+.articles.articles-side > article.post-mini {
+  min-height: 0; }
+  .articles.articles-side > article.post-mini h1 {
+    font-family: "PT Serif", serif;
+    font-size: 16px; }
+
+.articles.articles-side > article.ad {
+  min-height: 240px;
+  border: 1px solid gray;
+  background-color: #e6e6e6;
+  padding: 10px;
+  margin: 8px 10px; }
+
+footer {
+  padding: 20px 10px;
+  background-color: #fff; }
+  footer .site-links {
+    padding: 5px 0;
+    text-transform: uppercase;
+    font-size: 12px; }
+    footer .site-links li {
+      display: inline-block;
+      padding: 0 10px;
+      border-right: 1px solid #aaa; }
+      footer .site-links li:first-child {
+        padding-left: 0; }
+      footer .site-links li:last-child {
+        border-right: none; }
+      footer .site-links li > a {
+        color: #a9002a; }
+        footer .site-links li > a:hover {
+          text-decoration: underline; }
