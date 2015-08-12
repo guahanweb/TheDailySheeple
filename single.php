@@ -28,6 +28,7 @@ get_header();
                     get_template_part( 'content', get_post_format() );
 ?>
 <!-- START SHARE THIS -->
+<div style="font-family: Tahoma, Geneva, sans-serif; font-size: 14pt; font-weight: bold; font-style:italic;">Please share: Spread the word to sheeple far and wide</div>
 <div style="padding: 0px 0px 10px 0px;">
     <span class='st_facebook_vcount' displayText='Facebook'></span>
     <span class='st_pinterest_vcount' displayText='Pinterest'></span>
