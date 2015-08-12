@@ -560,3 +560,12 @@ span.edit-link {
   text-transform: none; }
   .articles.discussion h1 strong {
     font-weight: 600; }
+
+
+.stButton .stButton_gradient, .stButton .stFb, .stButton .stTwbutton, .stButton .stMainServices {
+    min-height: 22px;
+}
+
+.stBubble {
+    height: 44px;
+}
