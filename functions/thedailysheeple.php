@@ -17,7 +17,7 @@ class thedailysheeple {
    */
   public function add_author_content($content) {
     if (!is_page_template()) {
-      $authoID   = get_the_author_ID();
+      $authorID  = get_the_author_ID($postID);
       $authName  = get_the_author();
       $postID    = get_the_ID();
       $post      = get_post($postID);
@@ -27,10 +27,9 @@ class thedailysheeple {
       $websiteName    = get_post_meta($postID, "websitename", true);
       $profileUrl     = get_usermeta($post->post_author, "user_url");
       $profileWebsite = get_usermeta($post->post_author, "profilewebsitename");
-      var_dump($authID);
 
       $exceptions = array(2, 3);
-      if (in_array($authID, $exceptions)) {
+      if (in_array($authorID, $exceptions)) {
         $displayName = $profilecustom; // Was $profile but -M updated to fix Contributing Author text
         $link = sprintf('<a href="%s" target="_blank">%s</a>', $websiteUrl, $websiteName);
         $content .= sprintf("<p><em>Contributed by %s.</em></p>\n", $displayName);
