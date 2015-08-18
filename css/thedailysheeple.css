@@ -321,6 +321,25 @@ body {
   padding: 10px;
   margin: 8px 10px; }
 
+.icon {
+  width: 30px;
+  height: 30px;
+  display: inline-block;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  text-indent: -999em;
+  border-radius: 3px; }
+  .icon.icon-star {
+    background-image: url("../images/icons/star.png"); }
+  .icon.icon-rss {
+    background-image: url("../images/icons/rss.png"); }
+  .icon.icon-mail {
+    background-image: url("../images/icons/mail.png"); }
+  .icon.icon-facebook {
+    background-image: url("../image/icons/facebook.png"); }
+  .icon.icon-twitter {
+    background-image: url("../image/icons/twitter.png"); }
+
 footer {
   padding: 20px 10px;
   background-color: #fff; }

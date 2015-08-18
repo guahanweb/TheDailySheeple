@@ -1,0 +1,15 @@
+.icon {
+    width: 30px;
+    height: 30px;
+    display: inline-block;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    text-indent: -999em;
+    border-radius: 3px;
+
+    &.icon-star { background-image: url('../images/icons/star.png'); }
+    &.icon-rss { background-image: url('../images/icons/rss.png'); }
+    &.icon-mail { background-image: url('../images/icons/mail.png'); }
+    &.icon-facebook { background-image: url('../image/icons/facebook.png'); }
+    &.icon-twitter { background-image: url('../image/icons/twitter.png'); }
+}
