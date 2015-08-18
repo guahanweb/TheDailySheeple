@@ -32,15 +32,14 @@ class thedailysheeple {
       if (in_array($authorID, $exceptions)) {
         $displayName = $profilecustom; // Was $profile but -M updated to fix Contributing Author text
         $link = sprintf('<a href="%s" target="_blank">%s</a>', $websiteUrl, $websiteName);
-        $content .= sprintf("<p><em>Contributed by %s.</em></p>\n", $displayName);
         $desc = '';
       } else {
         $displayName = $authName;
         $link = sprintf('<a href="%s" target="_blank">%s</a>', $profileUrl, $profileWebsite);
-        $content .= sprintf("<p><em>Contributed by %s of %s.</em></p>\n", $displayName, $link);
         $desc = get_the_author_meta('description');
       }
 
+      $content .= sprintf("<p><em>Contributed by %s of %s.</em></p>\n", $displayName, $link);
       if (!empty($desc)) {
         $content .= sprintf("<p><em>%s</em></p>\n", $desc);
       }
