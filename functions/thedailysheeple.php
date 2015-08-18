@@ -27,10 +27,10 @@ class thedailysheeple {
       $websiteName    = get_post_meta($postID, "websitename", true);
       $profileUrl     = get_usermeta($post->post_author, "user_url");
       $profileWebsite = get_usermeta($post->post_author, "profilewebsitename");
+      var_dump($authID);
 
       $exceptions = array(2, 3);
       if (in_array($authID, $exceptions)) {
-        var_dump($authID);
         $displayName = $profilecustom; // Was $profile but -M updated to fix Contributing Author text
         $link = sprintf('<a href="%s" target="_blank">%s</a>', $websiteUrl, $websiteName);
         $content .= sprintf("<p><em>Contributed by %s.</em></p>\n", $displayName);
