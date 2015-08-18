@@ -1,4 +1,7 @@
 <?php
+remove_filter('pre_user_description', 'wp_filter_kses');
+add_filter('pre_user_description', 'wp_filter_post_kses');
+
 /**
  * The Daily Sheeple only works in WordPress 3.6 or later.
  */
@@ -192,6 +195,7 @@ require get_template_directory() . '/inc/template-tags.php';
 // Custom ad template for this theme.
 require get_template_directory() . '/inc/ads.php';
 
+// This is where we add back in the admin fields, etc
 require 'functions/thedailysheeple.php';
 $legacy = new thedailysheeple();
 
