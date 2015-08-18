@@ -245,6 +245,9 @@ header.masthead {
 
 #main > .entry-content {
   padding: 0 5px 10px; }
+  #main > .entry-content .delivered-by {
+    font-weight: bold;
+    font-style: italic; }
   #main > .entry-content p {
     padding: 2px 0 12px;
     font-size: 13px;
