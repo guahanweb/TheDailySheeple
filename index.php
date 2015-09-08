@@ -80,14 +80,13 @@ recent_comments("limit=20&output_template=$tpl");
                     </div>
                 </section>
             </div>
+            <div class="container archive-block" id="archives">
+                <?php get_sidebar('left-column'); ?>
+                <section class="archives column column-two-third">
+                    <?php get_template_part('main', 'archive'); ?>
+                </section>
+            </div>
         </section>
         <?php get_sidebar(); ?>
-        <section class="column archive-block column-triple" id="archives">
-            <?php get_sidebar('left-column'); ?>
-            <section class="archives column column-two-third">
-                <?php get_template_part('main', 'archive'); ?>
-            </section>
-            <div class="column column-single"></div>
-        </section>
 <?php
 get_footer();
