@@ -4,7 +4,7 @@ var minify = require('gulp-minify-css');
 var rename = require('gulp-rename');
 
 gulp.task('sass', function () {
-    return gulp.src('css/sass/*.scss')
+    return gulp.src('sass/*.scss')
         .pipe(sass.sync().on('error', sass.logError))
         .pipe(gulp.dest('css/'))
         .pipe(rename({ suffix: '.min' }))
@@ -13,5 +13,5 @@ gulp.task('sass', function () {
 });
 
 gulp.task('watch', ['sass'], function () {
-    gulp.watch('css/sass/**/*', ['sass']);
+    gulp.watch('sass/**/*', ['sass']);
 });
