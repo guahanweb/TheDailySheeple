@@ -201,8 +201,12 @@ body {
       margin-top: 0; }
     #right-column .ad-block > .ad > a {
       display: block;
-      max-width: 100% !important;
+      width: 100%;
       height: auto; }
+      #right-column .ad-block > .ad > a img {
+        display: block;
+        max-width: 100% !important;
+        height: auto; }
   #right-column .ad-block .ad-email-signup {
     background-color: #000;
     color: #fff;

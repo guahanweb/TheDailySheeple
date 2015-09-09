@@ -1,37 +1,37 @@
 
-<!-- START GARTH ORIGINAL CODE -->       
-       
+<!-- START GARTH ORIGINAL CODE -->
+
         <section class="column column-single" id="right-column">
             <div class="container">
                 <section class="ad-list">
                     <div class="ad-block">
-       	<?php 
-			the_widget('TDS_MailChimp_Widget', array(), array(
-				'before_widget' => '',
-				'after_widget' => '',
-				'before_title' => '',
-				'after_title' => ''
-			)); 
-			?>
-                       
+           <?php
+            the_widget('TDS_MailChimp_Widget', array(), array(
+                'before_widget' => '',
+                'after_widget' => '',
+                'before_title' => '',
+                'after_title' => ''
+            ));
+            ?>
+
                         <div class="ad ad-ff">
-                            <a href="http://www.futuremoneytrends.com/investright" target="_blank" rel="nofollow" onClick="_gaq.push(['_trackEvent', 'Banner', 'Click', 'FMT-FF-SidebarRight']);"><img src="http://www.thedailysheeple.com/wp-content/uploads/2015/07/mineralbank2.jpg" width="300" height="300" border="0" /></a>
-                        </div>  
+                            <a href="http://www.futuremoneytrends.com/investright" target="_blank" rel="nofollow" onClick="_gaq.push(['_trackEvent', 'Banner', 'Click', 'FMT-FF-SidebarRight']);"><img src="http://www.thedailysheeple.com/wp-content/uploads/2015/07/mineralbank2.jpg" border="0" /></a>
+                        </div>
                       <div class="ad ad-JMB">
-                          <a href="http://www.jmbullion.com/silver/" target="_blank" rel="nofollow" onClick="_gaq.push(['_trackEvent', 'Banner', 'Click', 'JMB-banner-bison']);"><img src="/images/banners/JMB-fast-free-shipping-250x250.jpg" width="300" height="300" border="0" /></a>
-                        </div>  
+                          <a href="http://www.jmbullion.com/silver/" target="_blank" rel="nofollow" onClick="_gaq.push(['_trackEvent', 'Banner', 'Click', 'JMB-banner-bison']);"><img src="/images/banners/JMB-fast-free-shipping-250x250.jpg" border="0" /></a>
+                        </div>
                          <div class="ad ad-GOOGLE">
                       <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
 <!-- TDS-300 -->
 <ins class="adsbygoogle"
-     style="display:inline-block;width:300px;height:250px"
+     style="display:inline-block;max-width:100%;height:auto"
      data-ad-client="ca-pub-8010023987911623"
      data-ad-slot="1195994165"></ins>
 <script>
 (adsbygoogle = window.adsbygoogle || []).push({});
 </script>
-                        </div>  
-                    
+                        </div>
+
 <!-- SHUFFLING AD UNITS -->
 <div id="region-sidebarrightshuffle">
 
@@ -117,8 +117,8 @@
 </div><!-- END region-sidebarrightshuffle DIV -->
 <script type="text/javascript">
 jQuery('#region-sidebarrightshuffle div.sidebar_right_ad').shuffle();
-</script>		
-                  
+</script>
+
 <!-- END SHUFFLING AD UNITS -->
 
 
