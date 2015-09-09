@@ -68,6 +68,76 @@ body {
   body > div > footer {
     clear: both; }
 
+a {
+  color: #000;
+  text-decoration: none; }
+  a:hover {
+    color: #a9002a; }
+
+.screen-reader-text {
+  clip: rect(1px, 1px, 1px, 1px);
+  position: absolute; }
+  .screen-reader-text:focus {
+    background-color: #f1f1f1;
+    border-radius: 3px;
+    box-shado: 0 0 2px 2px rgba(0, 0, 0, 0.6);
+    clip: auto;
+    color: #21759b;
+    display: block;
+    font-size: 14px;
+    font-weight: bold;
+    height: auto;
+    line-height: normal;
+    padding: 15px 23px 14px;
+    position: absolute;
+    left: 5px;
+    top: 5px;
+    text-decoration: none;
+    text-transform: none;
+    width: auto;
+    z-index: 100000; }
+
+#mailchimp-registration {
+  min-height: 265px; }
+  #mailchimp-registration .success {
+    padding-top: 15px; }
+
+span.edit-link {
+  float: right; }
+
+.tbd-entry {
+  margin-top: 10px;
+  border: 1px solid #aaa;
+  background-color: #f4f4f4;
+  height: 680px; }
+  .tbd-entry h1 {
+    line-height: 680px;
+    font-size: 32px;
+    text-align: center;
+    color: #ccc; }
+
+#main-column .news-streams .articles.discussion h1 {
+  text-transform: none; }
+  #main-column .news-streams .articles.discussion h1 strong {
+    font-weight: 600; }
+
+#main-column .news-streams .articles.discussion > article {
+  padding: 10px; }
+  #main-column .news-streams .articles.discussion > article h1 {
+    font-size: 12px; }
+
+.stButton .stButton_gradient, .stButton .stFb, .stButton .stTwbutton, .stButton .stMainServices {
+  min-height: 22px; }
+
+.column, .stButton .stBubble_count {
+  height: 41px; }
+
+em {
+  font-style: italic; }
+
+strong, b {
+  font-weight: 600; }
+
 .masthead {
   background-color: #fff;
   padding: 10px 10px 0; }
@@ -364,6 +434,93 @@ body {
     background-image: url("../image/icons/facebook.png"); }
   .icon.icon-twitter {
     background-image: url("../image/icons/twitter.png"); }
+
+.icon-extended {
+  min-width: 120px;
+  padding-right: 10px;
+  height: 30px;
+  border-radius: 3px;
+  position: relative;
+  /* Facebook Arrow Box */ }
+  .icon-extended:before {
+    content: '';
+    display: inline-block;
+    height: 100%;
+    vertical-align: middle;
+    margin-right: -0.25em; }
+  .icon-extended .icon {
+    vertical-align: middle; }
+  .icon-extended.icon-ex-facebook {
+    background-color: #2f477c;
+    color: #fff; }
+  .icon-extended .like {
+    display: inline-block;
+    font-family: "Gudea", Helvetica, Arial, Verdana, sans-serif;
+    font-size: 11px;
+    padding-top: 2px;
+    padding-left: 4px;
+    vertical-align: middle; }
+  .icon-extended .like-count {
+    display: inline-block;
+    padding: 0 2px;
+    margin-left: 2px;
+    vertical-align: middle;
+    font-size: 11px; }
+    .icon-extended .like-count .content {
+      font-size: 11px;
+      line-height: 11px;
+      font-family: monospace;
+      color: #666; }
+  .icon-extended > a {
+    position: absolute;
+    display: block;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0; }
+  .icon-extended.icon-ex-twitter {
+    background-color: #0089C0;
+    color: #fff; }
+  .icon-extended:before, .icon-extended .like-count:after {
+    right: 100%;
+    top: 50%;
+    border: solid transparent;
+    content: ' ';
+    height: 0;
+    width: 0;
+    position: absolute;
+    pointer-events: none; }
+  .icon-extended .like-count {
+    position: relative;
+    background: #fff;
+    border: 1px solid #999; }
+    .icon-extended .like-count:after {
+      border-color: rgba(255, 255, 255, 0);
+      border-right-color: #fff;
+      border-width: 3px;
+      margin-top: -3px; }
+    .icon-extended .like-count:before {
+      border-color: rgba(153, 153, 153, 0);
+      border-right-color: #999;
+      border-width: 4px;
+      margin-top: -4px; }
+
+header.masthead section.top > .social-media ul li .icon-extended a {
+  margin-top: 0; }
+
+.icon-mini {
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  text-indent: -999em; }
+  .icon-mini.icon-discuss {
+    background-image: url("../images/icons/chat-sm.png"); }
+  .icon-mini.icon-link {
+    background-image: url("../images/icons/link-sm.png"); }
+  .icon-mini.icon-watch {
+    background-image: url("../images/icons/watch-sm.png"); }
 
 footer {
   padding: 20px 10px;

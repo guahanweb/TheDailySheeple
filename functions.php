@@ -180,7 +180,8 @@ function thedailysheeple_scripts() {
     wp_enqueue_style('thedailysheeple-font-ptserif', '//fonts.googleapis.com/css?family=PT+Serif:400,400italic', array(), null);
 
     // Main Styles
-    wp_enqueue_style('thedailysheeple-style', get_template_directory_uri() . '/css/main.css', array('thedailysheeple-font-gudea', 'thedailysheeple-font-ptserif'));
+//    wp_enqueue_style('thedailysheeple-style', get_template_directory_uri() . '/css/main.css', array('thedailysheeple-font-gudea', 'thedailysheeple-font-ptserif'));
+    wp_enqueue_style('thedailysheeple-style', get_template_directory_uri() . '/css/thedailysheeple.min.css', array('thedailysheeple-font-gudea', 'thedailysheeple-font-ptserif'));
 
     // Enqueue Scripts
     wp_enqueue_script('thedailysheeple-disqus-count', get_template_directory_uri() . '/js/disqus.js', array(), null, true);

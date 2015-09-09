@@ -12,3 +12,99 @@ body {
         clear: both;
     }
 }
+
+a {
+    color: #000;
+    text-decoration: none;
+
+    &:hover {
+        color: #a9002a;
+    }
+}
+
+.screen-reader-text {
+    clip: rect(1px, 1px, 1px, 1px);
+    position: absolute;
+
+    &:focus {
+        background-color: #f1f1f1;
+        border-radius: 3px;
+        box-shado: 0 0 2px 2px rgba(0, 0, 0, 0.6);
+        clip: auto;
+        color: #21759b;
+        display: block;
+        font-size: 14px;
+        font-weight: bold;
+        height: auto;
+        line-height: normal;
+        padding: 15px 23px 14px;
+        position: absolute;
+        left: 5px;
+        top: 5px;
+        text-decoration: none;
+        text-transform: none;
+        width: auto;
+        z-index: 100000;
+    }
+}
+
+#mailchimp-registration {
+    min-height: 265px;
+
+    .success {
+        padding-top: 15px;
+    }
+}
+
+span.edit-link {
+    float: right;
+}
+
+.tbd-entry {
+    margin-top: 10px;
+    border: 1px solid #aaa;
+    background-color: #f4f4f4;
+    height: 680px;
+
+    h1 {
+        line-height: 680px;
+        font-size: 32px;
+        text-align: center;
+        color: #ccc;
+    }
+}
+
+#main-column {
+    .news-streams {
+        .articles {
+            &.discussion {
+                h1 {
+                    text-transform: none;
+
+                    strong {
+                        font-weight: 600;
+                    }
+                }
+
+                & > article {
+                    padding: 10px;
+
+                    h1 {
+                        font-size: 12px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.stButton .stButton_gradient, .stButton .stFb, .stButton .stTwbutton, .stButton .stMainServices {
+    min-height: 22px;
+}
+
+.column, .stButton .stBubble_count {
+    height: 41px;
+}
+
+em { font-style: italic; }
+strong, b { font-weight: 600; }

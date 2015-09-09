@@ -13,3 +13,115 @@
     &.icon-facebook { background-image: url('../image/icons/facebook.png'); }
     &.icon-twitter { background-image: url('../image/icons/twitter.png'); }
 }
+
+.icon-extended {
+    min-width: 120px;
+    padding-right: 10px;
+    height: 30px;
+    border-radius: 3px;
+    position: relative;
+
+    &:before {
+        content: '';
+        display: inline-block;
+        height: 100%;
+        vertical-align: middle;
+        margin-right: -0.25em;
+    }
+
+    .icon {
+        vertical-align: middle;
+    }
+
+    &.icon-ex-facebook {
+        background-color: #2f477c;
+        color: #fff;
+    }
+
+    .like {
+        display: inline-block;
+        font-family: $font-sans;
+        font-size: 11px;
+        padding-top: 2px;
+        padding-left: 4px;
+        vertical-align: middle;
+    }
+
+    .like-count {
+        display: inline-block;
+        padding: 0 2px;
+        margin-left: 2px;
+        vertical-align: middle;
+        font-size: 11px;
+
+        .content {
+            font-size: 11px;
+            line-height: 11px;
+            font-family: monospace;
+            color: #666;
+        }
+    }
+
+    & > a {
+        position: absolute;
+        display: block;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+    }
+
+    &.icon-ex-twitter {
+        background-color: #0089C0;
+        color: #fff;
+    }
+
+    /* Facebook Arrow Box */
+    &:before, .like-count:after {
+        right: 100%;
+        top: 50%;
+        border: solid transparent;
+        content: ' ';
+        height: 0;
+        width: 0;
+        position: absolute;
+        pointer-events: none;
+    }
+
+    .like-count {
+        position: relative;
+        background: #fff;
+        border: 1px solid #999;
+
+        &:after {
+            border-color: rgba(255, 255, 255, 0);
+            border-right-color: #fff;
+            border-width: 3px;
+            margin-top: -3px;
+        }
+
+        &:before {
+            border-color: rgba(153, 153, 153, 0);
+            border-right-color: #999;
+            border-width: 4px;
+            margin-top: -4px;
+        }
+    }
+}
+
+header.masthead section.top > .social-media ul li .icon-extended a {
+    margin-top: 0;
+}
+
+.icon-mini {
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    text-indent: -999em;
+
+    &.icon-discuss { background-image: url('../images/icons/chat-sm.png'); }
+    &.icon-link { background-image: url('../images/icons/link-sm.png'); }
+    &.icon-watch { background-image: url('../images/icons/watch-sm.png'); }
+}
