@@ -82,16 +82,26 @@
     background-color: $white;
     padding: 10px;
 
-    .sidebar_right_ad {
-        & > a {
-            display: block;
+    #region-sidebarrightshuffle {
+        .sidebar_right_ad {
             width: 100%;
             height: auto;
 
-            img {
+            & > iframe {
+                width: 280px;
+                height: 250px;
+            }
+
+            & > a {
                 display: block;
-                width: 100% !important;
+                width: 100%;
                 height: auto;
+
+                img {
+                    display: block;
+                    width: 100% !important;
+                    height: auto;
+                }
             }
         }
     }

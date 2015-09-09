@@ -193,14 +193,20 @@ body {
 #right-column {
   background-color: #fff;
   padding: 10px; }
-  #right-column .sidebar_right_ad > a {
-    display: block;
+  #right-column #region-sidebarrightshuffle .sidebar_right_ad {
     width: 100%;
     height: auto; }
-    #right-column .sidebar_right_ad > a img {
+    #right-column #region-sidebarrightshuffle .sidebar_right_ad > iframe {
+      width: 280px;
+      height: 250px; }
+    #right-column #region-sidebarrightshuffle .sidebar_right_ad > a {
       display: block;
-      width: 100% !important;
+      width: 100%;
       height: auto; }
+      #right-column #region-sidebarrightshuffle .sidebar_right_ad > a img {
+        display: block;
+        width: 100% !important;
+        height: auto; }
   #right-column .ad-block > .ad {
     margin-top: 20px;
     width: 100%;
