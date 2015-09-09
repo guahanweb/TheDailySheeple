@@ -82,6 +82,20 @@
     background-color: $white;
     padding: 10px;
 
+    .sidebar_right_ad {
+        & > a {
+            display: block;
+            width: 100%;
+            height: auto;
+
+            img {
+                display: block;
+                width: 100% !important;
+                height: auto;
+            }
+        }
+    }
+
     .ad-block {
         & > .ad {
             margin-top: 20px;
@@ -99,7 +113,7 @@
 
                 img {
                     display: block;
-                    max-width: 100% !important;
+                    width: 100% !important;
                     height: auto;
                 }
             }

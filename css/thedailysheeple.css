@@ -193,6 +193,14 @@ body {
 #right-column {
   background-color: #fff;
   padding: 10px; }
+  #right-column .sidebar_right_ad > a {
+    display: block;
+    width: 100%;
+    height: auto; }
+    #right-column .sidebar_right_ad > a img {
+      display: block;
+      width: 100% !important;
+      height: auto; }
   #right-column .ad-block > .ad {
     margin-top: 20px;
     width: 100%;
@@ -205,7 +213,7 @@ body {
       height: auto; }
       #right-column .ad-block > .ad > a img {
         display: block;
-        max-width: 100% !important;
+        width: 100% !important;
         height: auto; }
   #right-column .ad-block .ad-email-signup {
     background-color: #000;
