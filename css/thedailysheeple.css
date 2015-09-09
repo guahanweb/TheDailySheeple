@@ -181,7 +181,7 @@ span.edit-link {
 .stButton .stButton_gradient, .stButton .stFb, .stButton .stTwbutton, .stButton .stMainServices {
   min-height: 22px; }
 
-.column, .stButton .stBubble_count {
+.column .stButton .stBubble_count {
   height: 41px; }
 
 em {
