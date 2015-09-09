@@ -1,6 +1,5 @@
 /* Include library */
 @import 'includes/_reset';
-@import 'includes/_clearfix';
 @import 'includes/_variables';
 @import 'includes/_mixins';
 @import 'includes/_grid';
@@ -8,6 +7,8 @@
 /* Include modules */
 @import '_global';
 @import '_masthead';
+@import '_icons';
+@import '_footer';
 
 #main-column {
     background-color: $white;
@@ -226,7 +227,7 @@
         }
     }
 
-    & > .navigation {
+    & > nav.navigation {
         &.post-navigation {
             $border-color: lighten($black, 70%);
             border-top: 1px solid $border-color;
@@ -336,5 +337,3 @@
     }
 }
 
-@import '_icons';
-@import '_footer';

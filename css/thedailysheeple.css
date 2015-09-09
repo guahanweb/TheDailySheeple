@@ -57,18 +57,6 @@ table {
 .container {
   zoom: 1; }
 
-.container:before,
-.container:after {
-  content: "";
-  display: table; }
-
-.container:after {
-  clear: both; }
-
-/* For IE 6/7 (trigger hasLayout) */
-.container {
-  zoom: 1; }
-
 .column {
   float: left;
   padding: 10px; }
@@ -286,6 +274,132 @@ strong, b {
       border-left: 1px solid #000;
       border-right: 1px solid #000; }
 
+.icon {
+  width: 30px;
+  height: 30px;
+  display: inline-block;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  text-indent: -999em;
+  border-radius: 3px; }
+  .icon.icon-star {
+    background-image: url("../images/icons/star.png"); }
+  .icon.icon-rss {
+    background-image: url("../images/icons/rss.png"); }
+  .icon.icon-mail {
+    background-image: url("../images/icons/mail.png"); }
+  .icon.icon-facebook {
+    background-image: url("../image/icons/facebook.png"); }
+  .icon.icon-twitter {
+    background-image: url("../image/icons/twitter.png"); }
+
+.icon-extended {
+  min-width: 120px;
+  padding-right: 10px;
+  height: 30px;
+  border-radius: 3px;
+  position: relative;
+  /* Facebook Arrow Box */ }
+  .icon-extended:before {
+    content: '';
+    display: inline-block;
+    height: 100%;
+    vertical-align: middle;
+    margin-right: -0.25em; }
+  .icon-extended .icon {
+    vertical-align: middle; }
+  .icon-extended.icon-ex-facebook {
+    background-color: #2f477c;
+    color: #fff; }
+  .icon-extended .like {
+    display: inline-block;
+    font-family: "Gudea", Helvetica, Arial, Verdana, sans-serif;
+    font-size: 11px;
+    padding-top: 2px;
+    padding-left: 4px;
+    vertical-align: middle; }
+  .icon-extended .like-count {
+    display: inline-block;
+    padding: 0 2px;
+    margin-left: 2px;
+    vertical-align: middle;
+    font-size: 11px; }
+    .icon-extended .like-count .content {
+      font-size: 11px;
+      line-height: 11px;
+      font-family: monospace;
+      color: #666; }
+  .icon-extended > a {
+    position: absolute;
+    display: block;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0; }
+  .icon-extended.icon-ex-twitter {
+    background-color: #0089C0;
+    color: #fff; }
+  .icon-extended:before, .icon-extended .like-count:after {
+    right: 100%;
+    top: 50%;
+    border: solid transparent;
+    content: ' ';
+    height: 0;
+    width: 0;
+    position: absolute;
+    pointer-events: none; }
+  .icon-extended .like-count {
+    position: relative;
+    background: #fff;
+    border: 1px solid #999; }
+    .icon-extended .like-count:after {
+      border-color: rgba(255, 255, 255, 0);
+      border-right-color: #fff;
+      border-width: 3px;
+      margin-top: -3px; }
+    .icon-extended .like-count:before {
+      border-color: rgba(153, 153, 153, 0);
+      border-right-color: #999;
+      border-width: 4px;
+      margin-top: -4px; }
+
+header.masthead section.top > .social-media ul li .icon-extended a {
+  margin-top: 0; }
+
+.icon-mini {
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  text-indent: -999em; }
+  .icon-mini.icon-discuss {
+    background-image: url("../images/icons/chat-sm.png"); }
+  .icon-mini.icon-link {
+    background-image: url("../images/icons/link-sm.png"); }
+  .icon-mini.icon-watch {
+    background-image: url("../images/icons/watch-sm.png"); }
+
+footer {
+  padding: 20px 10px;
+  background-color: #fff; }
+  footer .site-links {
+    padding: 5px 0;
+    text-transform: uppercase;
+    font-size: 12px; }
+    footer .site-links li {
+      display: inline-block;
+      padding: 0 10px;
+      border-right: 1px solid #aaa; }
+      footer .site-links li:first-child {
+        padding-left: 0; }
+      footer .site-links li:last-child {
+        border-right: none; }
+      footer .site-links li > a {
+        color: #a9002a; }
+        footer .site-links li > a:hover {
+          text-decoration: underline; }
+
 #main-column {
   background-color: #fff; }
   #main-column.column {
@@ -413,21 +527,21 @@ strong, b {
     font-weight: bold;
     font-style: italic; }
 
-#main > .navigation.post-navigation {
+#main > nav.navigation.post-navigation {
   border-top: 1px solid #b3b3b3;
   border-bottom: 1px solid #b3b3b3;
   padding: 10px 0;
   font-size: 12px; }
-  #main > .navigation.post-navigation .nav-links {
+  #main > nav.navigation.post-navigation .nav-links {
     height: 100%; }
-  #main > .navigation.post-navigation span.prev-link {
+  #main > nav.navigation.post-navigation span.prev-link {
     float: left;
     width: 50%; }
-  #main > .navigation.post-navigation span.next-link {
+  #main > nav.navigation.post-navigation span.next-link {
     float: right;
     width: 50%;
     text-align: right; }
-  #main > .navigation.post-navigation span .meta-nav {
+  #main > nav.navigation.post-navigation span .meta-nav {
     font-weight: bold; }
 
 .articles > article {
@@ -479,129 +593,3 @@ strong, b {
   background-color: #e6e6e6;
   padding: 10px;
   margin: 8px 10px; }
-
-.icon {
-  width: 30px;
-  height: 30px;
-  display: inline-block;
-  background-position: 50% 50%;
-  background-repeat: no-repeat;
-  text-indent: -999em;
-  border-radius: 3px; }
-  .icon.icon-star {
-    background-image: url("../images/icons/star.png"); }
-  .icon.icon-rss {
-    background-image: url("../images/icons/rss.png"); }
-  .icon.icon-mail {
-    background-image: url("../images/icons/mail.png"); }
-  .icon.icon-facebook {
-    background-image: url("../image/icons/facebook.png"); }
-  .icon.icon-twitter {
-    background-image: url("../image/icons/twitter.png"); }
-
-.icon-extended {
-  min-width: 120px;
-  padding-right: 10px;
-  height: 30px;
-  border-radius: 3px;
-  position: relative;
-  /* Facebook Arrow Box */ }
-  .icon-extended:before {
-    content: '';
-    display: inline-block;
-    height: 100%;
-    vertical-align: middle;
-    margin-right: -0.25em; }
-  .icon-extended .icon {
-    vertical-align: middle; }
-  .icon-extended.icon-ex-facebook {
-    background-color: #2f477c;
-    color: #fff; }
-  .icon-extended .like {
-    display: inline-block;
-    font-family: "Gudea", Helvetica, Arial, Verdana, sans-serif;
-    font-size: 11px;
-    padding-top: 2px;
-    padding-left: 4px;
-    vertical-align: middle; }
-  .icon-extended .like-count {
-    display: inline-block;
-    padding: 0 2px;
-    margin-left: 2px;
-    vertical-align: middle;
-    font-size: 11px; }
-    .icon-extended .like-count .content {
-      font-size: 11px;
-      line-height: 11px;
-      font-family: monospace;
-      color: #666; }
-  .icon-extended > a {
-    position: absolute;
-    display: block;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0; }
-  .icon-extended.icon-ex-twitter {
-    background-color: #0089C0;
-    color: #fff; }
-  .icon-extended:before, .icon-extended .like-count:after {
-    right: 100%;
-    top: 50%;
-    border: solid transparent;
-    content: ' ';
-    height: 0;
-    width: 0;
-    position: absolute;
-    pointer-events: none; }
-  .icon-extended .like-count {
-    position: relative;
-    background: #fff;
-    border: 1px solid #999; }
-    .icon-extended .like-count:after {
-      border-color: rgba(255, 255, 255, 0);
-      border-right-color: #fff;
-      border-width: 3px;
-      margin-top: -3px; }
-    .icon-extended .like-count:before {
-      border-color: rgba(153, 153, 153, 0);
-      border-right-color: #999;
-      border-width: 4px;
-      margin-top: -4px; }
-
-header.masthead section.top > .social-media ul li .icon-extended a {
-  margin-top: 0; }
-
-.icon-mini {
-  display: inline-block;
-  width: 16px;
-  height: 16px;
-  background-position: 50% 50%;
-  background-repeat: no-repeat;
-  text-indent: -999em; }
-  .icon-mini.icon-discuss {
-    background-image: url("../images/icons/chat-sm.png"); }
-  .icon-mini.icon-link {
-    background-image: url("../images/icons/link-sm.png"); }
-  .icon-mini.icon-watch {
-    background-image: url("../images/icons/watch-sm.png"); }
-
-footer {
-  padding: 20px 10px;
-  background-color: #fff; }
-  footer .site-links {
-    padding: 5px 0;
-    text-transform: uppercase;
-    font-size: 12px; }
-    footer .site-links li {
-      display: inline-block;
-      padding: 0 10px;
-      border-right: 1px solid #aaa; }
-      footer .site-links li:first-child {
-        padding-left: 0; }
-      footer .site-links li:last-child {
-        border-right: none; }
-      footer .site-links li > a {
-        color: #a9002a; }
-        footer .site-links li > a:hover {
-          text-decoration: underline; }
