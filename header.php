@@ -8,17 +8,17 @@
     <meta property="og:image" content="<?php echo thedailysheeple_get_post_image_url(get_queried_object_id()); ?>">
     <?php endif; ?>
     <link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
-	<!--[if lt IE 9]>
-	<script src="<?php echo get_template_directory_uri(); ?>/js/html5.js"></script>
-	<![endif]-->
-	<?php wp_head(); ?>
+    <!--[if lt IE 9]>
+    <script src="<?php echo get_template_directory_uri(); ?>/js/html5.js"></script>
+    <![endif]-->
+    <?php wp_head(); ?>
     <script type="text/javascript">var switchTo5x=true;</script>
     <script type="text/javascript" src="http://w.sharethis.com/button/buttons.js"></script>
     <script type="text/javascript">
         stLight.options({
-            publisher: "7b290577-a1b4-42f5-8f2d-755a8aabb6c1", 
-            doNotHash: false, 
-            doNotCopy: false, 
+            publisher: "7b290577-a1b4-42f5-8f2d-755a8aabb6c1",
+            doNotHash: false,
+            doNotCopy: false,
             hashAddressBar: false,
             onhover: false
         });
@@ -35,7 +35,7 @@
                     </div>
                     <div class="edition">
                         <p>US Edition<br>
-						<?php echo date('l, F jS, Y'); ?></p>
+                        <?php echo date('l, F jS, Y'); ?></p>
                     </div>
                     <div class="social-media">
                         <form name="search" role="search" id="searchform" action="/" method="get">
@@ -44,25 +44,25 @@
                             <li><a href="#" class="icon icon-mail"><?php echo __('Mail', 'thedailysheeple'); ?></a></li>
                             <li><a href="#" data-action="bookmark" class="icon icon-star"><?php echo __('Star', 'thedailysheeple'); ?></a></li>
                             <li><a href="http://feeds.feedburner.com/dailysheeple" target="_blank" class="icon icon-rss"><?php echo __('RSS', 'thedailysheeple'); ?></a></li>
-							<li><div class="icon-extended icon-ex-facebook" data-action="facebook">
-								<span class="icon icon-facebook">FB</span>
-								<span class="like">Like</span>
-								<span class="like-count">
-									<span class="content"><?php echo thedailysheeple_get_likes(); ?></span>
-								</span>
-								<a href="https://www.facebook.com/pages/The-Daily-Sheeple/114637491995485" target="_blank" class="overlay">&nbsp;</a>
-							</div></li>
-							<li><div class="icon-extended icon-ex-twitter" data-action="twitter">
-								<span class="icon icon-twitter">Twitter</span>
-								<span class="like">Follow</span>
-								<a href="https://twitter.com/TheDailySheeple" target="_blank" class="overlay">&nbsp;</a>
-							</div></li>
+                            <li><div class="icon-extended icon-ex-facebook" data-action="facebook">
+                                <span class="icon icon-facebook">FB</span>
+                                <span class="like">Like</span>
+                                <span class="like-count">
+                                    <span class="content"><?php echo thedailysheeple_get_likes(); ?></span>
+                                </span>
+                                <a href="https://www.facebook.com/pages/The-Daily-Sheeple/114637491995485" target="_blank" class="overlay">&nbsp;</a>
+                            </div></li>
+                            <li><div class="icon-extended icon-ex-twitter" data-action="twitter">
+                                <span class="icon icon-twitter">Twitter</span>
+                                <span class="like">Follow</span>
+                                <a href="https://twitter.com/TheDailySheeple" target="_blank" class="overlay">&nbsp;</a>
+                            </div></li>
                         </ul>
                         </form>
                     </div>
                 </section>
                 <section class="main">
-                    <a href="http://www.thedailysheeple.com/"><img src="<?php echo get_template_directory_uri(); ?>/images/main-banner.png" height="161" width="948" border="0"alt="The Daily Sheeple: Wake the Flock Up!"></a>>
+                    <a href="http://www.thedailysheeple.com/"><img src="<?php echo get_template_directory_uri(); ?>/images/main-banner.png" height="161" width="948" border="0"alt="The Daily Sheeple: Wake the Flock Up!"></a>
                 </section>
                 <section class="ad-holder container">
                     <div class="highlights left">
