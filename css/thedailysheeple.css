@@ -57,6 +57,58 @@ table {
 .container {
   zoom: 1; }
 
+.column {
+  float: left;
+  padding: 10px; }
+  .column:first-child {
+    padding-left: 0; }
+  .column:last-child {
+    padding-right: 0; }
+  .column.column-single {
+    width: 25%; }
+  .column.column-double {
+    width: 50%; }
+  .column.column-triple {
+    width: 75%; }
+  .column.column-one-third {
+    width: 33.3%; }
+  .column.column-two-third {
+    width: 66.6%; }
+  .column > header {
+    text-transform: uppercase;
+    border-bottom: 2px solid #000;
+    padding: 10px 5px;
+    margin-top: -10px; }
+    .column > header > h1 {
+      font-size: 20px;
+      line-height: 24px; }
+    .column > header > a {
+      float: right;
+      font-size: 10px;
+      line-height: 24px; }
+  .column > h2.posted {
+    font: "PT Serif", serif;
+    text-transform: uppercase;
+    font-size: 11px;
+    color: #aaa;
+    padding: 10px 5px; }
+    .column > h2.posted a {
+      color: #aaa; }
+      .column > h2.posted a:hover {
+        color: #a9002a; }
+
+.page-content {
+  padding: 10px 5px; }
+  .page-content p {
+    line-height: 1.4em;
+    font-size: 13px; }
+
+.container > .column:first-child {
+  padding-left: 0; }
+
+.container > .column:last-child {
+  padding-right: 0; }
+
 /* Include modules */
 body {
   background-color: #5d5d5d;
