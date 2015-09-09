@@ -194,11 +194,15 @@ body {
   background-color: #fff;
   padding: 10px; }
   #right-column .ad-block > .ad {
-    margin-top: 20px; }
+    margin-top: 20px;
+    width: 100%;
+    height: auto; }
     #right-column .ad-block > .ad:first-child {
       margin-top: 0; }
     #right-column .ad-block > .ad > a {
-      display: block; }
+      display: block;
+      max-width: 100% !important;
+      height: auto; }
   #right-column .ad-block .ad-email-signup {
     background-color: #000;
     color: #fff;

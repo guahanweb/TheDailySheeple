@@ -85,6 +85,8 @@
     .ad-block {
         & > .ad {
             margin-top: 20px;
+            width: 100%;
+            height: auto;
 
             &:first-child {
                 margin-top: 0;
@@ -92,6 +94,8 @@
 
             & > a {
                 display: block;
+                max-width: 100% !important;
+                height: auto;
             }
         }
 
