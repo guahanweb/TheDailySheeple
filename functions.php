@@ -253,3 +253,13 @@ function thedailysheeple_footer_script() { ?>
 </script>
 <?php }
 add_action('wp_footer', 'thedailysheeple_footer_script');
+
+// Set up custom search template to handle special pages
+add_filter('template_include', 'thedailysheeple_custom_search_template');
+function thedailysheeple_custom_search_template($template) {
+    if (is_search()) {
+        $ct = locate_template('custom-search.php', false, false);
+        if ($ct) $template = $ct;
+    }
+    return $template;
+}
