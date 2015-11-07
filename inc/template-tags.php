@@ -126,7 +126,7 @@ function thedailysheeple_posted_on() {
     printf( '<span class="entry-date"><a href="%1$s" rel="bookmark"><time class="entry-date" datetime="%2$s">%3$s</time></a></span> | <span class="byline"><span class="author vcard"><a class="url fn n" href="%4$s" rel="author" target="_blank">%5$s</a></span></span>',
         esc_url( get_permalink() ),
         esc_attr( get_the_date( 'c' ) ),
-        esc_html( get_the_date('D. F j, Y, g:ia') ),
+        esc_html( get_the_date('F j, g:ia') ),
         esc_url( thedailysheeple_get_authorurl($post) ),
         thedailysheeple_get_authorname($post)
     );
