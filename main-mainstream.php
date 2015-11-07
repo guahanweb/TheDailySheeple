@@ -7,7 +7,7 @@ query_posts(array(
 ));
 ?>
 <header>
-    <!-- <a href="#"><?php echo __('More', 'thedailysheeple'); ?></a> --?
+    <!-- <a href="#"><?php echo __('More', 'thedailysheeple'); ?></a> -->
     <h1><?php echo __('Main Stream&hellip;', 'thedailysheeple'); ?></h1>
 </header>
 <div class="articles">
