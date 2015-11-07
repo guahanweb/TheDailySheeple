@@ -262,6 +262,7 @@ function thedailysheeple_custom_search_filter($query) {
                         'category_name' => 'featuredreports',
                         'posts_per_page' => 25
                     ));
+                    var_dump($query);
                     break;
             }
         }
