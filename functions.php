@@ -258,11 +258,8 @@ function thedailysheeple_custom_search_filter($query) {
         if ($query->is_search) {
             switch ($query->query_vars['s']) {
                 case 'breakingnews':
-                    $query = new WP_Query(array(
-                        'category_name' => 'featuredreports',
-                        'posts_per_page' => 25
-                    ));
-                    var_dump($query);
+                    $query->query_vars['s'] = '';
+                    $query->set('category_name', 'featuredreports');
                     break;
             }
         }
