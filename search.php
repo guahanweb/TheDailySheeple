@@ -33,11 +33,9 @@ get_header(); ?>
                     endwhile;
                     // Previous/next post navigation.
                     thedailysheeple_paging_nav();
-                    echo "</div>\n";
                 else :
                     // If no content, include the "No posts found" template.
                     get_template_part( 'content', 'none' );
-
                 endif;
                 ?>
                 </div>
