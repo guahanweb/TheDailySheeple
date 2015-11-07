@@ -44,5 +44,5 @@ get_header(); ?>
     </section>
 <?php
 get_sidebar( 'content' );
-get_sidebar( 'ads' );
+// get_sidebar( 'ads' );
 get_footer();

@@ -57,5 +57,5 @@ get_header();
     </section><!-- #primary -->
 <?php
 get_sidebar( 'content' );
-get_sidebar( 'ads' );
+// get_sidebar( 'ads' );
 get_footer();
