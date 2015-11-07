@@ -257,15 +257,7 @@ function thedailysheeple_custom_search_filter($query) {
     if (!is_admin() && $query->is_main_query()) {
         if ($query->is_search) {
             switch ($query->query_vars['s']) {
-                case 'tds-breakingnews':
-                    $query->query_vars['s'] = '';
-                    $query->set('category_name', 'featuredreports');
-                    break;
-
-                case 'tds-popularnews':
-                    $query->query_vars['s'] = '';
-                    $query->set('category_name', 'editors-choice');
-                    break;
+                /* Custom search queries can be overridden here */
             }
         }
     }
