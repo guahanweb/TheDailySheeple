@@ -256,7 +256,7 @@ function thedailysheeple_footer_script() { ?>
 function thedailysheeple_custom_search_filter($query) {
     if (!is_admin() && $query->is_main_query()) {
         if ($query->is_search) {
-            var_dump($query);
+            var_dump($query->query_vars['s']);
         }
     }
 }
