@@ -114,7 +114,8 @@ body {
   background-color: #5d5d5d;
   font-family: "PT Serif", serif; }
   body > .wrapper {
-    max-width: 1200px;
+    /* max-width: 1200px; */
+    width: 1200px;
     margin: 0 auto;
     background: #fff; }
   body > div > footer {
