@@ -23,6 +23,12 @@ a {
     }
 }
 
+.entry-content {
+    a {
+        color: $link-color;
+    }
+}
+
 .screen-reader-text {
     clip: rect(1px, 1px, 1px, 1px);
     position: absolute;
