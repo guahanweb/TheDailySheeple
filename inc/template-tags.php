@@ -115,20 +115,30 @@ if ( ! function_exists( 'thedailysheeple_posted_on' ) ) :
  *
  * @since The Daily Sheeple 1.0
  */
-function thedailysheeple_posted_on() {
+function thedailysheeple_posted_on($single) {
     if ( is_sticky() && is_home() && ! is_paged() ) {
         echo '<span class="featured-post">' . __( 'Sticky', 'thedailysheeple' ) . '</span>';
     }
 
     $post = get_post(get_the_ID());
 
-    // Set up and print post meta information.
-    printf( '<span class="entry-date"><a href="%1$s" rel="bookmark"><time class="entry-date" datetime="%2$s">%3$s</time></a></span> | <span class="byline"><span class="author vcard"><a class="url fn n" href="%4$s" rel="author" target="_blank">%5$s</a></span></span>',
-        esc_url( get_permalink() ),
-        esc_attr( get_the_date( 'c' ) ),
-        esc_html( get_the_date('F j, g:ia') ),
-        esc_url( thedailysheeple_get_authorurl($post) ),
-        thedailysheeple_get_authorname($post)
-    );
+    if ($single) {
+        // Set up and print post meta information.
+        printf( '<span class="entry-date"><a href="%1$s" rel="bookmark"><time class="entry-date" datetime="%2$s">%3$s</time></a></span> | <span class="byline"><span class="author vcard"><a class="url fn n" href="%4$s" rel="author" target="_blank">%5$s</a></span></span>',
+            esc_url( get_permalink() ),
+            esc_attr( get_the_date( 'c' ) ),
+            esc_html( get_the_date('F j, Y') ),
+            esc_url( thedailysheeple_get_authorurl($post) ),
+            thedailysheeple_get_authorname($post)
+    } else {
+        // Set up and print post meta information.
+        printf( '<span class="entry-date"><a href="%1$s" rel="bookmark"><time class="entry-date" datetime="%2$s">%3$s</time></a></span> | <span class="byline"><span class="author vcard"><a class="url fn n" href="%4$s" rel="author" target="_blank">%5$s</a></span></span>',
+            esc_url( get_permalink() ),
+            esc_attr( get_the_date( 'c' ) ),
+            esc_html( get_the_date('F j, g:ia') ),
+            esc_url( thedailysheeple_get_authorurl($post) ),
+            thedailysheeple_get_authorname($post)
+        );
+    }
 }
 endif;
