@@ -193,9 +193,10 @@ strong, b {
 
 #main blockquote {
   font-size: 0.9em;
-  margin: 10px 30px;
+  margin: 10px 30px 10px 26px;
   padding: 20px;
-  background-color: #f4f4f4; }
+  background-color: #f4f4f4;
+  border-left: 4px solid #ccc; }
 
 .masthead {
   background-color: #fff;
