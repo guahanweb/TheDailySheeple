@@ -82,6 +82,8 @@ table {
     .column > header > h1 {
       font-size: 20px;
       line-height: 24px; }
+      .column > header > h1.single-title {
+        font-size: 24px; }
     .column > header > a {
       float: right;
       font-size: 10px;
