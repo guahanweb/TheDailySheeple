@@ -132,7 +132,8 @@ a {
 .entry-content a, article p a {
   color: #0728b7; }
   .entry-content a:hover, article p a:hover {
-    text-decoration: underline; }
+    text-decoration: underline;
+    color: #a9002a; }
 
 .screen-reader-text {
   clip: rect(1px, 1px, 1px, 1px);
