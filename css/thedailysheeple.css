@@ -191,6 +191,12 @@ em {
 strong, b {
   font-weight: 600; }
 
+article blockquote {
+  font-size: 0.9em;
+  margin: 10px 30px;
+  padding: 20px;
+  background-color: #f4f4f4; }
+
 .masthead {
   background-color: #fff;
   padding: 10px 10px 0; }
