@@ -23,9 +23,12 @@ a {
     }
 }
 
-.entry-content {
+.entry-content, article {
     a {
         color: $link-color;
+        &:hover {
+            text-decoration: underline;
+        }
     }
 }
 
