@@ -110,10 +110,25 @@ span.edit-link {
 em { font-style: italic; }
 strong, b { font-weight: 600; }
 
-#main blockquote {
-    font-size: 0.9em;
-    margin: 10px 30px 10px 26px;
-    padding: 20px;
-    background-color: #f4f4f4;
-    border-left: 4px solid #ccc;
+#main {
+    blockquote {
+        font-size: 0.9em;
+        margin: 10px 30px 10px 26px;
+        padding: 20px;
+        background-color: #f4f4f4;
+        border-left: 4px solid #ccc;
+    }
+
+    ul {
+        list-style-type: square;
+        margin: 10px 30px;
+    }
+
+    ol {
+        margin: 10px 30px;
+    }
+
+    li {
+        line-height: 1.2em;
+    }
 }

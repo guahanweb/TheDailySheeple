@@ -198,6 +198,16 @@ strong, b {
   background-color: #f4f4f4;
   border-left: 4px solid #ccc; }
 
+#main ul {
+  list-style-type: square;
+  margin: 10px 30px; }
+
+#main ol {
+  margin: 10px 30px; }
+
+#main li {
+  line-height: 1.2em; }
+
 .masthead {
   background-color: #fff;
   padding: 10px 10px 0; }
