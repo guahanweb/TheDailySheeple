@@ -115,7 +115,7 @@ if ( ! function_exists( 'thedailysheeple_posted_on' ) ) :
  *
  * @since The Daily Sheeple 1.0
  */
-function thedailysheeple_posted_on($single) {
+function thedailysheeple_posted_on($single = false) {
     if ( is_sticky() && is_home() && ! is_paged() ) {
         echo '<span class="featured-post">' . __( 'Sticky', 'thedailysheeple' ) . '</span>';
     }
