@@ -129,9 +129,9 @@ a {
   a:hover {
     color: #a9002a; }
 
-.entry-content a, article a {
+.entry-content a, article p a {
   color: #0728b7; }
-  .entry-content a:hover, article a:hover {
+  .entry-content a:hover, article p a:hover {
     text-decoration: underline; }
 
 .screen-reader-text {
