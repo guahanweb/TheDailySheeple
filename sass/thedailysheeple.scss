@@ -214,10 +214,11 @@
 #main {
     & > .entry-content {
         padding: 0 5px 10px;
+        font-size: 12px;
+        font-family: $font-sans;
 
         p {
             padding: 2px 0 12px;
-            font-size: 13px;
             line-height: 1.5em;
         }
 
