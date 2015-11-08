@@ -7,7 +7,7 @@ query_posts(array(
 ));
 ?>
 <header>
-    <a href="<?php echo date('/Y/m/', strtotime('1 month ago')); ?>"><?php echo __('See Full Archives', 'thedailysheeple'); ?></a>
+    <a href="<?php echo date('/Y/m/', mktime(date('Y'), date('m'))); ?>"><?php echo __('See Full Archives', 'thedailysheeple'); ?></a>
     <h1><?php echo __('Sheeple News Archives', 'thedailysheeple'); ?></h1>
 </header>
 <div class="articles">
