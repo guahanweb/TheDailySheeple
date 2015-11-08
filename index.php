@@ -19,12 +19,12 @@ get_header(); ?>
         <section class="column column-triple" id="main-column">
             <div class="container">
                 <section class="column column-two-third news-just-in">
-			<!-- Breaking News -->
-			<?php get_template_part('main', 'breaking'); ?>
+            <!-- Breaking News -->
+            <?php get_template_part('main', 'breaking'); ?>
                 </section>
                 <section class="column column-one-third news-popular">
-			<!-- Popular News -->
-			<?php get_template_part('main', 'popular'); ?>
+            <!-- Popular News -->
+            <?php get_template_part('main', 'popular'); ?>
                 </section>
             </div>
             <div class="container feature-holder">
@@ -55,21 +55,14 @@ get_header(); ?>
                     <?php get_template_part('main', 'mainstream'); ?>
                 </section>
                 <section class="column column-one-third stream-editors-pick">
-                    <header>
-                        <h1>TBD&hellip;</h1>
-                    </header>
-                    <div class="articles">
-                        <div class="tbd-entry">
-                            <h1>EMPTY!!!</h1>
-                        </div>
-                    </div>
+                    <?php get_template_part('main', 'videos'); ?>
                 </section>
                 <section class="column column-one-third stream-discussion">
                     <header>
                         <h1>Discussion&hellip;</h1>
                     </header>
                     <div class="articles discussion">
-<?php 
+<?php
 $tpl = <<<EOT
 <article>
     <h1><a href="{commenturl}"><strong>{commenter}:</strong> <em>"{commentsnippet}"</a></em></h1>
