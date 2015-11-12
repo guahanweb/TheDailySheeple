@@ -14,29 +14,29 @@
 get_header(); ?>
 
 <section class="column column-triple" id="main-column">
-	<div class="container">
-		<section class="column column-one-third left-column">
-			<header><h1>Left Column</h1></header>
-		</section>
-		<section class="column column-two-third">
+    <div class="container">
+        <section class="column column-one-third left-column">
+            <?php get_sidebar('left-single'); ?>
+        </section>
+        <section class="column column-two-third" id="main" role="main">
 <?php
-			if ( is_front_page() && thedailysheeple_has_featured_posts() ) {
-				// Include the featured content template.
-				get_template_part( 'featured-content' );
-			}
-				// Start the Loop.
-				while ( have_posts() ) : the_post();
+            if ( is_front_page() && thedailysheeple_has_featured_posts() ) {
+                // Include the featured content template.
+                get_template_part( 'featured-content' );
+            }
+                // Start the Loop.
+                while ( have_posts() ) : the_post();
 
-					// Include the page content template.
-					get_template_part( 'content', 'page' );
+                    // Include the page content template.
+                    get_template_part( 'content', 'page' );
 
-					
-				endwhile;
-			?>
 
-		</section>
-	</div>
+                endwhile;
+            ?>
+
+        </section>
+    </div>
 </section>
-<?php 
+<?php
 get_sidebar('ads');
 get_footer();
