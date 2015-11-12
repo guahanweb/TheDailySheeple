@@ -124,12 +124,14 @@ function thedailysheeple_posted_on($single = false) {
 
     if ($single) {
         // Set up and print post meta information.
-        printf( '<span class="entry-date"><a href="%1$s" rel="bookmark"><time class="entry-date" datetime="%2$s">%3$s</time></a></span> | <span class="byline"><span class="author vcard"><a class="url fn n" href="%4$s" rel="author" target="_blank">%5$s</a></span></span>',
+        $website = thedailysheeple_get_authorwebsite($post);
+        printf( '<span class="entry-date"><a href="%1$s" rel="bookmark"><time class="entry-date" datetime="%2$s">%3$s</time></a></span> | <span class="byline"><span class="author vcard">%4$s</span></span> | <span class="byline"><span class="author-website"><a href="%5$s">%6$s</a></span>',
             esc_url( get_permalink() ),
             esc_attr( get_the_date( 'c' ) ),
             esc_html( get_the_date('F j, Y') ),
-            esc_url( thedailysheeple_get_authorurl($post) ),
-            thedailysheeple_get_authorname($post)
+            thedailysheeple_get_authorname($post),
+            $website['url'],
+            $website['name']
        );
     } else {
         // Set up and print post meta information.
