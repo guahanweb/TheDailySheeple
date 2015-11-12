@@ -20,7 +20,7 @@ class TheDailySheepleOptions {
         register_setting('thedailysheeple_options_group', self::$option_key, array('TheDailySheepleOptions', 'validate'));
         add_settings_section('thedailysheeple_settings_header', __('Formatting Options', 'thedailysheeple'), array('TheDailySheepleOptions', 'settingsHeaderText'), 'thedailysheeple_options_group');
         add_settings_field('thedailysheeple_social_truncate', __('Truncate Social Media Counts', 'thedailysheeple'), array('TheDailySheepleOptions', 'socialTruncateField'), 'thedailysheeple_options_group', 'thedailysheeple_settings_header');
-        add_settings_field('thedailysheeple_social_count', __('Static Facebook Likes', 'thedailysheeple'), array('TheDailySheeplOptions', 'socialStaticCount'), 'thedailysheeple_options_group', 'thedailysheeple_settings_header');
+        add_settings_field('thedailysheeple_social_count', __('Static Facebook Likes', 'thedailysheeple'), array('TheDailySheepleOptions', 'socialStaticCount'), 'thedailysheeple_options_group', 'thedailysheeple_settings_header');
     }
 
     public static function settingsHeaderText() {
