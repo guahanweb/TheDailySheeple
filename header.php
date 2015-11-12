@@ -31,7 +31,7 @@
                 <section class="top container">
                     <div class="tip-jar">
                         <p><a href="/contact-us">Send us a tip</a><br>
-                        <a href="/about-the-daily-sheeple">About The Daily Sheeple</a></p>
+                        <a href="/about">About The Daily Sheeple</a></p>
                     </div>
                     <div class="edition">
                         <p>US Edition<br>
