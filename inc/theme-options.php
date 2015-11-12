@@ -45,7 +45,7 @@ EOF;
         $description = __('If this field is set, it will be shown instead of trying to retrieve the live count from Facebook');
         $key = self::$option_key;
         echo <<<EOF
-<input type="text" size="10" placeholder="n/a" name="${key}[social_static_count']" value="$count">
+<input type="text" size="10" placeholder="n/a" name="${key}[social_static_count]" value="$count">
 <span class="description">$description</span>
 EOF;
     }
@@ -65,7 +65,6 @@ EOF;
         $submit = !empty($input['submit']) ? true : false;
         $reset  = !empty($input['reset']) ? true : false;
 
-        var_dump($input);
         if ($submit) {
             $data['social_truncate_count'] = isset($input['social_truncate_count']);
             $data['social_static_count'] = !empty($input['social_static_count']) ? intval($input['social_static_count']) : false;
