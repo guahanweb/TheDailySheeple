@@ -550,6 +550,13 @@ footer {
   padding: 0 5px 10px;
   font-size: 12pt;
   font-family: "Gudea", Helvetica, Arial, Verdana, sans-serif; }
+  #main > .entry-content h2 {
+    font-family: "Gudea", Helvetica, Arial, Verdana, sans-serif;
+    font-size: 12pt;
+    text-transform: uppercase;
+    font-weight: bold; }
+  #main > .entry-content h3, #main > .entry-content h4, #main > .entry-content h5 {
+    font-weight: bold; }
   #main > .entry-content p {
     padding: 2px 0 12px;
     line-height: 1.5em; }
