@@ -147,9 +147,10 @@ function thedailysheeple_get_authorname($post) {
 function thedailysheeple_get_authorwebsite($post) {
     $website = null;
     $author_id = get_usermeta($post->post_author, 'ID');
+    $contrib = in_array($author_id, array(2, 3));
     $website = array(
-        'name' => get_usermeta($post->post_author, 'websitename', true),
-        'url' => get_usermeta($post->post_author, 'websiteurl', true)
+        'name' => get_usermeta($post->post_author, 'profilewebsitename', true),
+        'url' => thedailysheeple_get_authorurl($post)
     );
     return $website;
 }
