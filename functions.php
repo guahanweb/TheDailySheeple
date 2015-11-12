@@ -34,6 +34,10 @@ add_action('after_setup_theme', 'thedailysheeple_setup');
 // Check Facebook like counts
 if (!function_exists('thedailysheeple_update_facebook')):
 function thedailysheeple_update_facebook() {
+    return;
+
+    // TODO: The graph endpoint now requires an OAuth token.
+    // We need to integrate with it in order to pull the live data
     $option = 'thedailysheeple_facebook_time';
     $likes  = 'thedailysheeple_facebook_likes';
     $expiry = time() - (24 * 60 * 60);
@@ -50,9 +54,11 @@ function thedailysheeple_update_facebook() {
 function thedailysheeple_get_likes() {
     $theme_options = get_option('thedailysheeple-theme-options');
     $truncate = $theme_options['social_truncate_count'];
+    $static_value = $theme_options['social_static_count'];
 
     $data = '';
-    $likes = intval(get_option('thedailysheeple_facebook_likes'));
+    // Use the static value if it has been provided
+    $likes = $static_value ? $static_value : intval(get_option('thedailysheeple_facebook_likes'));
     if ($truncate) {
         if ($likes > 1000000) {
             $data .= number_format($likes / 1000000, 2) . 'M';
@@ -136,6 +142,16 @@ function thedailysheeple_get_authorname($post) {
     $author_id = get_usermeta($post->post_author, 'ID');
     $author = in_array($author_id, array(2, 3)) ? get_post_meta($post->ID, "Author", true) : get_usermeta($post->post_author, 'display_name');
     return $author;
+}
+
+function thedailysheeple_get_authorwebsite($post) {
+    $website = null;
+    $author_id = get_usermeta($post->post_author, 'ID');
+    $website = array(
+        'name' => get_usermeta($post->post_author, 'websitename', true),
+        'url' => get_usermeta($post->post_author, 'websiteurl', true)
+    );
+    return $website;
 }
 
 function thedailysheeple_format_minimal_post($post) {
