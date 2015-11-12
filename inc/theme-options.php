@@ -65,6 +65,7 @@ EOF;
         $submit = !empty($input['submit']) ? true : false;
         $reset  = !empty($input['reset']) ? true : false;
 
+        var_dump($input);
         if ($submit) {
             $data['social_truncate_count'] = isset($input['social_truncate_count']);
             $data['social_static_count'] = !empty($input['social_static_count']) ? intval($input['social_static_count']) : false;
