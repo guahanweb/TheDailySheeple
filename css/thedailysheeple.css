@@ -265,8 +265,9 @@ strong, b {
             .masthead .top > .social-media ul li .input-field .input-part input[type=text] {
               font-size: 11px;
               margin: 0;
-              height: 28px;
-              line-height: 28px;
+              height: 26px;
+              line-height: 26px;
+              vertical-align: middle;
               text-transform: uppercase;
               padding: 0 4px;
               margin: 0;
