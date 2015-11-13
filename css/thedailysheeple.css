@@ -283,16 +283,10 @@ strong, b {
               text-indent: -9999em;
               overflow: hidden;
               cursor: pointer; }
-        .masthead .top > .social-media ul li input.search {
-          border: 1px solid gray;
-          border-radius: 2px;
-          height: 28px;
-          width: 160px;
-          line-height: 28px;
-          font-size: 11px;
-          padding: 0 5px;
-          text-transform: uppercase;
-          background: url("../images/icons/bullseye.png") no-repeat 97% 50% transparent; }
+          .masthead .top > .social-media ul li .input-field.input-email {
+            width: 160px; }
+            .masthead .top > .social-media ul li .input-field.input-email input[type=text] {
+              width: 100%; }
     .masthead .top p {
       line-height: 14px;
       font-size: 11px;
