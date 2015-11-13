@@ -40,7 +40,14 @@
                     <div class="social-media">
                         <form name="search" role="search" id="searchform" action="/" method="get">
                         <ul>
-                            <li><input type="text" placeholder="<?php echo __('Type Search Term', 'thedailysheeple'); ?>" class="search search-icon" name="s" id="s"></li>
+                            <li><div class="input-field input-search">
+                                <div class="input-part input-text">
+                                    <input type="text" placeholder="<?php echo __('Type Search Term', 'thedailysheeple'); ?>" class="search search-icon" name="s" id="s">
+                                </div>
+                                <div class="input-part input-submit">
+                                    <button class="search search-icon" type="submit">Submit</button>
+                                </div>
+                            </div></li>
                             <li><a href="#" class="icon icon-mail manual-optin-trigger" data-optin-slug="k5vywtzbwd-lightbox"><?php echo __('Newsletter', 'thedailysheeple'); ?></a></li>
                             <li><a href="#" data-action="bookmark" class="icon icon-star"><?php echo __('Star', 'thedailysheeple'); ?></a></li>
                             <li><a href="http://feeds.feedburner.com/dailysheeple" target="_blank" class="icon icon-rss"><?php echo __('RSS', 'thedailysheeple'); ?></a></li>
