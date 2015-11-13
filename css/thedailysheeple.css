@@ -261,7 +261,7 @@ strong, b {
           font-size: 11px;
           padding: 0 5px; }
           .masthead .top > .social-media ul li .input-field .input-part {
-            display: inline-block;
+            display: inline;
             cursor: text; }
             .masthead .top > .social-media ul li .input-field .input-part input[type=text] {
               font-size: 11px;
