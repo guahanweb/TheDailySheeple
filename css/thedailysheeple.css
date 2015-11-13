@@ -259,7 +259,8 @@ strong, b {
           border-radius: 2px;
           height: 28px;
           line-height: 28px;
-          font-size: 11px; }
+          font-size: 11px;
+          overflow: hidden; }
           .masthead .top > .social-media ul li .input-field .input-part {
             display: inline-block;
             vertical-align: top;
