@@ -254,14 +254,14 @@ strong, b {
           margin-top: -6px; }
         .masthead .top > .social-media ul li .input-field {
           display: inline-block;
+          vertical-align: top;
           border: 1px solid gray;
           border-radius: 2px;
           height: 28px;
           line-height: 28px;
-          font-size: 11px;
-          padding: 0 5px; }
+          font-size: 11px; }
           .masthead .top > .social-media ul li .input-field .input-part {
-            display: inline;
+            display: inline-block;
             cursor: text; }
             .masthead .top > .social-media ul li .input-field .input-part input[type=text] {
               font-size: 11px;

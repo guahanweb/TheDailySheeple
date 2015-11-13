@@ -46,15 +46,15 @@
 
                     .input-field {
                         display: inline-block;
+                        vertical-align: top;
                         border: 1px solid lighten($black, 50%);
                         border-radius:2px;
                         height: 28px;
                         line-height: 28px;
                         font-size: 11px;
-                        padding: 0 5px;
 
                         .input-part {
-                            display: inline;
+                            display: inline-block;
                             cursor: text;
 
                             input[type=text] {
