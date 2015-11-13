@@ -7,6 +7,7 @@
     line-height: 28px;
     font-size: 11px;
     overflow: hidden;
+    background-color: #fff;
 
     .input-part {
         display: inline-block;
@@ -40,9 +41,6 @@
 
     &.input-email {
         width: 160px;
-        input[type=text] {
-            width: 100%;
-        }
     }
 }
 

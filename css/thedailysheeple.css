@@ -227,7 +227,8 @@ strong, b {
   height: 28px;
   line-height: 28px;
   font-size: 11px;
-  overflow: hidden; }
+  overflow: hidden;
+  background-color: #fff; }
   .input-field .input-part {
     display: inline-block;
     vertical-align: top;
@@ -252,8 +253,6 @@ strong, b {
       cursor: pointer; }
   .input-field.input-email {
     width: 160px; }
-    .input-field.input-email input[type=text] {
-      width: 100%; }
 
 .masthead {
   background-color: #fff;
