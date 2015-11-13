@@ -251,8 +251,6 @@ strong, b {
       text-indent: -9999em;
       overflow: hidden;
       cursor: pointer; }
-  .input-field.input-email {
-    width: 160px; }
 
 .masthead {
   background-color: #fff;
