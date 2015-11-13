@@ -55,6 +55,7 @@
 
                         .input-part {
                             display: inline-block;
+                            vertical-align: top;
                             cursor: text;
 
                             input[type=text] {
@@ -62,7 +63,6 @@
                                 margin: 0;
                                 height: 26px;
                                 line-height: 26px;
-                                vertical-align: middle;
                                 text-transform: uppercase;
                                 padding: 0 4px;
                                 margin: 0;

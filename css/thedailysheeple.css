@@ -262,13 +262,13 @@ strong, b {
           font-size: 11px; }
           .masthead .top > .social-media ul li .input-field .input-part {
             display: inline-block;
+            vertical-align: top;
             cursor: text; }
             .masthead .top > .social-media ul li .input-field .input-part input[type=text] {
               font-size: 11px;
               margin: 0;
               height: 26px;
               line-height: 26px;
-              vertical-align: middle;
               text-transform: uppercase;
               padding: 0 4px;
               margin: 0;
