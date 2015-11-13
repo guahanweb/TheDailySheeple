@@ -270,7 +270,9 @@ strong, b {
               vertical-align: middle;
               text-transform: uppercase;
               padding: 0 4px;
-              margin: 0; }
+              margin: 0;
+              border: none;
+              outline: none; }
         .masthead .top > .social-media ul li input.search {
           border: 1px solid gray;
           border-radius: 2px;
