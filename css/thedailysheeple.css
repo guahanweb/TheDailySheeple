@@ -273,6 +273,11 @@ strong, b {
               margin: 0;
               border: none;
               outline: none; }
+            .masthead .top > .social-media ul li .input-field .input-part.input-submit button {
+              height: 26px;
+              width: 22px;
+              border: none;
+              background: url("../images/icons/bullseye.png") no-repeat 50% 50% transparent; }
         .masthead .top > .social-media ul li input.search {
           border: 1px solid gray;
           border-radius: 2px;
