@@ -252,7 +252,7 @@ strong, b {
       overflow: hidden;
       cursor: pointer; }
   .input-field.input-email {
-    width: 170px; }
+    width: 100%; }
 
 .masthead {
   background-color: #fff;
@@ -537,7 +537,7 @@ footer {
       font-size: 14px;
       line-height: 20px; }
     #right-column .ad-block .ad-email-signup > .register {
-      margin: 10px 30px; }
+      margin: 10px 20px; }
       #right-column .ad-block .ad-email-signup > .register .privacy {
         padding-top: 5px;
         font-size: 8px;
