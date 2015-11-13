@@ -44,6 +44,29 @@
                         margin-top: -6px;
                     }
 
+                    .input-field {
+                        display: inline-block;
+                        border: 1px solid lighten($black, 50%);
+                        border-radius:2px;
+                        height: 28px;
+                        line-height: 28px;
+                        font-size: 11px;
+                        padding: 0 5px;
+
+                        .input-part {
+                            display: inline-block;
+
+                            input[type=text] {
+                                font-size: 11px;
+                                margin: 0;
+                                height: 28px;
+                                line-height: 28px;
+                                vertical-align: middle;
+                                text-transform: uppercase;
+                            }
+                        }
+                    }
+
                     input.search {
                         border: 1px solid lighten($black, 50%);
                         border-radius: 2px;
