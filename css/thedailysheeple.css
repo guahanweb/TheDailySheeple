@@ -219,6 +219,42 @@ strong, b {
 #main small {
   font-size: 10pt; }
 
+.input-field {
+  display: inline-block;
+  vertical-align: top;
+  border: 1px solid gray;
+  border-radius: 2px;
+  height: 28px;
+  line-height: 28px;
+  font-size: 11px;
+  overflow: hidden; }
+  .input-field .input-part {
+    display: inline-block;
+    vertical-align: top;
+    cursor: text; }
+    .input-field .input-part input[type=text] {
+      font-size: 11px;
+      margin: 0;
+      height: 26px;
+      line-height: 26px;
+      text-transform: uppercase;
+      padding: 0 4px;
+      margin: 0;
+      border: none;
+      outline: none; }
+    .input-field .input-part.input-submit button {
+      height: 28px;
+      width: 28px;
+      border: none;
+      background: url("../images/icons/bullseye.png") no-repeat 50% 48% transparent;
+      text-indent: -9999em;
+      overflow: hidden;
+      cursor: pointer; }
+  .input-field.input-email {
+    width: 160px; }
+    .input-field.input-email input[type=text] {
+      width: 100%; }
+
 .masthead {
   background-color: #fff;
   padding: 10px 10px 0; }
@@ -252,41 +288,6 @@ strong, b {
         .masthead .top > .social-media ul li a {
           display: inline-block;
           margin-top: -6px; }
-        .masthead .top > .social-media ul li .input-field {
-          display: inline-block;
-          vertical-align: top;
-          border: 1px solid gray;
-          border-radius: 2px;
-          height: 28px;
-          line-height: 28px;
-          font-size: 11px;
-          overflow: hidden; }
-          .masthead .top > .social-media ul li .input-field .input-part {
-            display: inline-block;
-            vertical-align: top;
-            cursor: text; }
-            .masthead .top > .social-media ul li .input-field .input-part input[type=text] {
-              font-size: 11px;
-              margin: 0;
-              height: 26px;
-              line-height: 26px;
-              text-transform: uppercase;
-              padding: 0 4px;
-              margin: 0;
-              border: none;
-              outline: none; }
-            .masthead .top > .social-media ul li .input-field .input-part.input-submit button {
-              height: 28px;
-              width: 28px;
-              border: none;
-              background: url("../images/icons/bullseye.png") no-repeat 50% 48% transparent;
-              text-indent: -9999em;
-              overflow: hidden;
-              cursor: pointer; }
-          .masthead .top > .social-media ul li .input-field.input-email {
-            width: 160px; }
-            .masthead .top > .social-media ul li .input-field.input-email input[type=text] {
-              width: 100%; }
     .masthead .top p {
       line-height: 14px;
       font-size: 11px;
