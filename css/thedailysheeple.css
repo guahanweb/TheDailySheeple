@@ -538,15 +538,6 @@ footer {
       line-height: 20px; }
     #right-column .ad-block .ad-email-signup > .register {
       margin: 10px 30px; }
-      #right-column .ad-block .ad-email-signup > .register input {
-        box-sizing: border-box;
-        width: 100%;
-        padding: 8px;
-        font-size: 12px;
-        text-transform: uppercase;
-        border-radius: 2px;
-        border: 1px solid gray;
-        background: url("../images/icons/bullseye.png") no-repeat 97% 50% #fff; }
       #right-column .ad-block .ad-email-signup > .register .privacy {
         padding-top: 5px;
         font-size: 8px;
