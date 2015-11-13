@@ -261,7 +261,8 @@ strong, b {
           font-size: 11px;
           padding: 0 5px; }
           .masthead .top > .social-media ul li .input-field .input-part {
-            display: inline-block; }
+            display: inline-block;
+            cursor: text; }
             .masthead .top > .social-media ul li .input-field .input-part input[type=text] {
               font-size: 11px;
               margin: 0;
@@ -277,7 +278,10 @@ strong, b {
               height: 26px;
               width: 22px;
               border: none;
-              background: url("../images/icons/bullseye.png") no-repeat 50% 50% transparent; }
+              background: url("../images/icons/bullseye.png") no-repeat 50% 50% transparent;
+              text-indent: -9999em;
+              overflow: hidden;
+              cursor: pointer; }
         .masthead .top > .social-media ul li input.search {
           border: 1px solid gray;
           border-radius: 2px;

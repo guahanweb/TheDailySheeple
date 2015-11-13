@@ -55,6 +55,7 @@
 
                         .input-part {
                             display: inline-block;
+                            cursor: text;
 
                             input[type=text] {
                                 font-size: 11px;
@@ -75,6 +76,9 @@
                                     width: 22px;
                                     border: none;
                                     background: url('../images/icons/bullseye.png') no-repeat 50% 50% transparent;
+                                    text-indent: -9999em;
+                                    overflow: hidden;
+                                    cursor: pointer;
                                 }
                             }
                         }
