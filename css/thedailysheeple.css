@@ -496,7 +496,8 @@ footer {
   padding: 10px; }
   #right-column #region-sidebarrightshuffle .sidebar_right_ad {
     width: 100%;
-    height: auto; }
+    height: auto;
+    margin-top: 10px; }
     #right-column #region-sidebarrightshuffle .sidebar_right_ad > iframe {
       width: 280px;
       height: 250px; }
@@ -602,6 +603,8 @@ footer {
   border-bottom: 1px solid #aaa;
   min-height: 126px;
   position: relative; }
+  .articles > article.ad-embedded {
+    background-color: #fdf1ca; }
   .articles > article .post-thumbnail {
     float: left;
     margin-right: 15px; }
