@@ -1,5 +1,5 @@
 <?php
-$ads = thedailysheeple_get_ads(2);
+$ads = thedailysheeple_get_ads(3);
 
 // Retrieve 10 breaking news articles
 $tmp_query = $wp_query;
