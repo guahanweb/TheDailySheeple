@@ -202,8 +202,8 @@ function thedailysheeple_scripts() {
 
     // Enqueue Scripts
     wp_enqueue_script('thedailysheeple-disqus-count', get_template_directory_uri() . '/js/disqus.js', array(), null, true);
-    wp_enqueue_script('thedailysheeple-core', get_template_directory_uri() . '/js/thedailysheeple.js', array('jquery'), null, true);
     wp_enqueue_script('thedailysheeple-shuffle', get_template_directory_uri() . '/js/jquery.shuffle.js', array('jquery'), null, true);
+    wp_enqueue_script('thedailysheeple-core', get_template_directory_uri() . '/js/thedailysheeple.js', array('thedailysheeple-shuffle'), null, true);
     wp_enqueue_script('thedailysheeple-lazyload', get_template_directory_uri() . '/js/lazyload.js', array(), null, true);
 }
 add_action( 'wp_enqueue_scripts', 'thedailysheeple_scripts' );

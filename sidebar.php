@@ -13,7 +13,7 @@
                       <div class="ad ad-JMB">
                           <a href="http://www.jmbullion.com/silver/" target="_blank" rel="nofollow" onClick="_gaq.push(['_trackEvent', 'Banner', 'Click', 'JMB-banner-bison']);"><img src="/images/banners/JMB-fast-free-shipping-250x250.jpg" /></a>
                         </div>
-                        
+
            <?php
             the_widget('TDS_MailChimp_Widget', array(), array(
                 'before_widget' => '',
@@ -21,7 +21,7 @@
                 'before_title' => '',
                 'after_title' => ''
             ));
-            ?>                        
+            ?>
                          <div class="ad ad-GOOGLE">
                       <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
 <!-- TDS-300 -->
@@ -117,9 +117,6 @@
 <!-- END Bio Mask -->
 
 </div><!-- END region-sidebarrightshuffle DIV -->
-<script type="text/javascript">
-jQuery('#region-sidebarrightshuffle div.sidebar_right_ad').shuffle();
-</script>
 
 <!-- END SHUFFLING AD UNITS -->
 
