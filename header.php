@@ -7,7 +7,6 @@
     <?php if (is_single()): ?>
     <meta property="og:image" content="<?php echo thedailysheeple_get_post_image_url(get_queried_object_id()); ?>">
     <?php endif; ?>
-    <
     <link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
     <!--[if lt IE 9]>
     <script src="<?php echo get_template_directory_uri(); ?>/js/html5.js"></script>
@@ -39,7 +38,7 @@
 
 </script>
 <!-- END GOGGLE ANALYTICS -->
-    
+
     <script type="text/javascript">var switchTo5x=true;</script>
     <script type="text/javascript" src="http://w.sharethis.com/button/buttons.js"></script>
     <script type="text/javascript">
