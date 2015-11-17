@@ -89,6 +89,7 @@
         .sidebar_right_ad {
             width: 100%;
             height: auto;
+            margin-top: 10px;
 
             & > iframe {
                 width: 280px;
@@ -267,6 +268,10 @@
         border-bottom: 1px solid #aaa;
         min-height: 126px;
         position: relative;
+
+        &.ad-embedded {
+            background-color: #fdf1ca;
+        }
 
         .post-thumbnail {
             float: left;

@@ -19,12 +19,17 @@ query_posts(array(
         $index++;
         the_post();
         get_template_part('content', get_post_format());
-        if ($index % 3 === 0) {
-            if ($ads !== false) {
-                echo $ads[($index / 3) - 1];
-            }
+
+        // Show an ad after 3 and 8
+        if ($index === 3) {
+            echo $ads ? $ads[0] : '';
+        } else if ($index === 8) {
+            echo $ads ? $ads[1] : '';
         }
     endwhile;
+
+    // Show one more ad after all
+    echo $ads ? $ads[2] : '';
     ?>
 </div>
 

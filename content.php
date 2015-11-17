@@ -73,10 +73,10 @@ if (is_single()):
     <div class="icons">
         <ul>
             <li><a href="<?php the_permalink() ?>#disqus_thread" class="icon-mini icon-discuss"></a></li>
-            <li><span class='st_sharethis' displayText="" st_url="<?php the_permalink(); ?>"></span></li>
             <?php if (thedailysheeple_is_video(get_the_id())): ?>
             <li><a href="#" class="icon-mini icon-watch">Watch</a></li>
             <?php endif; ?>
+            <li><span class='st_sharethis' displayText="" st_url="<?php the_permalink(); ?>"></span></li>
         </ul>
     </div>
     <?php endif; ?>
