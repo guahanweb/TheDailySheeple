@@ -5,14 +5,7 @@
             <div class="container">
                 <section class="ad-list">
                     <div class="ad-block">
-           <?php
-            the_widget('TDS_MailChimp_Widget', array(), array(
-                'before_widget' => '',
-                'after_widget' => '',
-                'before_title' => '',
-                'after_title' => ''
-            ));
-            ?>
+
 
                         <div class="ad ad-ff">
                             <a href="http://www.futuremoneytrends.com/investright" target="_blank" rel="nofollow" onClick="_gaq.push(['_trackEvent', 'Banner', 'Click', 'FMT-FF-SidebarRight']);"><img src="http://www.thedailysheeple.com/wp-content/uploads/2015/07/mineralbank2.jpg" /></a>
@@ -20,6 +13,15 @@
                       <div class="ad ad-JMB">
                           <a href="http://www.jmbullion.com/silver/" target="_blank" rel="nofollow" onClick="_gaq.push(['_trackEvent', 'Banner', 'Click', 'JMB-banner-bison']);"><img src="/images/banners/JMB-fast-free-shipping-250x250.jpg" /></a>
                         </div>
+                        
+           <?php
+            the_widget('TDS_MailChimp_Widget', array(), array(
+                'before_widget' => '',
+                'after_widget' => '',
+                'before_title' => '',
+                'after_title' => ''
+            ));
+            ?>                        
                          <div class="ad ad-GOOGLE">
                       <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
 <!-- TDS-300 -->

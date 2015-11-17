@@ -5,7 +5,7 @@ $ads = thedailysheeple_get_ads(2);
 $tmp_query = $wp_query;
 query_posts(array(
     'category_name' => 'featuredreports',
-    'posts_per_page' => 10
+    'posts_per_page' => 14
 ));
 ?>
 <header>
@@ -19,9 +19,9 @@ query_posts(array(
         $index++;
         the_post();
         get_template_part('content', get_post_format());
-        if ($index % 5 === 0) {
+        if ($index % 3 === 0) {
             if ($ads !== false) {
-                echo $ads[($index / 5) - 1];
+                echo $ads[($index / 3) - 1];
             }
         }
     endwhile;

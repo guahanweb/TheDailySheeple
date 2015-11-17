@@ -10,6 +10,7 @@
 get_header();
 ?>
 
+
     <section id="main-column" class="content-area column column-triple">
         <div class="container">
             <section class="column column-one-third left-column">
@@ -29,18 +30,32 @@ get_header();
 ?>
 <!-- START SHARE THIS -->
 <div style="font-family: Tahoma, Geneva, sans-serif; font-size: 14pt; font-weight: bold; font-style:italic;">Please share: Spread the word to sheeple far and wide</div>
-<div style="padding: 0px 0px 10px 0px;">
+<div style="padding: 5px 0px 15px 0px; text-align: center;">
+    <span class='st_fblike_vcount' displayText='Facebook Like'></span>
     <span class='st_facebook_vcount' displayText='Facebook'></span>
-    <span class='st_pinterest_vcount' displayText='Pinterest'></span>
     <span class='st_twitter_vcount' displayText='Tweet'></span>
     <span class='st_reddit_vcount' displayText='Reddit'></span>
-    <span class='st_stumbleupon_vcount' displayText='StumbleUpon'></span>
-    <span class='st_fblike_vcount' displayText='Facebook Like'></span>
     <span class='st_plusone_vcount' displayText='Google +1'></span>
     <span class='st_sharethis_vcount' displayText='ShareThis'></span>
     <span class='st_email_vcount' displayText='Email'></span>
 </div>
 <!-- END SHARE THIS -->
+
+<!-- START TABOOLA -->
+<div id='taboola-bottom-main-column'></div>
+           <script type="text/javascript">
+               window._taboola = window._taboola || [];
+               _taboola.push({mode:'autosized-generated-2r', container:'taboola-bottom-main-column', placement:'bottom-main-column'});
+            </script>
+<div id='taboola-text-2-columns'></div>
+<script type="text/javascript">
+window._taboola = window._taboola || [];
+_taboola.push({mode:'text-links-2c', container:'taboola-text-2-columns', placement:'text-2-columns'});
+</script>
+
+<!-- END TABOOLA -->
+
+
 <?php
 
                     // Previous/next post navigation.

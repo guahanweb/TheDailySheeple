@@ -12,7 +12,7 @@
     $k = 0;
     while ($query->have_posts()):
         $query->the_post();
-        if ($k === 10):
+        if ($k === 5):
     ?>
             <article class="ad ad-holder">
                 <p>Here go the ads!</p>
