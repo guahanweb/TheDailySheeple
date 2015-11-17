@@ -200,7 +200,6 @@ strong, b {
   font-weight: 600; }
 
 #main blockquote {
-  font-size: 0.9em;
   margin: 10px 30px 10px 26px;
   padding: 20px;
   background-color: #f4f4f4;
@@ -510,7 +509,7 @@ footer {
         width: 100% !important;
         height: auto; }
   #right-column .ad-block > .ad {
-    margin-top: 20px;
+    margin-top: 10px;
     width: 100%;
     height: auto; }
     #right-column .ad-block > .ad:first-child {
@@ -565,9 +564,9 @@ footer {
 #main > .entry-content {
   padding: 0 5px 10px;
   font-size: 12pt;
-  font-family: "Gudea", Helvetica, Arial, Verdana, sans-serif; }
+  font-family: Verdana, Geneva, sans-serif; }
   #main > .entry-content h2 {
-    font-family: "Gudea", Helvetica, Arial, Verdana, sans-serif;
+    font-family: Verdana, Geneva, sans-serif;
     font-size: 12pt;
     text-transform: uppercase;
     font-weight: bold; }

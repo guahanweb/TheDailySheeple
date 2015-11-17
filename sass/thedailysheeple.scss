@@ -111,7 +111,7 @@
 
     .ad-block {
         & > .ad {
-            margin-top: 20px;
+            margin-top: 10px;
             width: 100%;
             height: auto;
 
@@ -204,10 +204,10 @@
     & > .entry-content {
         padding: 0 5px 10px;
         font-size: 12pt;
-        font-family: $font-sans;
+        font-family: $font-verdana;
 
         h2 {
-            font-family: $font-sans;
+            font-family: $font-verdana;
             font-size: 12pt;
             text-transform: uppercase;
             font-weight: bold;
