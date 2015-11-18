@@ -19,7 +19,7 @@
             </article>
         <?php endif; ?>
         <article id="post-<?php the_ID(); ?>" class="post-<?php the_ID(); ?> post post-mini type-post status-publish">
-            <h1 class="entry-title"><?php printf('<a href="%s" rel="bookmark">%s</a>', get_permalink(get_the_ID()), the_title()); ?></h1>
+            <h1 class="entry-title"><?php printf('<a href="%s" rel="bookmark">%s</a>', get_permalink(get_the_ID()), get_the_title()); ?></h1>
         </article>
     <?php
         $k++;
