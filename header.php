@@ -57,8 +57,8 @@
             <div>
                 <section class="top container">
                     <div class="tip-jar">
-                        <p><a href="/contact-us">Send us a tip</a><br>
-                        <a href="/about">About The Daily Sheeple</a></p>
+                        <p><a href="/contact-us" target="_blank">Send us a tip</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="/contact-us" target="_blank">Advertising</a><br>
+                        <a href="/about" target="_blank">About The Daily Sheeple</a></p>
                     </div>
                     <div class="edition">
                         <p>US Edition<br>
@@ -101,21 +101,23 @@
                 <section class="ad-holder container">
                     <div class="highlights left">
                         <ul>
-                            <li><a href="http://www.jmbullion.com/">Invest In Physical Gold & Silver</a></li>
-                            <li><a href="http://tinyurl.com/ppyj8hv">N.B.C. Tactical Gas Mask</a></li>
-                            <li><a href="http://www.clarocet.com/clarocet-nri/">Natural Stress Relief Today</a></li>
+                            <li><a href="http://www.jmbullion.com/" target="_blank" rel="nofollow" onClick="_gaq.push(['_trackEvent', 'TextAd', 'Click', 'JMBullion-TextAdMain']);">Invest In Physical Gold & Silver</a></li>
+                            <li><a href="http://hypertracker.com/go/dotcommer/sheeplesecret/" target="_blank" onClick="_gaq.push(['_trackEvent', 'TextAd', 'Click', 'Jason Dinner-TextAdMain']);" rel="nofollow">GUN CONTROL & FOOD CRISIS</a></li>
+                            <li><a href="http://tinyurl.com/ppyj8hv" target="_blank" rel="nofollow"onClick="_gaq.push(['_trackEvent', 'TextAd', 'Click', 'Amazon-TextAdMain']);">N.B.C. Tactical Gas Mask</a></li>
                         </ul>
                     </div>
                     <div class="highlights right">
                         <ul>
-                            <li><a href="http://hypertracker.com/go/dotcommer/sheeplesecret/">Gun Control & Food Crisis</a></li>
-                            <li><a href="https://secure.avangate.com/affiliate.php?ACCOUNT=HIGHPEYK&AFFILIATE=42896&PATH=http%3A%2F%2Fwww.survivalmd.com%2Fvsl/index.php&AFFSRC=">Survival M.D.</a></li>
-                            <li><a href="https://secure.avangate.com/affiliate.php?ACCOUNT=HIGHPEON&AFFILIATE=42896&PATH=http%3A%2F%2Fwww.blackoutusa.com%2Fvsl%2Findex.php&AFFSRC=text">Blackout USA: When the Lights Go Out</a></li>
+                            <li><a href="http://www.clarocet.com/clarocet-nri/" target="_blank" rel="nofollow" onClick="_gaq.push(['_trackEvent', 'TextAd', 'Click', 'Clarocet-TextAdMain']);">Instant Stress & Anxiety Relief</a></li>
+                            <li><a href="https://secure.avangate.com/affiliate.php?ACCOUNT=BRENTVEN&AFFILIATE=42896&PATH=http%3A%2F%2Fwww.bulletproofhome.com%2Fvsl%2F" target="_blank" rel="nofollow" onClick="_gaq.push(['_trackEvent', 'InFeed', 'Click', 'AFF-BulletProofHome-TextAdMain']);">Bulletproof Home</a></li>
+                            <li><a href="https://secure.avangate.com/affiliate.php?ACCOUNT=HIGHPEON&AFFILIATE=42896&PATH=http%3A%2F%2Fwww.blackoutusa.com%2Fvsl%2Findex.php&AFFSRC=text" target="_blank" rel="nofollow" onClick="_gaq.push(['_trackEvent', 'InFeed', 'Click', 'AFF-BlackoutUSA-TextAdMain']);">Blackout USA: EMP Survival</a></li>
                         </ul>
                     </div>
                     <div class="third-party">
                         <div class="ads">
-                              <iframe src="http://dcmr.sitescoutadserver.com/disp?pid=8F0825501A&rnd=[CACHE-BUSTING-ID-HERE]" width='728' height='90' marginwidth='0' marginheight='0' scrollbars='0' scrolling='no' frameborder='0' bordercolor='#000000' vspace='0' hspace='0'></iframe>
+<!-- FRAMED AD -->
+<iframe src="http://dcmr.sitescoutadserver.com/disp?pid=8F0825501A&rnd=[CACHE-BUSTING-ID-HERE]" width='728' height='90' marginwidth='0' marginheight='0' scrollbars='0' scrolling='no' frameborder='0' bordercolor='#000000' vspace='0' hspace='0'></iframe>
+<!-- END FRAMED AD -->
                         </div>
                     </div>
                 </section>
