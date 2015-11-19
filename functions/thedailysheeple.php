@@ -48,7 +48,7 @@ class thedailysheeple {
   }
 
   public function insertTDSdelivery($content) {
-    $content .= "<p class=\"delivered-by\">Delivered by <a href=\"http://www.thedailysheeple.com\" target=\"_blank\">The Daily Sheeple</a></p><hr>\n";
+    $content .= "<p class=\"delivered-by\">Delivered by <a href=\"http://www.thedailysheeple.com\" target=\"_blank\">The Daily Sheeple</a></p><p class=\"delivered-by\">We encourage you to share and republish our reports, analyses, breaking news and videos (<a href=\"http://www.thedailysheeple.com/about#share\" target=\"_blank\">Click for details</a>). </p><hr>\n";
     return $content;
   }
 

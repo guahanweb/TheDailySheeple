@@ -103,7 +103,8 @@
                         <ul>
                             <li><a href="http://www.jmbullion.com/" target="_blank" rel="nofollow" onClick="_gaq.push(['_trackEvent', 'TextAd', 'Click', 'JMBullion-TextAdMain']);">Invest In Physical Gold & Silver</a></li>
                             <li><a href="http://hypertracker.com/go/dotcommer/sheeplesecret/" target="_blank" onClick="_gaq.push(['_trackEvent', 'TextAd', 'Click', 'Jason Dinner-TextAdMain']);" rel="nofollow">GUN CONTROL & FOOD CRISIS</a></li>
-                            <li><a href="http://tinyurl.com/ppyj8hv" target="_blank" rel="nofollow"onClick="_gaq.push(['_trackEvent', 'TextAd', 'Click', 'Amazon-TextAdMain']);">N.B.C. Tactical Gas Mask</a></li>
+                            <li><a href="https://uj161.isrefer.com/go/mmk2/thesheeple/
+" target="_blank" rel="nofollow"onClick="_gaq.push(['_trackEvent', 'TextAd', 'Click', 'AFF-SolutionsFromScience-14-TextAdMain']);">14 Life-Saving Medical Tips</a></li>
                         </ul>
                     </div>
                     <div class="highlights right">

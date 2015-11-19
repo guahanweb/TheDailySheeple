@@ -28,27 +28,7 @@ get_header(); ?>
                 </section>
             </div>
             <div class="container feature-holder">
-                <div class="features">
-                    <div class="feature">
-                        <a href="#"><img src="<?php echo get_template_directory_uri(); ?>/images/feature-splash.png" width="276" height="222"></a>
-                    </div>
-                    <div class="feature">
-                        <a href="#"><img src="<?php echo get_template_directory_uri(); ?>/images/feature-splash.png" width="276" height="222"></a>
-                    </div>
-                    <div class="feature">
-                        <a href="#"><img src="<?php echo get_template_directory_uri(); ?>/images/feature-splash.png" width="276" height="222"></a>
-                    </div>
-                    <div class="feature">
-                        <a href="#"><img src="<?php echo get_template_directory_uri(); ?>/images/feature-splash.png" width="276" height="222"></a>
-                    </div>
-                    <div class="feature">
-                        <a href="#"><img src="<?php echo get_template_directory_uri(); ?>/images/feature-splash.png" width="276" height="222"></a>
-                    </div>
-                    <div class="feature">
-                        <a href="#"><img src="<?php echo get_template_directory_uri(); ?>/images/feature-splash.png" width="276" height="222"></a>
-                    </div>
-                </div>
-                <p class="ad-signature">Ads by Taboola</p>
+            <!-- TABOOLA ELEMENTS HERE -->
             </div>
             <div class="container news-streams">
                 <section class="column column-one-third stream-main">

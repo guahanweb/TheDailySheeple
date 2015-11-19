@@ -17,8 +17,7 @@ if (is_single()):
     <?php } ?>
 
 <!-- START SHARE THIS -->
-<div style="font-family: Tahoma, Geneva, sans-serif; font-size: 14pt; font-weight: bold; font-style:italic;">Please share: Spread the word to sheeple far and wide</div>
-<div style="padding: 5px 0px 15px 0px; text-align: center;">
+<div style="padding: 0px 0px 10px 0px; text-align: center;">
     <span class='st_fblike_vcount' displayText='Facebook Like'></span>
     <span class='st_facebook_vcount' displayText='Facebook'></span>
     <span class='st_twitter_vcount' displayText='Tweet'></span>
