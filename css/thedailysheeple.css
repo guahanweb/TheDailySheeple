@@ -454,7 +454,8 @@ footer {
           text-decoration: underline; }
 
 #main-column {
-  background-color: #fff; }
+  background-color: #fff;
+  padding-eft: 30px; }
   #main-column.column {
     padding-top: 0; }
   #main-column .news-popular .articles > article {
@@ -493,7 +494,8 @@ footer {
 
 #right-column {
   background-color: #fff;
-  padding: 10px; }
+  padding: 10px;
+  padding-right: 30px; }
   #right-column #region-sidebarrightshuffle .sidebar_right_ad {
     width: 100%;
     height: auto;
