@@ -38,5 +38,5 @@ get_header(); ?>
     </div>
 </section>
 <?php
-get_sidebar('ads');
+get_sidebar('content');
 get_footer();

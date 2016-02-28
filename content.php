@@ -27,6 +27,19 @@ if (is_single()):
     <span class='st_email_vcount' displayText='Email'></span>
 </div>
 <!-- END SHARE THIS -->
+<!-- AD -->
+<div style="text-align: center; padding: 10px 0px 10px 0px;">
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- TDS 2.0 - Article Top - 468x60 -->
+<ins class="adsbygoogle"
+     style="display:inline-block;width:468px;height:60px"
+     data-ad-client="ca-pub-8010023987911623"
+     data-ad-slot="2505014164"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+</div>
+<!-- AD -->
 
     <div class="entry-content">
     <?php

@@ -5,15 +5,7 @@
             <div class="container">
                 <section class="ad-list">
                     <div class="ad-block">
-
-
-                        <div class="ad ad-ff">
-                            <a href="http://www.futuremoneytrends.com/hardassets" target="_blank" rel="nofollow" onClick="_gaq.push(['_trackEvent', 'Banner', 'Click', 'FMT-CNX-SidebarRight']);"><img border="0" src="http://www.thedailysheeple.com/wp-content/uploads/2015/11/callinex-300.jpg" /></a>
-                        </div>
-                      <div class="ad ad-JMB">
-                          <a href="http://www.jmbullion.com/silver/" target="_blank" rel="nofollow" onClick="_gaq.push(['_trackEvent', 'Banner', 'Click', 'JMB-banner-bison']);"><img border="0" src="/images/banners/JMB-fast-free-shipping-250x250.jpg" width=300 height=300 /></a>
-                        </div>
-<!-- GOOGLE CPM AD -->
+<!-- START GOOGLE -->
 <div class="ad ad-GOOGLE">
 <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
 <!-- TDS2.0 - Right Sidebar - 300x250b -->
@@ -25,21 +17,13 @@
 (adsbygoogle = window.adsbygoogle || []).push({});
 </script>
 </div>
-<!-- END GOOGLE CPM AD -->
+<!-- END GOOGLE -->
 
-<!-- AMAZON CPM AD -->
-<div class="ad ad-AMAZON">
-<script type="text/javascript" language="javascript" src="//c.amazon-adsystem.com/aax2/getads.js"></script>
-<script type="text/javascript" language="javascript">
-//<![CDATA[
-aax_getad_mpb({
-  "slot_uuid":"5eddd92e-a15b-4e83-8567-2d34bd7f3e0f"
-});
-//]]>
-</script>
-</div>
-<!-- END AMAZON CPM AD -->                   
-
+<!-- START DIRECT AD JMB -->
+                      <div class="ad ad-JMB">
+                          <a href="http://www.jmbullion.com/silver/" target="_blank" rel="nofollow" onClick="_gaq.push(['_trackEvent', 'Banner', 'Click', 'JMB-banner-bison']);"><img border="0" src="/images/banners/JMB-fast-free-shipping-250x250.jpg" width=300 height=300 /></a>
+                        </div>
+<!-- END DIRECT AD JMB -->
            <?php
             the_widget('TDS_MailChimp_Widget', array(), array(
                 'before_widget' => '',
@@ -48,16 +32,19 @@ aax_getad_mpb({
                 'after_title' => ''
             ));
             ?>
-    
-
+<!-- FMT Ad Through Feb 18, 2016 -->
+   <div class="ad ad-FMT">
+                          <a href="http://futuremoneytrends.com/aug" target="_blank" rel="nofollow" onClick="_gaq.push(['_trackEvent', 'Banner', 'Click', 'FMT-AUG-Banner1']);"><img border="0" src="http://www.thedailysheeple.com/wp-content/uploads/2016/02/aug-banner2x300.jpg" width=300 height=300 /></a>
+                        </div>
+<!-- End FMT Ad -->
 <!-- SHUFFLING AD UNITS -->
 <div id="region-sidebarrightshuffle">
 
 <!-- START Direct Ads JHL CAMPING SUPPLY -->
-<div class="sidebar_right_ad"><a href="http://www.campingsurvival.com/fishantibiotics.html" target="_blank" rel="nofollow" onClick="_gaq.push(['_trackEvent', 'Banner', 'Click', 'Camping Survival']);" ><img src="/images/banners/campingsurvival-fishmox2.jpg" alt="" BORDER=0 WIDTH=300 HEIGHT=300 /></a></div>
+<div class="sidebar_right_ad"><a href="http://www.campingsurvival.com/fishantibiotics.html" target="_blank" rel="nofollow" onClick="_gaq.push(['_trackEvent', 'Banner', 'Click', 'CampingSurvival-banner2']);" ><img src="/images/banners/campingsurvival-fishmox2.jpg" alt="" BORDER=0 WIDTH=300 HEIGHT=300 /></a></div>
 
 <div class="sidebar_right_ad">
-<A HREF="http://www.campingsurvival.com" target="_blank" rel="nofollow" onClick="_gaq.push(['_trackEvent', 'Banner', 'Click', 'CampingSurvival-banner']);"><IMG SRC="/images/banners/250x250-campingsurvival.jpg" BORDER=0 WIDTH=300 HEIGHT=300 ></A>
+<A HREF="http://www.campingsurvival.com/lifestraw.html" target="_blank" rel="nofollow" onClick="_gaq.push(['_trackEvent', 'Banner', 'Click', 'CampingSurvival-banner']);"><IMG SRC="http://www.thedailysheeple.com/wp-content/uploads/2015/12/lifestraw2.jpg" BORDER=0 WIDTH=300 HEIGHT=300 ></A>
 </div>
 <!-- END  Direct Ads JHL CAMPING SUPPLY -->
 
@@ -79,22 +66,12 @@ aax_getad_mpb({
 </div>
 <!-- END Direct Ads Directive21 -->
 
+
+
 </div><!-- END region-sidebarrightshuffle DIV -->
 
 <!-- END SHUFFLING AD UNITS -->
-<!-- START GOOGLE AD 300x600 -->
-<div>
-<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-<!-- TDS2.0 - Sidebar - 300x600 -->
-<ins class="adsbygoogle"
-     style="display:inline-block;width:280px;height:560px"
-     data-ad-client="ca-pub-8010023987911623"
-     data-ad-slot="8220254164"></ins>
-<script>
-(adsbygoogle = window.adsbygoogle || []).push({});
-</script>
-</div>
-<!-- END GOOGLE AD 300x600 -->
+
 
                     </div>
                 </section>

@@ -2,7 +2,7 @@
 <html>
 <head>
     <title><?php wp_title( '|', true, 'right' ); ?></title>
-    <meta name="author" content="Garth Henson - http://www.guahanweb.com">
+    <meta name="author" content="">
     <meta name="DC.creator" content="Meat Grinder Media">
     <?php if (is_single()): ?>
     <meta property="og:image" content="<?php echo thedailysheeple_get_post_image_url(get_queried_object_id()); ?>">
@@ -12,7 +12,7 @@
     <script src="<?php echo get_template_directory_uri(); ?>/js/html5.js"></script>
     <![endif]-->
     <?php wp_head(); ?>
-    <!-- TABOOLA REQUIRED SCRIPT FOR POSTS -->
+    <!-- TABOOLA REQUIRED SCRIPTS  -->
         <?php if (is_single()): ?>
     <!-- TABOOLA CODE SNIPPET -->
   <script type="text/javascript">
@@ -22,7 +22,21 @@
           <script type="text/javascript" src="http://cdn.taboolasyndication.com/libtrc/shtf-network/loader.js"></script>
   <!-- END TABOOLA CODE SNIPPET -->
     <?php endif; ?>
-    <!-- END TABOOLA REQUIRED SCRIPT FOR POSTS -->
+    <?php if (is_front_page()): ?>
+<script type="text/javascript">
+  window._taboola = window._taboola || [];
+  _taboola.push({home:'auto'});
+  !function (e, f, u) {
+    e.async = 1;
+    e.src = u;
+    f.parentNode.insertBefore(e, f);
+  }(document.createElement('script'),
+  document.getElementsByTagName('script')[0],
+  '//cdn.taboola.com/libtrc/shtf-dailysheeple/loader.js');
+</script> 
+
+ <?php endif; ?>
+    <!-- END TABOOLA REQUIRED SCRIPTS -->
     <!-- GOGGLE ANALYTICS -->
 <script type="text/javascript">
 
@@ -45,7 +59,7 @@
         stLight.options({
             publisher: "7b290577-a1b4-42f5-8f2d-755a8aabb6c1",
             doNotHash: false,
-            doNotCopy: false,
+            doNotCopy: true,
             hashAddressBar: false,
             onhover: false
         });
@@ -57,7 +71,7 @@
             <div>
                 <section class="top container">
                     <div class="tip-jar">
-                        <p><a href="/contact-us" target="_blank">Send us a tip</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="/contact-us" target="_blank">Advertising</a><br>
+                        <p><a href="/contact-us" target="_blank">Send us a tip</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="/advertising" target="_blank">Advertising</a><br>
                         <a href="/about" target="_blank">About The Daily Sheeple</a></p>
                     </div>
                     <div class="edition">
@@ -103,8 +117,7 @@
                         <ul>
                             <li><a href="http://www.jmbullion.com/" target="_blank" rel="nofollow" onClick="_gaq.push(['_trackEvent', 'TextAd', 'Click', 'JMBullion-TextAdMain']);">Invest In Physical Gold & Silver</a></li>
                             <li><a href="http://hypertracker.com/go/dotcommer/sheeplesecret/" target="_blank" onClick="_gaq.push(['_trackEvent', 'TextAd', 'Click', 'Jason Dinner-TextAdMain']);" rel="nofollow">GUN CONTROL & FOOD CRISIS</a></li>
-                            <li><a href="https://uj161.isrefer.com/go/mmk2/thesheeple/
-" target="_blank" rel="nofollow"onClick="_gaq.push(['_trackEvent', 'TextAd', 'Click', 'AFF-SolutionsFromScience-14-TextAdMain']);">14 Life-Saving Medical Tips</a></li>
+                            <li><!-- Promo though Jan 5, 2015 --><a href="http://www.campingsurvival.com/lifestraw.html" target="_blank" rel="nofollow"onClick="_gaq.push(['_trackEvent', 'TextAd', 'Click', 'CampingSurvival-TextAdMain']);">Lifestraw - Clean Water Anywhere</a></li>
                         </ul>
                     </div>
                     <div class="highlights right">

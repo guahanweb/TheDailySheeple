@@ -28,7 +28,20 @@ get_header(); ?>
                 </section>
             </div>
             <div class="container feature-holder">
-            <!-- TABOOLA ELEMENTS HERE -->
+<!-- START TABOOLA HOMEPAGE ELEMENT -->
+<div style="padding-left: 10px; padding-right: 10px;">
+<div id="taboola-mid-page-thumbnails"></div>
+<script type="text/javascript">
+  window._taboola = window._taboola || [];
+  _taboola.push({
+    mode: 'thumbnails-a',
+    container: 'taboola-mid-page-thumbnails',
+    placement: 'Mid Page Thumbnails',
+    target_type: 'mix'
+  });
+</script> 
+</div>
+<!-- END TABOOLA HOMEPAGE ELEMENT -->
             </div>
             <div class="container news-streams">
                 <section class="column column-one-third stream-main">
