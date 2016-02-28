@@ -1,4 +1,8 @@
-
+<?php
+/*
+Template Name: Test Page
+*/
+?>
 <!DOCTYPE html>
 <html>
 <head>
