@@ -96,74 +96,7 @@ img.emoji {
 <body>
     <div class="wrapper container">
         <header class="masthead">
-            <div>
-                <section class="top container">
-                    <div class="tip-jar">
-                        <p><a href="/contact-us" target="_blank">Send us a tip</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="/advertising" target="_blank">Advertising</a><br>
-                        <a href="/about" target="_blank">About The Daily Sheeple</a></p>
-                    </div>
-                    <div class="edition">
-                        <p>US Edition<br>
-                        Sunday, February 28th, 2016</p>
-                    </div>
-                    <div class="social-media">
-                        <form name="search" role="search" id="searchform" action="/" method="get">
-                        <ul>
-                            <li><div class="input-field input-search">
-                                <div class="input-part input-text">
-                                    <input type="text" placeholder="Type Search Term" name="s" id="s">
-                                </div>
-                                <div class="input-part input-submit">
-                                    <button class="search search-icon" type="submit">Submit</button>
-                                </div>
-                            </div></li>
-                            <li><a href="#" class="icon icon-mail manual-optin-trigger" data-optin-slug="k5vywtzbwd-lightbox">Newsletter</a></li>
-                            <li><a href="#" data-action="bookmark" class="icon icon-star">Star</a></li>
-                            <li><a href="http://feeds.feedburner.com/dailysheeple" target="_blank" class="icon icon-rss">RSS</a></li>
-                            <li><div class="icon-extended icon-ex-facebook" data-action="facebook">
-                                <span class="icon icon-facebook">FB</span>
-                                <span class="like">Like</span>
-                                <span class="like-count">
-                                    <span class="content">41.13K</span>
-                                </span>
-                                <a href="https://www.facebook.com/pages/The-Daily-Sheeple/114637491995485" target="_blank" class="overlay">&nbsp;</a>
-                            </div></li>
-                            <li><div class="icon-extended icon-ex-twitter" data-action="twitter">
-                                <span class="icon icon-twitter">Twitter</span>
-                                <span class="like">Follow</span>
-                                <a href="https://twitter.com/TheDailySheeple" target="_blank" class="overlay">&nbsp;</a>
-                            </div></li>
-                        </ul>
-                        </form>
-                    </div>
-                </section>
-                <section class="main">
-                    <a href="http://www.thedailysheeple.com/"><img src="http://www.thedailysheeple.com/wp-content/themes/thedailysheeple/images/main-banner.png" height="161" width="948" border="0"alt="The Daily Sheeple: Wake the Flock Up!"></a>
-                </section>
-                <section class="ad-holder container">
-                    <div class="highlights left">
-                        <ul>
-                            <li><a href="http://www.jmbullion.com/" target="_blank" rel="nofollow" onClick="_gaq.push(['_trackEvent', 'TextAd', 'Click', 'JMBullion-TextAdMain']);">Invest In Physical Gold & Silver</a></li>
-                            <li><a href="http://hypertracker.com/go/dotcommer/sheeplesecret/" target="_blank" onClick="_gaq.push(['_trackEvent', 'TextAd', 'Click', 'Jason Dinner-TextAdMain']);" rel="nofollow">GUN CONTROL & FOOD CRISIS</a></li>
-                            <li><!-- Promo though Jan 5, 2015 --><a href="http://www.campingsurvival.com/lifestraw.html" target="_blank" rel="nofollow"onClick="_gaq.push(['_trackEvent', 'TextAd', 'Click', 'CampingSurvival-TextAdMain']);">Lifestraw - Clean Water Anywhere</a></li>
-                        </ul>
-                    </div>
-                    <div class="highlights right">
-                        <ul>
-                            <li><a href="http://www.clarocet.com/clarocet-nri/" target="_blank" rel="nofollow" onClick="_gaq.push(['_trackEvent', 'TextAd', 'Click', 'Clarocet-TextAdMain']);">Instant Stress & Anxiety Relief</a></li>
-                            <li><a href="https://secure.avangate.com/affiliate.php?ACCOUNT=BRENTVEN&AFFILIATE=42896&PATH=http%3A%2F%2Fwww.bulletproofhome.com%2Fvsl%2F" target="_blank" rel="nofollow" onClick="_gaq.push(['_trackEvent', 'InFeed', 'Click', 'AFF-BulletProofHome-TextAdMain']);">Bulletproof Home</a></li>
-                            <li><a href="https://secure.avangate.com/affiliate.php?ACCOUNT=HIGHPEON&AFFILIATE=42896&PATH=http%3A%2F%2Fwww.blackoutusa.com%2Fvsl%2Findex.php&AFFSRC=text" target="_blank" rel="nofollow" onClick="_gaq.push(['_trackEvent', 'InFeed', 'Click', 'AFF-BlackoutUSA-TextAdMain']);">Blackout USA: EMP Survival</a></li>
-                        </ul>
-                    </div>
-                    <div class="third-party">
-                        <div class="ads">
-<!-- FRAMED AD -->
-<iframe src="http://dcmr.sitescoutadserver.com/disp?pid=8F0825501A&rnd=[CACHE-BUSTING-ID-HERE]" width='728' height='90' marginwidth='0' marginheight='0' scrollbars='0' scrolling='no' frameborder='0' bordercolor='#000000' vspace='0' hspace='0'></iframe>
-<!-- END FRAMED AD -->
-                        </div>
-                    </div>
-                </section>
-            </div>
+          <h1>TDS</h1>
         </header>
 
         <section class="column column-triple" id="main-column">
