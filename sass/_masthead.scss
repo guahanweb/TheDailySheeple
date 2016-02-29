@@ -140,7 +140,18 @@
       padding: 5px;
       margin-bottom: 3px;
       border-bottom: 1px solid $black;
+
+      & > .search-form {
+        display: inline-block;
+      }
+
+      & > .top-nav {
+        display: inline-block;
+      }
+
       & > .social-media {
+        display: inline-block;
+
         ul {
           margin-top: 3px;
           li {

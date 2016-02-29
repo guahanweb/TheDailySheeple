@@ -331,17 +331,23 @@ strong, b {
     padding: 5px;
     margin-bottom: 3px;
     border-bottom: 1px solid #000; }
-    .masthead.small .top-main > .social-media ul {
-      margin-top: 3px; }
-      .masthead.small .top-main > .social-media ul li {
-        display: inline-block;
-        margin: 0;
-        list-style-type: none;
-        float: right;
-        margin-left: 5px; }
-        .masthead.small .top-main > .social-media ul li a {
+    .masthead.small .top-main > .search-form {
+      display: inline-block; }
+    .masthead.small .top-main > .top-nav {
+      display: inline-block; }
+    .masthead.small .top-main > .social-media {
+      display: inline-block; }
+      .masthead.small .top-main > .social-media ul {
+        margin-top: 3px; }
+        .masthead.small .top-main > .social-media ul li {
           display: inline-block;
-          margin-top: -6px; }
+          margin: 0;
+          list-style-type: none;
+          float: right;
+          margin-left: 5px; }
+          .masthead.small .top-main > .social-media ul li a {
+            display: inline-block;
+            margin-top: -6px; }
 
 .icon {
   width: 30px;
