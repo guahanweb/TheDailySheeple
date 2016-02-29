@@ -149,12 +149,12 @@
         <section class="container main-logo">
           <img src="<?php echo get_template_directory_uri() . '/images/header-mini-logo.png'; ?>" height="38" width="350" alt="The Daily Sheeple">
         </section>
-        <div class="third-party">
-          <div class="ads">
-            <!-- FRAMED AD -->
-            <iframe src="http://dcmr.sitescoutadserver.com/disp?pid=8F0825501A&rnd=[CACHE-BUSTING-ID-HERE]" width='728' height='90' marginwidth='0' marginheight='0' scrollbars='0' scrolling='no' frameborder='0' bordercolor='#000000' vspace='0' hspace='0'></iframe>
-            <!-- END FRAMED AD -->
-          </div>
+      </div>
+      <div class="third-party">
+        <div class="ads">
+          <!-- FRAMED AD -->
+          <iframe src="http://dcmr.sitescoutadserver.com/disp?pid=8F0825501A&rnd=[CACHE-BUSTING-ID-HERE]" width='728' height='90' marginwidth='0' marginheight='0' scrollbars='0' scrolling='no' frameborder='0' bordercolor='#000000' vspace='0' hspace='0'></iframe>
+          <!-- END FRAMED AD -->
         </div>
       </div>
     </header>
