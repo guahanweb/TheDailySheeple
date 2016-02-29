@@ -141,6 +141,10 @@
       &.mini {
         border-bottom: 4px solid $black;
         transform: translateY(-100%);
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
 
         &.fixed {
           animation: showmasthead 0.5s forwards;

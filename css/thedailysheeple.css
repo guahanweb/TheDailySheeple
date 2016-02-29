@@ -331,7 +331,11 @@ strong, b {
     border-bottom: 2px solid #000; }
     .masthead.small > div.mini {
       border-bottom: 4px solid #000;
-      transform: translateY(-100%); }
+      transform: translateY(-100%);
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0; }
       .masthead.small > div.mini.fixed {
         animation: showmasthead 0.5s forwards; }
   .masthead.small .top-main {
