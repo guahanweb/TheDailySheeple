@@ -329,6 +329,11 @@ strong, b {
       border-right: 1px solid #000; }
   .masthead.small > div {
     border-bottom: 2px solid #000; }
+    .masthead.small > div.mini {
+      border-bottom: 4px solid #000;
+      transform: translateY(-100%); }
+      .masthead.small > div.mini.fixed {
+        animation: showmasthead 0.5s forwards; }
   .masthead.small .top-main {
     padding: 8px 5px;
     border-bottom: 4px solid #000; }
@@ -402,6 +407,10 @@ strong, b {
   .masthead.small .third-party {
     padding: 10px;
     text-align: center; }
+
+@keyframes showmasthead {
+  100% {
+    transform: translateY(0); } }
 
 .icon {
   width: 30px;

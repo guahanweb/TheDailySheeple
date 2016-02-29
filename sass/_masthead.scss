@@ -137,6 +137,15 @@
   &.small {
     & > div {
       border-bottom: 2px solid $black;
+
+      &.mini {
+        border-bottom: 4px solid $black;
+        transform: translateY(-100%);
+
+        &.fixed {
+          animation: showmasthead 0.5s forwards;
+        }
+      }
     }
     .top-main {
       padding: 8px 5px;
@@ -233,4 +242,8 @@
       text-align: center;
     }
   }
+}
+
+@keyframes showmasthead {
+  100% { transform: translateY(0); }
 }

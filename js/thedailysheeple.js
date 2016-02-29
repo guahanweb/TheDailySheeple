@@ -16,4 +16,40 @@
 
     // Shuffle ads
     $('#region-sidebarrightshuffle div.sidebar_right_ad').shuffle();
+
+  /**
+   * Returns a function that, as long as it continues to b invoked, will not b triggered
+   * @param {function} func The function to be invoked
+   * @param {int} wait The duration to wait before executing
+   * @param {bool} immediate Trigger the function on the leading edge. Default is false
+   * @returns {function}
+   */
+  function debounce(func, wait, immediate) {
+    var timeout;
+    return function () {
+      var context = this, args = arguments;
+      var later = function () {
+        timeout = null;
+        if (!immediate) func.apply(context, args);
+      };
+      var callNow = immediate && !timeout;
+      clearTimeout(timeout);
+      timeout = setTimeout(later, wait);
+      if (callNow) func.apply(context, args);
+    };
+  }
+
+  $(document).ready(function () {
+    var $header = document.getElementById('masthead-secondary');
+    if (!!$header) {
+      var scrollHandler = debounce(function () {
+        if (window.scrollY > 200) {
+          $header.classList.add('fixed');
+        } else {
+          $header.classList.remove('fixed');
+        }
+      }, 100);
+      window.addEventListener('scroll', scrollHandler);
+    }
+  });
 })(jQuery);
