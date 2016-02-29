@@ -338,13 +338,15 @@ strong, b {
     .masthead.small .top-main > .top-nav {
       display: inline-block;
       vertical-align: bottom; }
-      .masthead.small .top-main > .top-nav nav li {
-        display: inline-block;
-        font-size: 0.9em;
-        line-height: 1.8em;
-        padding: 2px 20px;
-        font-weight: bold;
-        text-transform: uppercase; }
+      .masthead.small .top-main > .top-nav nav {
+        padding: 0 20px; }
+        .masthead.small .top-main > .top-nav nav li {
+          display: inline-block;
+          font-size: 0.9em;
+          line-height: 1.8em;
+          padding: 2px 20px;
+          font-weight: bold;
+          text-transform: uppercase; }
     .masthead.small .top-main > .social-media {
       display: inline-block;
       vertical-align: bottom; }
