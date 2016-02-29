@@ -422,7 +422,7 @@ strong, b {
       .masthead.small .top-main > .search-form .input-field {
         display: inline-block;
         vertical-align: top;
-        border: 1px solid #bfbfbf;
+        border: 1px solid #cccccc;
         border-radius: 2px;
         height: 28px;
         line-height: 28px;
