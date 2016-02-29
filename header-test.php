@@ -93,6 +93,17 @@
               </div>
             </form>
           </div>
+          <div class="top-nav">
+            <nav>
+              <ul>
+                <li><a href="#">Breaking</a></li>
+                <li><a href="#">Video</a></li>
+                <li><a href="#">Popular</a></li>
+                <li><a href="#">Editor&apos;s Pick</a></li>
+                <li><a href="#">Main Stream</a></li>
+              </ul>
+            </nav>
+          </div>
           <div class="social-media">
             <ul>
               <li>
