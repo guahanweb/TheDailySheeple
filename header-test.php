@@ -81,53 +81,53 @@
     <header class="masthead">
       <div>
         <section class="top container">
-          <div class="social-media">
+          <div class="search-form">
             <form name="search" role="search" id="searchform" action="/" method="get">
-              <ul>
-                <li>
-                  <div class="input-field input-search">
-                    <div class="input-part input-text">
-                      <input type="text" placeholder="<?php echo __('Type Search Term', 'thedailysheeple'); ?>" name="s" id="s">
-                    </div>
-                    <div class="input-part input-submit">
-                      <button class="search search-icon" type="submit">Submit</button>
-                    </div>
-                  </div>
-                </li>
-                <li>
-                  <a href="#" class="icon icon-mail manual-optin-trigger" data-optin-slug="k5vywtzbwd-lightbox">
-                    <?php echo __('Newsletter', 'thedailysheeple'); ?>
-                  </a>
-                </li>
-                <li>
-                  <a href="#" data-action="bookmark" class="icon icon-star">
-                    <?php echo __('Star', 'thedailysheeple'); ?>
-                  </a>
-                </li>
-                <li>
-                  <a href="http://feeds.feedburner.com/dailysheeple" target="_blank" class="icon icon-rss">
-                    <?php echo __('RSS', 'thedailysheeple'); ?>
-                  </a>
-                </li>
-                <li>
-                  <div class="icon-extended icon-ex-facebook" data-action="facebook">
-                    <span class="icon icon-facebook">FB</span>
-                    <span class="like">Like</span>
-                    <span class="like-count">
-                                    <span class="content"><?php echo thedailysheeple_get_likes(); ?></span>
-                    </span>
-                    <a href="https://www.facebook.com/pages/The-Daily-Sheeple/114637491995485" target="_blank" class="overlay">&nbsp;</a>
-                  </div>
-                </li>
-                <li>
-                  <div class="icon-extended icon-ex-twitter" data-action="twitter">
-                    <span class="icon icon-twitter">Twitter</span>
-                    <span class="like">Follow</span>
-                    <a href="https://twitter.com/TheDailySheeple" target="_blank" class="overlay">&nbsp;</a>
-                  </div>
-                </li>
-              </ul>
+              <div class="input-field input-search">
+                <div class="input-part input-text">
+                  <input type="text" placeholder="<?php echo __('Type Search Term', 'thedailysheeple'); ?>" name="s" id="s">
+                </div>
+                <div class="input-part input-submit">
+                  <button class="search search-icon" type="submit">Submit</button>
+                </div>
+              </div>
             </form>
+          </div>
+          <div class="social-media">
+            <ul>
+              <li>
+                <a href="#" class="icon icon-mail manual-optin-trigger" data-optin-slug="k5vywtzbwd-lightbox">
+                  <?php echo __('Newsletter', 'thedailysheeple'); ?>
+                </a>
+              </li>
+              <li>
+                <a href="#" data-action="bookmark" class="icon icon-star">
+                  <?php echo __('Star', 'thedailysheeple'); ?>
+                </a>
+              </li>
+              <li>
+                <a href="http://feeds.feedburner.com/dailysheeple" target="_blank" class="icon icon-rss">
+                  <?php echo __('RSS', 'thedailysheeple'); ?>
+                </a>
+              </li>
+              <li>
+                <div class="icon-extended icon-ex-facebook" data-action="facebook">
+                  <span class="icon icon-facebook">FB</span>
+                  <span class="like">Like</span>
+                  <span class="like-count">
+                                    <span class="content"><?php echo thedailysheeple_get_likes(); ?></span>
+                  </span>
+                  <a href="https://www.facebook.com/pages/The-Daily-Sheeple/114637491995485" target="_blank" class="overlay">&nbsp;</a>
+                </div>
+              </li>
+              <li>
+                <div class="icon-extended icon-ex-twitter" data-action="twitter">
+                  <span class="icon icon-twitter">Twitter</span>
+                  <span class="like">Follow</span>
+                  <a href="https://twitter.com/TheDailySheeple" target="_blank" class="overlay">&nbsp;</a>
+                </div>
+              </li>
+            </ul>
           </div>
         </section>
       </div>
