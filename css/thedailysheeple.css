@@ -338,7 +338,7 @@ strong, b {
       .masthead.small .top-main > .search-form .input-field {
         display: inline-block;
         vertical-align: top;
-        border: 1px solid #404040;
+        border: 1px solid #bfbfbf;
         border-radius: 2px;
         height: 28px;
         line-height: 28px;
@@ -350,6 +350,7 @@ strong, b {
           vertical-align: top;
           cursor: text; }
           .masthead.small .top-main > .search-form .input-field .input-part input[type=text] {
+            width: 180px;
             font-size: 11px;
             margin: 0;
             height: 26px;
