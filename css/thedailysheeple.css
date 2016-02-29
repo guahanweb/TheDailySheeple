@@ -338,6 +338,8 @@ strong, b {
     .masthead.small .top-main > .top-nav {
       display: inline-block;
       vertical-align: bottom; }
+      .masthead.small .top-main > .top-nav nav li {
+        display: inline-block; }
     .masthead.small .top-main > .social-media {
       display: inline-block;
       vertical-align: bottom; }

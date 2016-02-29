@@ -152,6 +152,12 @@
       & > .top-nav {
         display: inline-block;
         vertical-align: bottom;
+
+        nav {
+          li {
+            display: inline-block;
+          }
+        }
       }
 
       & > .social-media {
