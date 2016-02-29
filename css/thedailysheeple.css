@@ -335,6 +335,40 @@ strong, b {
     .masthead.small .top-main > .search-form {
       display: inline-block;
       vertical-align: bottom; }
+      .masthead.small .top-main > .search-form .input-field {
+        display: inline-block;
+        vertical-align: top;
+        border: 1px solid #404040;
+        border-radius: 2px;
+        height: 28px;
+        line-height: 28px;
+        font-size: 11px;
+        overflow: hidden;
+        background-color: #fff; }
+        .masthead.small .top-main > .search-form .input-field .input-part {
+          display: inline-block;
+          vertical-align: top;
+          cursor: text; }
+          .masthead.small .top-main > .search-form .input-field .input-part input[type=text] {
+            font-size: 11px;
+            margin: 0;
+            height: 26px;
+            line-height: 26px;
+            text-transform: uppercase;
+            padding: 0 4px;
+            margin: 0;
+            border: none;
+            outline: none; }
+          .masthead.small .top-main > .search-form .input-field .input-part.input-submit button {
+            height: 28px;
+            width: 28px;
+            border: none;
+            background: url("../images/icons/search.png") no-repeat 50% 48% transparent;
+            text-indent: -9999em;
+            overflow: hidden;
+            cursor: pointer; }
+        .masthead.small .top-main > .search-form .input-field.input-email {
+          width: 100%; }
     .masthead.small .top-main > .top-nav {
       display: inline-block;
       vertical-align: bottom; }

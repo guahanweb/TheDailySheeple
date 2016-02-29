@@ -85,7 +85,7 @@
             <form name="search" role="search" id="searchform" action="/" method="get">
               <div class="input-field input-search">
                 <div class="input-part input-text">
-                  <input type="text" placeholder="<?php echo __('Type Search Term', 'thedailysheeple'); ?>" name="s" id="s">
+                  <input type="text" placeholder="<?php echo __('Search The Daily Sheeple', 'thedailysheeple'); ?>" name="s" id="s">
                 </div>
                 <div class="input-part input-submit">
                   <button class="search search-icon" type="submit">Submit</button>
