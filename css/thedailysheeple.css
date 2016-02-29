@@ -328,10 +328,9 @@ strong, b {
       border-left: 1px solid #000;
       border-right: 1px solid #000; }
   .masthead.small > div {
-    border-bottom: 2px solid #000;
-    padding: 0 8px; }
+    border-bottom: 2px solid #000; }
   .masthead.small .top-main {
-    padding: 5px;
+    padding: 5px 8px;
     border-bottom: 4px solid #000; }
     .masthead.small .top-main > .search-form {
       display: inline-block;

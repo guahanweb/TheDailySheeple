@@ -138,11 +138,10 @@
   &.small {
     & > div {
       border-bottom: 2px solid $black;
-      padding: 0 8px;
     }
 
     .top-main {
-      padding: 5px;
+      padding: 5px 8px;
       border-bottom: 4px solid $black;
 
       & > .search-form {
