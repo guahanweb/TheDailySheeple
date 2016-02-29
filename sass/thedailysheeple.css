@@ -495,6 +495,10 @@ strong, b {
   .masthead.small .main-logo {
     text-align: center;
     padding: 5px; }
+  /* line 231, /private/var/www/themes/thedailysheeple/sass/_masthead.scss */
+  .masthead.small .third-party {
+    padding: 10px;
+    text-align: center; }
 
 /* line 1, /private/var/www/themes/thedailysheeple/sass/_icons.scss */
 .icon {
