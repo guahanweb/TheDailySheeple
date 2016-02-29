@@ -122,6 +122,11 @@
                 </a>
               </li>
               <li>
+                <a href="#" target="_blank" class="icon icon-youtube">
+                  <?php echo __('YouTube', 'thedailysheeple'); ?>
+                </a>
+              </li>
+              <li>
                 <div class="icon-extended icon-ex-facebook" data-action="facebook">
                   <span class="icon icon-facebook">FB</span>
                   <span class="like">Like</span>

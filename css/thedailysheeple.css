@@ -418,6 +418,8 @@ strong, b {
     background-image: url("../images/icons/facebook.png"); }
   .icon.icon-twitter {
     background-image: url("../images/icons/twitter.png"); }
+  .icon.icon-youtube {
+    background-image: url("../images/icons/youtube.png"); }
 
 .icon-extended {
   min-width: 120px;
