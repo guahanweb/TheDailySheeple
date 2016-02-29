@@ -255,7 +255,8 @@ strong, b {
 
 .masthead {
   background-color: #fff;
-  padding: 10px 10px 0; }
+  padding: 10px 10px 0;
+  /* NEW STYLES */ }
   .masthead > div {
     padding-bottom: 3px;
     border-bottom: 3px solid #000; }
@@ -326,6 +327,21 @@ strong, b {
       margin: 0 160px;
       border-left: 1px solid #000;
       border-right: 1px solid #000; }
+  .masthead.small .top-main {
+    padding: 5px;
+    margin-bottom: 3px;
+    border-bottom: 1px solid #000; }
+    .masthead.small .top-main > .social-media ul {
+      margin-top: 3px; }
+      .masthead.small .top-main > .social-media ul li {
+        display: inline-block;
+        margin: 0;
+        list-style-type: none;
+        float: right;
+        margin-left: 5px; }
+        .masthead.small .top-main > .social-media ul li a {
+          display: inline-block;
+          margin-top: -6px; }
 
 .icon {
   width: 30px;

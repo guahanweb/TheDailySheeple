@@ -78,9 +78,9 @@
 
 <body>
   <div class="wrapper container">
-    <header class="masthead">
+    <header class="masthead small">
       <div>
-        <section class="top container">
+        <section class="container top-main">
           <div class="search-form">
             <form name="search" role="search" id="searchform" action="/" method="get">
               <div class="input-field input-search">
