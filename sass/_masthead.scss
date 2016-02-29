@@ -137,11 +137,12 @@
   /* NEW STYLES */
   &.small {
     & > div {
-      border-bottom: 4px solid $black;
+      border-bottom: 2px solid $black;
     }
 
     .top-main {
       padding: 5px;
+      border-bottom: 4px solid $black;
 
       & > .search-form {
         display: inline-block;
