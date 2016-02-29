@@ -139,8 +139,8 @@
       border-bottom: 2px solid $black;
 
       &.mini {
-        border-bottom: 4px solid $black;
-        transform: translateY(-100%);
+        background-color: #fff;
+        transform: translateY(-110%);
         position: fixed;
         top: 0;
         left: 0;
@@ -234,6 +234,11 @@
             }
           }
         }
+      }
+
+      & > .main-logo {
+        display: inline-block;
+        vertical-align: bottom;
       }
     }
     .main-logo {

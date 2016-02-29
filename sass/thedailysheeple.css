@@ -412,8 +412,8 @@ strong, b {
     border-bottom: 2px solid #000; }
     /* line 141, /private/var/www/themes/thedailysheeple/sass/_masthead.scss */
     .masthead.small > div.mini {
-      border-bottom: 4px solid #000;
-      transform: translateY(-100%);
+      background-color: #fff;
+      transform: translateY(-110%);
       position: fixed;
       top: 0;
       left: 0;
@@ -502,11 +502,15 @@ strong, b {
           .masthead.small .top-main > .social-media ul li a {
             display: inline-block;
             margin-top: -6px; }
-  /* line 239, /private/var/www/themes/thedailysheeple/sass/_masthead.scss */
+    /* line 239, /private/var/www/themes/thedailysheeple/sass/_masthead.scss */
+    .masthead.small .top-main > .main-logo {
+      display: inline-block;
+      vertical-align: bottom; }
+  /* line 244, /private/var/www/themes/thedailysheeple/sass/_masthead.scss */
   .masthead.small .main-logo {
     text-align: center;
     padding: 5px; }
-  /* line 244, /private/var/www/themes/thedailysheeple/sass/_masthead.scss */
+  /* line 249, /private/var/www/themes/thedailysheeple/sass/_masthead.scss */
   .masthead.small .third-party {
     padding: 10px;
     text-align: center; }
