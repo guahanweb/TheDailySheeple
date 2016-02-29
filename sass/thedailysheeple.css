@@ -412,7 +412,7 @@ strong, b {
     border-bottom: 2px solid #000; }
   /* line 143, /private/var/www/themes/thedailysheeple/sass/_masthead.scss */
   .masthead.small .top-main {
-    padding: 5px 8px;
+    padding: 8px 5px;
     border-bottom: 4px solid #000; }
     /* line 147, /private/var/www/themes/thedailysheeple/sass/_masthead.scss */
     .masthead.small .top-main > .search-form {
