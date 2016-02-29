@@ -136,10 +136,12 @@
 
   /* NEW STYLES */
   &.small {
+    & > div {
+      border-bottom: 4px solid $black;
+    }
+
     .top-main {
       padding: 5px;
-      margin-bottom: 3px;
-      border-bottom: 1px solid $black;
 
       & > .search-form {
         display: inline-block;
@@ -170,6 +172,11 @@
           }
         }
       }
+    }
+
+    .main-logo {
+      text-align: center;
+      padding: 5px;
     }
   }
 }
