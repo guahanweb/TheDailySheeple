@@ -337,9 +337,12 @@ strong, b {
       top: 0;
       left: 0;
       right: 0;
-      width: 1280px; }
+      width: 1280px;
+      margin: 0 auto; }
       .masthead.small > div.mini.fixed {
         animation: showmasthead 0.5s forwards; }
+        .masthead.small > div.mini.fixed.with-admin {
+          animation: showadminmasthead 0.5s forwards; }
   .masthead.small .top-main {
     padding: 8px 5px;
     border-bottom: 4px solid #000; }
@@ -420,6 +423,10 @@ strong, b {
 @keyframes showmasthead {
   100% {
     transform: translateY(0); } }
+
+@keyframes showadminmasthead {
+  100% {
+    transform: translateY(32px); } }
 
 .icon {
   width: 30px;

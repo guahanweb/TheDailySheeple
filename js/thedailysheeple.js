@@ -41,7 +41,9 @@
 
   $(document).ready(function () {
     var $header = document.getElementById('masthead-secondary');
+    var $adminbar = document.getElementById('wpadminbar');
     if (!!$header) {
+      $header.classList.add('with-admin');
       var scrollHandler = debounce(function () {
         if (window.scrollY > 200) {
           $header.classList.add('fixed');

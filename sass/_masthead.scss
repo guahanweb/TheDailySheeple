@@ -147,9 +147,14 @@
         left: 0;
         right: 0;
         width: 1280px;
+        margin: 0 auto;
 
         &.fixed {
           animation: showmasthead 0.5s forwards;
+
+          &.with-admin {
+            animation: showadminmasthead 0.5s forwards;
+          }
         }
       }
     }
@@ -257,4 +262,8 @@
 
 @keyframes showmasthead {
   100% { transform: translateY(0); }
+}
+
+@keyframes showadminmasthead {
+  100% { transform: translateY(32px); }
 }
