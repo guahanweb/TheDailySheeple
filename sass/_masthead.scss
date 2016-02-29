@@ -139,12 +139,14 @@
       border-bottom: 2px solid $black;
 
       &.mini {
+        z-index: 9999;
         background-color: #fff;
         transform: translateY(-110%);
         position: fixed;
         top: 0;
         left: 0;
         right: 0;
+        width: 1280px;
 
         &.fixed {
           animation: showmasthead 0.5s forwards;

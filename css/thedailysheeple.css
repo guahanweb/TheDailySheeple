@@ -330,12 +330,14 @@ strong, b {
   .masthead.small > div {
     border-bottom: 2px solid #000; }
     .masthead.small > div.mini {
+      z-index: 9999;
       background-color: #fff;
       transform: translateY(-110%);
       position: fixed;
       top: 0;
       left: 0;
-      right: 0; }
+      right: 0;
+      width: 1280px; }
       .masthead.small > div.mini.fixed {
         animation: showmasthead 0.5s forwards; }
   .masthead.small .top-main {
