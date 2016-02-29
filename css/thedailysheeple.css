@@ -332,11 +332,14 @@ strong, b {
     margin-bottom: 3px;
     border-bottom: 1px solid #000; }
     .masthead.small .top-main > .search-form {
-      display: inline-block; }
+      display: inline-block;
+      vertical-align: bottom; }
     .masthead.small .top-main > .top-nav {
-      display: inline-block; }
+      display: inline-block;
+      vertical-align: bottom; }
     .masthead.small .top-main > .social-media {
-      display: inline-block; }
+      display: inline-block;
+      vertical-align: bottom; }
       .masthead.small .top-main > .social-media ul {
         margin-top: 3px; }
         .masthead.small .top-main > .social-media ul li {
