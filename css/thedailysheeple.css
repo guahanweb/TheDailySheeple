@@ -442,7 +442,7 @@ strong, b {
                     box-shadow: none; }
                   .masthead.small .top-main > .top-nav nav li.dropdown ul li a {
                     display: block;
-                    padding: 5px 10px;
+                    padding: 10px;
                     white-space: nowrap;
                     height: auto;
                     line-height: 1;
