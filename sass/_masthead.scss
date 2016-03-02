@@ -243,7 +243,9 @@
               a.hamburger:before {
                 content: '☰';
                 display: inline-block;
-                padding: 0 5px;
+                font-size: 1.2em;
+                line-height: 1.2em;
+                padding: 0 10px;
               }
 
               &:hover ul {
@@ -256,13 +258,13 @@
                 margin: 0;
                 padding: 0;
                 position: absolute;
-                top: 35px;
-                left: 0;
+                top: 28px;
+                left: 10px;
                 z-index: 99999;
-                background-color: #444;
-                background-image: linear-gradient(#444, #111);
-                -moz-border-radius: 5px;
-                border-radius: 5px;
+                background-color: #f4f4f4;
+                background-image: linear-gradient(#f4f4f4, #eeeeee);
+                -moz-border-radius: 2px;
+                border-radius: 2px;
 
                 li {
                   float: none;

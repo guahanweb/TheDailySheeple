@@ -98,7 +98,7 @@
             <nav>
               <ul>
                 <li class="dropdown">
-                  <a class="hamburger">Sections</a>
+                  <a class="hamburger" href="#">Sections</a>
                   <ul>
                     <li><a href="#">Breaking</a></li>
                     <li><a href="#">Video</a></li>
