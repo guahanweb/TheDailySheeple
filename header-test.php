@@ -5,6 +5,7 @@
   <title>
     <?php wp_title( '|', true, 'right' ); ?>
   </title>
+  <meta charset="utf-8">
   <meta name="author" content="">
   <meta name="DC.creator" content="Meat Grinder Media">
   <?php if (is_single()): ?>
@@ -92,6 +93,22 @@
                 </div>
               </div>
             </form>
+          </div>
+          <div class="top-nav">
+            <nav>
+              <ul>
+                <li class="dropdown">
+                  <a class="hamburger">☰</a>
+                  <ul>
+                    <li><a href="#">Breaking</a></li>
+                    <li><a href="#">Video</a></li>
+                    <li><a href="#">Popular</a></li>
+                    <li><a href="#">Editor&apos;s Pick</a></li>
+                    <li><a href="#">Main Stream</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </nav>
           </div>
           <div class="social-media">
             <ul>
