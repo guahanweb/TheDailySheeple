@@ -93,9 +93,6 @@
               </div>
             </form>
           </div>
-          <div class="main-logo">
-            <img src="<?php echo get_template_directory_uri() . '/images/header-mini-logo.png'; ?>" height="38" width="350" alt="The Daily Sheeple">
-          </div>
           <div class="social-media">
             <ul>
               <li>
@@ -131,6 +128,9 @@
                 </div>
               </li>
             </ul>
+          </div>
+          <div class="main-logo">
+            <img src="<?php echo get_template_directory_uri() . '/images/header-mini-logo.png'; ?>" height="38" width="350" alt="The Daily Sheeple">
           </div>
         </section>
       </div>
