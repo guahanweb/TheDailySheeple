@@ -580,7 +580,10 @@ strong, b {
     .masthead.small .main-logo {
       text-align: center;
       padding: 5px; }
-    /* line 328, /private/var/www/themes/thedailysheeple/sass/_masthead.scss */
+      /* line 327, /private/var/www/themes/thedailysheeple/sass/_masthead.scss */
+      .masthead.small .main-logo img {
+        border: none; }
+    /* line 332, /private/var/www/themes/thedailysheeple/sass/_masthead.scss */
     .masthead.small .third-party {
       padding: 10px;
       text-align: center; }

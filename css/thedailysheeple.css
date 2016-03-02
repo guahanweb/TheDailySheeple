@@ -469,6 +469,8 @@ strong, b {
     .masthead.small .main-logo {
       text-align: center;
       padding: 5px; }
+      .masthead.small .main-logo img {
+        border: none; }
     .masthead.small .third-party {
       padding: 10px;
       text-align: center; }
