@@ -338,7 +338,9 @@ strong, b {
       left: 0;
       right: 0;
       width: 1280px;
-      margin: 0 auto; }
+      margin: 0 auto;
+      border-bottom: none;
+      padding-bottom: 0; }
       .masthead.small > div.mini.fixed {
         animation: showmasthead 0.5s forwards; }
         .masthead.small > div.mini.fixed.with-admin {
