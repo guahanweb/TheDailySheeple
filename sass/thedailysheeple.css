@@ -515,8 +515,8 @@ strong, b {
             margin-top: -6px; }
     /* line 251, /private/var/www/themes/thedailysheeple/sass/_masthead.scss */
     .masthead.small .top-main > .main-logo {
-      display: inline-block;
-      vertical-align: bottom; }
+      width: 350px;
+      margin: 0 auto; }
   /* line 256, /private/var/www/themes/thedailysheeple/sass/_masthead.scss */
   .masthead.small .main-logo {
     text-align: center;

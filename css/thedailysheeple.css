@@ -415,8 +415,8 @@ strong, b {
             display: inline-block;
             margin-top: -6px; }
     .masthead.small .top-main > .main-logo {
-      display: inline-block;
-      vertical-align: bottom; }
+      width: 350px;
+      margin: 0 auto; }
   .masthead.small .main-logo {
     text-align: center;
     padding: 5px; }
