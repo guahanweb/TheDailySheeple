@@ -10,7 +10,7 @@ query_posts(array(
 ?>
 <header>
     <a href="/category/featuredreports/">See all breaking news</a>
-    <h1><?php echo __('News Just In&hellip;', 'thedailysheeple'); ?></h1>
+    <h1><?php echo __('Breaking News', 'thedailysheeple'); ?></h1>
 </header>
 <div class="articles">
     <?php

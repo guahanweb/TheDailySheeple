@@ -100,11 +100,11 @@
                 <li class="dropdown">
                   <a class="hamburger" href="#">Sections</a>
                   <ul>
-                    <li><a href="#">Breaking</a></li>
-                    <li><a href="#">Video</a></li>
-                    <li><a href="#">Popular</a></li>
-                    <li><a href="#">Editor&apos;s Pick</a></li>
-                    <li><a href="#">Main Stream</a></li>
+                    <li><a href="/category/featuredreports/">Breaking</a></li>
+                    <li><a href="/category/videos/">Video</a></li>
+                    <!--<li><a href="#">Popular</a></li>-->
+                    <li><a href="/category/editors-choice/">Editor&apos;s Pick</a></li>
+                    <!--<li><a href="#">Main Stream</a></li>-->
                   </ul>
                 </li>
               </ul>
@@ -168,11 +168,11 @@
           <div class="top-nav">
             <nav>
               <ul>
-                <li><a href="#">Breaking</a></li>
-                <li><a href="#">Video</a></li>
-                <li><a href="#">Popular</a></li>
-                <li><a href="#">Editor&apos;s Pick</a></li>
-                <li><a href="#">Main Stream</a></li>
+                <li><a href="/category/featuredreports/">Breaking</a></li>
+                <li><a href="/category/videos/">Video</a></li>
+                <!--<li><a href="#">Popular</a></li>-->
+                <li><a href="/category/editors-choice/">Editor&apos;s Pick</a></li>
+                <!--<li><a href="#">Main Stream</a></li>-->
               </ul>
             </nav>
           </div>
