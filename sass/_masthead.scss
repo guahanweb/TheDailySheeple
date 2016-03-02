@@ -161,10 +161,17 @@
     .top-main {
       padding: 8px 5px;
       border-bottom: 4px solid $black;
+      &:after {
+        visibility: hidden;
+        display: block;
+        font-size: 0;
+        clear: both;
+        content: ' ';
+        height: 0;
+      }
 
       & > .search-form {
-        display: inline-block;
-        vertical-align: bottom;
+        float: left;
 
         .input-field {
           display: inline-block;
@@ -210,8 +217,7 @@
         }
       }
       & > .top-nav {
-        display: inline-block;
-        vertical-align: bottom;
+        float: left;
         nav {
           padding: 0 18px;
           li {
@@ -225,8 +231,7 @@
         }
       }
       & > .social-media {
-        display: inline-block;
-        vertical-align: bottom;
+        float: right;
         ul {
           margin-top: 3px;
           li {
