@@ -40,18 +40,26 @@
   }
 
   $(document).ready(function () {
+    var TRIGGER_HEIGHT = 200;
+
     var $header = document.getElementById('masthead-secondary');
     var $adminbar = document.getElementById('wpadminbar');
     if (!!$header) {
-      $header.classList.add('with-admin');
+      if (!!$adminbar) {
+        $header.classList.add('with-admin');
+      }
+
       var scrollHandler = debounce(function () {
-        if (window.scrollY > 200) {
+        if (window.scrollY > TRIGGER_HEIGHT) {
           $header.classList.add('fixed');
         } else {
           $header.classList.remove('fixed');
         }
       }, 100);
       window.addEventListener('scroll', scrollHandler);
+
+      // If we start down the page, trigger it immediately
+      scrollHander();
     }
   });
 })(jQuery);
