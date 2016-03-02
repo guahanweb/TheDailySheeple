@@ -434,7 +434,6 @@ strong, b {
                 border-radius: 2px; }
                 .masthead.small .top-main > .top-nav nav li.dropdown ul li {
                   float: none;
-                  width: 160px;
                   margin: 0;
                   padding: 0;
                   display: block;
@@ -444,8 +443,10 @@ strong, b {
                   .masthead.small .top-main > .top-nav nav li.dropdown ul li a {
                     display: block;
                     padding: 5px 10px;
-                    background-color: transparent;
-                    box-shadow: 0 1px 0 #666666, 0 2px 0 #cccccc; }
+                    white-space: nowrap;
+                    height: auto;
+                    line-height: 1;
+                    background-color: transparent; }
                     .masthead.small .top-main > .top-nav nav li.dropdown ul li a:hover {
                       background-color: #fff; }
       .masthead.small .top-main > .social-media {
