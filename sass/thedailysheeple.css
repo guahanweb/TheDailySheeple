@@ -539,20 +539,20 @@ strong, b {
                   width: 160px;
                   margin: 0;
                   padding: 0;
-                  display: block; }
-                  /* line 276, /private/var/www/themes/thedailysheeple/sass/_masthead.scss */
+                  display: block;
+                  box-shadow: 0 1px 0 #333333, 0 2px 0 #aaaaaa; }
+                  /* line 277, /private/var/www/themes/thedailysheeple/sass/_masthead.scss */
+                  .masthead.small .top-main > .top-nav nav li.dropdown ul li:last-child {
+                    box-shadow: none; }
+                  /* line 281, /private/var/www/themes/thedailysheeple/sass/_masthead.scss */
                   .masthead.small .top-main > .top-nav nav li.dropdown ul li a {
                     display: block;
                     padding: 5px 10px;
                     background-color: transparent;
-                    box-shadow: 0 1px 0 #333333, 0 2px 0 #aaaaaa; }
-                    /* line 282, /private/var/www/themes/thedailysheeple/sass/_masthead.scss */
-                    .masthead.small .top-main > .top-nav nav li.dropdown ul li a:hover {
-                      background-color: #fff;
-                      box-shadow: 0 1px 0 #666666, 0 2px 0 #cccccc; }
+                    box-shadow: 0 1px 0 #666666, 0 2px 0 #cccccc; }
                     /* line 287, /private/var/www/themes/thedailysheeple/sass/_masthead.scss */
-                    .masthead.small .top-main > .top-nav nav li.dropdown ul li a:last-child {
-                      box-shadow: none; }
+                    .masthead.small .top-main > .top-nav nav li.dropdown ul li a:hover {
+                      background-color: #fff; }
       /* line 297, /private/var/www/themes/thedailysheeple/sass/_masthead.scss */
       .masthead.small .top-main > .social-media {
         float: right;

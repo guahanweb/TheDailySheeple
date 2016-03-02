@@ -272,20 +272,20 @@
                   margin: 0;
                   padding: 0;
                   display: block;
+                  box-shadow: 0 1px 0 #333333, 0 2px 0 #aaaaaa;
+
+                  &:last-child {
+                    box-shadow: none;
+                  }
 
                   a {
                     display: block;
                     padding: 5px 10px;
                     background-color: transparent;
-                    box-shadow: 0 1px 0 #333333, 0 2px 0 #aaaaaa;
+                    box-shadow: 0 1px 0 #666666, 0 2px 0 #cccccc;
 
                     &:hover {
                       background-color: #fff;
-                      box-shadow: 0 1px 0 #666666, 0 2px 0 #cccccc;
-                    }
-
-                    &:last-child {
-                      box-shadow: none;
                     }
                   }
                 }
