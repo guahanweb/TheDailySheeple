@@ -356,7 +356,8 @@ strong, b {
       content: ' ';
       height: 0; }
     .masthead.small .top-main > .search-form {
-      float: left; }
+      float: left;
+      padding: 10px; }
       .masthead.small .top-main > .search-form .input-field {
         display: inline-block;
         vertical-align: top;
@@ -404,7 +405,8 @@ strong, b {
           font-weight: bold;
           text-transform: uppercase; }
     .masthead.small .top-main > .social-media {
-      float: right; }
+      float: right;
+      padding: 8px 10px; }
       .masthead.small .top-main > .social-media ul {
         margin-top: 3px; }
         .masthead.small .top-main > .social-media ul li {

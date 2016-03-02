@@ -443,8 +443,9 @@ strong, b {
       height: 0; }
     /* line 175, /private/var/www/themes/thedailysheeple/sass/_masthead.scss */
     .masthead.small .top-main > .search-form {
-      float: left; }
-      /* line 178, /private/var/www/themes/thedailysheeple/sass/_masthead.scss */
+      float: left;
+      padding: 10px; }
+      /* line 179, /private/var/www/themes/thedailysheeple/sass/_masthead.scss */
       .masthead.small .top-main > .search-form .input-field {
         display: inline-block;
         vertical-align: top;
@@ -455,12 +456,12 @@ strong, b {
         font-size: 11px;
         overflow: hidden;
         background-color: #fff; }
-        /* line 188, /private/var/www/themes/thedailysheeple/sass/_masthead.scss */
+        /* line 189, /private/var/www/themes/thedailysheeple/sass/_masthead.scss */
         .masthead.small .top-main > .search-form .input-field .input-part {
           display: inline-block;
           vertical-align: top;
           cursor: text; }
-          /* line 192, /private/var/www/themes/thedailysheeple/sass/_masthead.scss */
+          /* line 193, /private/var/www/themes/thedailysheeple/sass/_masthead.scss */
           .masthead.small .top-main > .search-form .input-field .input-part input[type=text] {
             width: 180px;
             font-size: 11px;
@@ -472,7 +473,7 @@ strong, b {
             margin: 0;
             border: none;
             outline: none; }
-          /* line 205, /private/var/www/themes/thedailysheeple/sass/_masthead.scss */
+          /* line 206, /private/var/www/themes/thedailysheeple/sass/_masthead.scss */
           .masthead.small .top-main > .search-form .input-field .input-part.input-submit button {
             height: 28px;
             width: 28px;
@@ -481,16 +482,16 @@ strong, b {
             text-indent: -9999em;
             overflow: hidden;
             cursor: pointer; }
-        /* line 216, /private/var/www/themes/thedailysheeple/sass/_masthead.scss */
+        /* line 217, /private/var/www/themes/thedailysheeple/sass/_masthead.scss */
         .masthead.small .top-main > .search-form .input-field.input-email {
           width: 100%; }
-    /* line 221, /private/var/www/themes/thedailysheeple/sass/_masthead.scss */
+    /* line 222, /private/var/www/themes/thedailysheeple/sass/_masthead.scss */
     .masthead.small .top-main > .top-nav {
       float: left; }
-      /* line 223, /private/var/www/themes/thedailysheeple/sass/_masthead.scss */
+      /* line 224, /private/var/www/themes/thedailysheeple/sass/_masthead.scss */
       .masthead.small .top-main > .top-nav nav {
         padding: 0 18px; }
-        /* line 225, /private/var/www/themes/thedailysheeple/sass/_masthead.scss */
+        /* line 226, /private/var/www/themes/thedailysheeple/sass/_masthead.scss */
         .masthead.small .top-main > .top-nav nav li {
           display: inline-block;
           font-size: 0.9em;
@@ -498,32 +499,33 @@ strong, b {
           padding: 2px 20px;
           font-weight: bold;
           text-transform: uppercase; }
-    /* line 235, /private/var/www/themes/thedailysheeple/sass/_masthead.scss */
+    /* line 236, /private/var/www/themes/thedailysheeple/sass/_masthead.scss */
     .masthead.small .top-main > .social-media {
-      float: right; }
-      /* line 237, /private/var/www/themes/thedailysheeple/sass/_masthead.scss */
+      float: right;
+      padding: 8px 10px; }
+      /* line 240, /private/var/www/themes/thedailysheeple/sass/_masthead.scss */
       .masthead.small .top-main > .social-media ul {
         margin-top: 3px; }
-        /* line 239, /private/var/www/themes/thedailysheeple/sass/_masthead.scss */
+        /* line 242, /private/var/www/themes/thedailysheeple/sass/_masthead.scss */
         .masthead.small .top-main > .social-media ul li {
           display: inline-block;
           margin: 0;
           list-style-type: none;
           float: right;
           margin-left: 5px; }
-          /* line 245, /private/var/www/themes/thedailysheeple/sass/_masthead.scss */
+          /* line 248, /private/var/www/themes/thedailysheeple/sass/_masthead.scss */
           .masthead.small .top-main > .social-media ul li a {
             display: inline-block;
             margin-top: -6px; }
-    /* line 253, /private/var/www/themes/thedailysheeple/sass/_masthead.scss */
+    /* line 256, /private/var/www/themes/thedailysheeple/sass/_masthead.scss */
     .masthead.small .top-main > .main-logo {
       width: 350px;
       margin: 0 auto; }
-  /* line 258, /private/var/www/themes/thedailysheeple/sass/_masthead.scss */
+  /* line 261, /private/var/www/themes/thedailysheeple/sass/_masthead.scss */
   .masthead.small .main-logo {
     text-align: center;
     padding: 5px; }
-  /* line 263, /private/var/www/themes/thedailysheeple/sass/_masthead.scss */
+  /* line 266, /private/var/www/themes/thedailysheeple/sass/_masthead.scss */
   .masthead.small .third-party {
     padding: 10px;
     text-align: center; }
