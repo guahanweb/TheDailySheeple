@@ -59,7 +59,7 @@
       window.addEventListener('scroll', scrollHandler);
 
       // If we start down the page, trigger it immediately
-      scrollHander();
+      scrollHandler();
     }
   });
 })(jQuery);
