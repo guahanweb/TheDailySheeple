@@ -259,7 +259,7 @@
                 padding: 0;
                 position: absolute;
                 top: 28px;
-                left: 10px;
+                left: 25px;
                 z-index: 99999;
                 background-color: #f4f4f4;
                 background-image: linear-gradient(#f4f4f4, #eeeeee);
@@ -269,9 +269,9 @@
                 li {
                   float: none;
                   margin: 0;
-                  padding: 0;
+                  padding: 5px 10px;
                   display: block;
-                  box-shadow: 0 1px 0 #111111, 0 2px 0 #777777;
+                  box-shadow: 0 1px 0 #eeeeee, 0 2px 0 #f4f4f4;
                 }
               }
             }
