@@ -135,6 +135,8 @@
   }
   /* NEW STYLES */
   &.small {
+    padding: 0;
+
     & > div {
       border-bottom: 2px solid $black;
 
