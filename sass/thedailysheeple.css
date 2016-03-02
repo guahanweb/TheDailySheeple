@@ -493,13 +493,13 @@ strong, b {
         float: left; }
         /* line 226, /private/var/www/themes/thedailysheeple/sass/_masthead.scss */
         .masthead.small .top-main > .top-nav nav {
-          padding: 0 18px; }
+          padding: 10px; }
           /* line 228, /private/var/www/themes/thedailysheeple/sass/_masthead.scss */
           .masthead.small .top-main > .top-nav nav li {
             display: inline-block;
             font-size: 0.9em;
             line-height: 1.8em;
-            padding: 2px 20px;
+            padding: 2px 15px;
             font-weight: bold;
             text-transform: uppercase; }
       /* line 238, /private/var/www/themes/thedailysheeple/sass/_masthead.scss */
