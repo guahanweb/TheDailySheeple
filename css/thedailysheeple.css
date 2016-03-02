@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /* Include library */
 /* Based off Eric Meyer's HTML5 reset */
 html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary, time, mark, audio, video {
@@ -408,6 +409,12 @@ strong, b {
             text-transform: uppercase; }
             .masthead.small .top-main > .top-nav nav li.dropdown {
               position: relative; }
+              .masthead.small .top-main > .top-nav nav li.dropdown a.hamburger {
+                display: inline-block; }
+              .masthead.small .top-main > .top-nav nav li.dropdown a.hamburger:before {
+                content: '☰';
+                display: inline-block;
+                padding: 0 5px; }
               .masthead.small .top-main > .top-nav nav li.dropdown:hover ul {
                 display: block; }
               .masthead.small .top-main > .top-nav nav li.dropdown ul {

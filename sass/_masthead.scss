@@ -236,6 +236,16 @@
             &.dropdown {
               position: relative;
 
+              a.hamburger {
+                display: inline-block;
+              }
+
+              a.hamburger:before {
+                content: '☰';
+                display: inline-block;
+                padding: 0 5px;
+              }
+
               &:hover ul {
                 display: block;
               }
