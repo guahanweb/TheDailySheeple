@@ -241,10 +241,13 @@
 
       &.video:after {
         display: block;
+        content: ' ';
         width: 100px;
         height: 100px;
         margin-top: -100px;
-        background: url('../images/video-icon.png') 50% 50% transparent;
+        background: url('../images/video-icon.png') no-repeat 50% 50% transparent;
+        opacity: 0.5;
+        z-index: 9999;
       }
     }
     .published {
