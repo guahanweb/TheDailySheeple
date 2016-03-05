@@ -767,20 +767,13 @@ footer {
     background-color: #fdf1ca; }
   .articles > article .post-thumbnail {
     float: left;
-    margin-right: 15px;
-    position: relative; }
-    .articles > article .post-thumbnail.video {
-      position: absolute;
-      top: 0; }
-      .articles > article .post-thumbnail.video .video-icon {
-        height: 100px;
-        width: 100px;
-        background: url("../images/video-icon.png") 50% 50% transparent;
-        -moz-opacity: 0.5;
-        opacity: 0.5; }
-      .articles > article .post-thumbnail.video:hover .video-icon {
-        -moz-opacity: 1;
-        opacity: 1; }
+    margin-right: 15px; }
+    .articles > article .post-thumbnail.video:after {
+      display: block;
+      width: 100px;
+      height: 100px;
+      margin-top: -100px;
+      background: url("../images/video-icon.png") 50% 50% transparent; }
   .articles > article .published {
     font-family: "PT Serif", serif;
     font-size: 10px;

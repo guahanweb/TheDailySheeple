@@ -103,11 +103,9 @@ function thedailysheeple_post_thumbnail() {
     </div>
 
     <?php else : ?>
-    <!-- VIDEO: <?php echo $is_video; ?> -->
     <a class="post-thumbnail<?php echo $is_video ? ' video' : '' ?>" href="<?php the_permalink(); ?>">
     <?php the_post_thumbnail('thumbnail'); ?>
     </a>
-
     <?php endif; // End is_singular()
 }
 
