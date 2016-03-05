@@ -160,9 +160,9 @@ a {
     z-index: 100000; }
 
 #mailchimp-registration {
-  min-height: 265px; }
+  min-height: 125px; }
   #mailchimp-registration .success {
-    padding-top: 15px; }
+    padding-top: 5px; }
 
 span.edit-link {
   float: right; }
@@ -684,20 +684,22 @@ footer {
   #right-column .ad-block .ad-email-signup {
     background-color: #000;
     color: #fff;
-    padding: 25px;
+    padding: 10px 20px;
     text-align: center;
     text-transform: uppercase; }
     #right-column .ad-block .ad-email-signup > h1 {
-      font-size: 24px;
-      line-height: 28px; }
+      font-size: 18px;
+      line-height: 20px;
+      border-bottom: 1px solid #fff;
+      padding-bottom: 5px; }
     #right-column .ad-block .ad-email-signup > h2 {
-      margin-top: 15px;
-      font-size: 14px;
-      line-height: 20px; }
+      margin-top: 5px;
+      font-size: 13px;
+      line-height: 18px; }
     #right-column .ad-block .ad-email-signup > .register {
-      margin: 10px 25px; }
+      margin: 2px 40px; }
       #right-column .ad-block .ad-email-signup > .register .privacy {
-        padding-top: 5px;
+        padding-top: 4px;
         font-size: 8px;
         text-align: right; }
         #right-column .ad-block .ad-email-signup > .register .privacy a {
