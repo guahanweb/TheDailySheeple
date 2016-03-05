@@ -729,7 +729,9 @@ footer {
     font-size: 12pt;
     text-transform: uppercase;
     font-weight: bold; }
-  #main > .entry-content h3, #main > .entry-content h4, #main > .entry-content h5 {
+  #main > .entry-content h3,
+  #main > .entry-content h4,
+  #main > .entry-content h5 {
     font-weight: bold; }
   #main > .entry-content p {
     padding: 2px 0 12px;
@@ -766,6 +768,13 @@ footer {
   .articles > article .post-thumbnail {
     float: left;
     margin-right: 15px; }
+    .articles > article .post-thumbnail.single .video-icon {
+      height: 100%;
+      witdth: 100%;
+      background: url("../images/video-icon.png") 50% 50% transparent;
+      opacity: 50%; }
+    .articles > article .post-thumbnail.single:hover .video-icon {
+      opacity: 100%; }
   .articles > article .published {
     font-family: "PT Serif", serif;
     font-size: 10px;

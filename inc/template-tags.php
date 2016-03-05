@@ -92,17 +92,21 @@ endif;
  * @since The Daily Sheeple 1.0
  */
 function thedailysheeple_post_thumbnail() {
+    $is_video = thedailysheeple_is_video(get_the_id());
     if ( post_password_required() || is_attachment() || ! has_post_thumbnail() ) {
         return;
     }
 
     if ( is_singular() ) : ?>
-    <div class="post-thumbnail single">
+    <div class="post-thumbnail single <?php echo $is_video ? 'video' : '' ?>">
     <?php the_post_thumbnail(); ?>
+    <?php if ($is_video): ?>
+      <span class="video-icon"></span>
+    <?php endif; ?>
     </div>
 
     <?php else : ?>
-    <a class="post-thumbnail" href="<?php the_permalink(); ?>">
+    <a class="post-thumbnail <?php echo $is_video ? 'video' : '' ?>" href="<?php the_permalink(); ?>">
     <?php the_post_thumbnail('thumbnail'); ?>
     </a>
 
