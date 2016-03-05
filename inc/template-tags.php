@@ -98,16 +98,16 @@ function thedailysheeple_post_thumbnail() {
     }
 
     if ( is_singular() ) : ?>
-    <div class="post-thumbnail single <?php echo $is_video ? 'video' : '' ?>">
+    <div class="post-thumbnail single">
     <?php the_post_thumbnail(); ?>
-    <?php if ($is_video): ?>
-      <span class="video-icon"></span>
-    <?php endif; ?>
     </div>
 
     <?php else : ?>
     <a class="post-thumbnail <?php echo $is_video ? 'video' : '' ?>" href="<?php the_permalink(); ?>">
     <?php the_post_thumbnail('thumbnail'); ?>
+    <?php if ($is_video): ?>
+      <span class="video-icon"></span>
+    <?php endif; ?>
     </a>
 
     <?php endif; // End is_singular()
