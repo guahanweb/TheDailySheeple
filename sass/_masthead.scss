@@ -32,10 +32,10 @@
         text-indent: -9999em;
         overflow: hidden;
         cursor: pointer;
-      }
 
-      &.subscribe {
-        background-image: url('../images/icons/go-submit.png');
+        &.subscribe {
+          background-image: url('../images/icons/go-submit.png');
+        }
       }
     }
   }

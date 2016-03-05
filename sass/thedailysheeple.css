@@ -313,9 +313,9 @@ strong, b {
       text-indent: -9999em;
       overflow: hidden;
       cursor: pointer; }
-    /* line 37, /private/var/www/themes/thedailysheeple/sass/_masthead.scss */
-    .input-field .input-part.input-submit.subscribe {
-      background-image: url("../images/icons/go-submit.png"); }
+      /* line 36, /private/var/www/themes/thedailysheeple/sass/_masthead.scss */
+      .input-field .input-part.input-submit button.subscribe {
+        background-image: url("../images/icons/go-submit.png"); }
   /* line 42, /private/var/www/themes/thedailysheeple/sass/_masthead.scss */
   .input-field.input-email {
     width: 100%; }
