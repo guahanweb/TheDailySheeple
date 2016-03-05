@@ -770,14 +770,17 @@ footer {
     margin-right: 15px;
     position: relative; }
     .articles > article .post-thumbnail.video {
-      position: absolute; }
+      position: absolute;
+      top: 0; }
       .articles > article .post-thumbnail.video .video-icon {
         height: 100px;
         width: 100px;
         background: url("../images/video-icon.png") 50% 50% transparent;
-        opacity: 50%; }
+        -moz-opacity: 0.5;
+        opacity: 0.5; }
       .articles > article .post-thumbnail.video:hover .video-icon {
-        opacity: 100%; }
+        -moz-opacity: 1;
+        opacity: 1; }
   .articles > article .published {
     font-family: "PT Serif", serif;
     font-size: 10px;
