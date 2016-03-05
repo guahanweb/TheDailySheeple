@@ -241,21 +241,7 @@
       position: relative;
 
       &.video {
-        position: absolute;
-        top: 0;
-
-        .video-icon {
-          height: 100px;
-          width: 100px;
-          background: url('../images/video-icon.png') 50% 50% transparent;
-          -moz-opacity: 0.5;
-          opacity: 0.5;
-        }
-
-        &:hover .video-icon {
-          -moz-opacity: 1;
-          opacity: 1;
-        }
+        background: url('../images/video-icon.png') 50% 50% transparent;
       }
     }
     .published {
