@@ -4,26 +4,19 @@
         <section class="column column-single" id="right-column">
             <div class="container">
                 <section class="ad-list">
-                    <div class="ad-block">
-<!-- START GOOGLE -->
-<div class="ad ad-GOOGLE">
-<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-<!-- TDS2.0 - Right Sidebar - 300x250b -->
-<ins class="adsbygoogle"
-     style="display:inline-block;width:280px;height:234px"
-     data-ad-client="ca-pub-8010023987911623"
-     data-ad-slot="9696987360"></ins>
-<script>
-(adsbygoogle = window.adsbygoogle || []).push({});
-</script>
-</div>
-<!-- END GOOGLE -->
-
+             <div class="ad-block">   
 <!-- START DIRECT AD JMB -->
                       <div class="ad ad-JMB">
                           <a href="http://www.jmbullion.com/silver/" target="_blank" rel="nofollow" onClick="_gaq.push(['_trackEvent', 'Banner', 'Click', 'JMB-banner-bison']);"><img border="0" src="/images/banners/JMB-fast-free-shipping-250x250.jpg" width=300 height=300 /></a>
                         </div>
 <!-- END DIRECT AD JMB -->
+<!-- FMT Ad Through MAR 18, 2016 -->
+   <div class="ad ad-FMT">
+                          <a href="http://FutureMoneyTrends.com/GoldStock" target="_blank" rel="nofollow" onClick="_gaq.push(['_trackEvent', 'Banner', 'Click', 'FMT-BRI-Banner1']);"><img border="0" src="http://www.thedailysheeple.com/wp-content/uploads/2016/03/BRI-300.jpg" /></a>
+                        </div>
+<!-- End FMT Ad -->
+                    
+<div class="ad ad-TTG"><a href="http://toptiergearusa.com/?utm_source=thedailysheeple.com&utm_medium=banner&utm_content=Sidebar-Right&utm_campaign=TTG-Sidebar-Right-Banner" target="_blank" rel="nofollow" onClick="_gaq.push(['_trackEvent', 'Banner', 'Click', 'TTG-RightBannerTop']);" ><img src="http://www.thedailysheeple.com/wp-content/uploads/2016/03/biomask2-300.png" alt="" width="300" height="300" border="0" /></a></div>
            <?php
             the_widget('TDS_MailChimp_Widget', array(), array(
                 'before_widget' => '',
@@ -32,11 +25,7 @@
                 'after_title' => ''
             ));
             ?>
-<!-- FMT Ad Through Feb 18, 2016 -->
-   <div class="ad ad-FMT">
-                          <a href="http://futuremoneytrends.com/aug" target="_blank" rel="nofollow" onClick="_gaq.push(['_trackEvent', 'Banner', 'Click', 'FMT-AUG-Banner1']);"><img border="0" src="http://www.thedailysheeple.com/wp-content/uploads/2016/02/aug-banner2x300.jpg" width=300 height=300 /></a>
-                        </div>
-<!-- End FMT Ad -->
+
 <!-- SHUFFLING AD UNITS -->
 <div id="region-sidebarrightshuffle">
 
@@ -71,7 +60,18 @@
 </div><!-- END region-sidebarrightshuffle DIV -->
 
 <!-- END SHUFFLING AD UNITS -->
-
+<!-- AMAZON CPM -->
+  <div class="ad ad-AmazonMain">
+<script type="text/javascript" language="javascript" src="//c.amazon-adsystem.com/aax2/getads.js"></script>
+<script type="text/javascript" language="javascript">
+//<![CDATA[
+aax_getad_mpb({
+  "slot_uuid":"5eddd92e-a15b-4e83-8567-2d34bd7f3e0f"
+});
+//]]>
+</script>
+</div>
+<!-- END AMAZON CPM -->
 
                     </div>
                 </section>
