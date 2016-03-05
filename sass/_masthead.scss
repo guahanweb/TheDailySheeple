@@ -33,6 +33,10 @@
         overflow: hidden;
         cursor: pointer;
       }
+
+      &.subscribe {
+        background-image: url('../images/icons/go-submit.png');
+      }
     }
   }
   &.input-email {
