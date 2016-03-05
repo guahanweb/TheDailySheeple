@@ -96,6 +96,7 @@ if (is_single()):
     <?php //the_tags( '<footer class="entry-meta"><span class="tag-links">', '', '</span></footer>' ); ?>
 
     <?php if (!post_password_required() && (comments_open() || get_comments_number())): ?>
+    <!--
     <div class="icons">
         <ul>
             <li><a href="<?php the_permalink() ?>#disqus_thread" class="icon-mini icon-discuss"></a></li>
@@ -105,6 +106,7 @@ if (is_single()):
             <li><span class='st_sharethis' displayText="" st_url="<?php the_permalink(); ?>"></span></li>
         </ul>
     </div>
+    -->
     <?php endif; ?>
 </article><!-- #post-## -->
 <?php endif; ?>
