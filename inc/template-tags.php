@@ -103,7 +103,7 @@ function thedailysheeple_post_thumbnail() {
     </div>
 
     <?php else : ?>
-    <a class="post-thumbnail <?php echo $is_video ? 'video' : '' ?>" href="<?php the_permalink(); ?>">
+    <a class="post-thumbnail<?php echo $is_video ? 'video' : '' ?>" href="<?php the_permalink(); ?>">
     <?php the_post_thumbnail('thumbnail'); ?>
     <?php if ($is_video): ?>
       <span class="video-icon"></span>
