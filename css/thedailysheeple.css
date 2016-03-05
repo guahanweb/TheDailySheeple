@@ -767,14 +767,17 @@ footer {
     background-color: #fdf1ca; }
   .articles > article .post-thumbnail {
     float: left;
-    margin-right: 15px; }
-    .articles > article .post-thumbnail.video .video-icon {
-      height: 100%;
-      witdth: 100%;
-      background: url("../images/video-icon.png") 50% 50% transparent;
-      opacity: 50%; }
-    .articles > article .post-thumbnail.video:hover .video-icon {
-      opacity: 100%; }
+    margin-right: 15px;
+    position: relative; }
+    .articles > article .post-thumbnail.video {
+      position: absolute; }
+      .articles > article .post-thumbnail.video .video-icon {
+        height: 100px;
+        width: 100px;
+        background: url("../images/video-icon.png") 50% 50% transparent;
+        opacity: 50%; }
+      .articles > article .post-thumbnail.video:hover .video-icon {
+        opacity: 100%; }
   .articles > article .published {
     font-family: "PT Serif", serif;
     font-size: 10px;
