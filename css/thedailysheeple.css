@@ -777,8 +777,6 @@ footer {
       background: url("../images/video-icon.png") no-repeat 50% 50% transparent;
       opacity: 0.6;
       z-index: 9999; }
-    .articles > article .post-thumbnail.video:hover::after {
-      opacity: 1; }
   .articles > article .published {
     font-family: "PT Serif", serif;
     font-size: 10px;

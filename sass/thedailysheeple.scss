@@ -250,9 +250,6 @@
         z-index: 9999;
       }
 
-      &.video:hover::after {
-        opacity: 1;
-      }
     }
     .published {
       font-family: $font-serif;
