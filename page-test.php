@@ -3,7 +3,7 @@
 Template Name: Test Page
 */
 
-get_header('test');
+get_header();
 ?>
 
         <section class="column column-triple" id="main-column">
