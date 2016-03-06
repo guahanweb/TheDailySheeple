@@ -586,7 +586,14 @@ strong, b {
       /* line 331, /private/var/www/themes/thedailysheeple/sass/_masthead.scss */
       .masthead.small .main-logo img {
         border: none; }
-    /* line 336, /private/var/www/themes/thedailysheeple/sass/_masthead.scss */
+      /* line 335, /private/var/www/themes/thedailysheeple/sass/_masthead.scss */
+      .masthead.small .main-logo .issue-date {
+        font-size: 11px;
+        text-transform: uppercase;
+        margin-top: 0;
+        padding-top: 0;
+        line-height: 12px; }
+    /* line 344, /private/var/www/themes/thedailysheeple/sass/_masthead.scss */
     .masthead.small .third-party {
       padding: 10px;
       text-align: center; }

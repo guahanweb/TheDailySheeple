@@ -148,6 +148,7 @@
           </div>
           <div class="main-logo">
             <a href="<?php echo home_url(); ?>"><img src="<?php echo get_template_directory_uri() . '/images/header-mini-logo.png'; ?>" height="38" width="350" alt="The Daily Sheeple"></a>
+            <p class="issue-date"><?php echo date('l, F jS, Y'); ?></p>
           </div>
         </section>
       </div>
