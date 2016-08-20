@@ -28,6 +28,10 @@ get_header();
                      */
                     get_template_part( 'content', get_post_format() );
 ?>
+
+<!-- OPTIN MONSTER - INLINE -->
+<!-- This site is converting visitors into subscribers and customers with OptinMonster - http://optinmonster.com --><script>var om570c5a8b4f4a3,om570c5a8b4f4a3_poll=function(){var r=0;return function(n,l){clearInterval(r),r=setInterval(n,l)}}();!function(e,t,n){if(e.getElementById(n)){om570c5a8b4f4a3_poll(function(){if(window['om_loaded']){if(!om570c5a8b4f4a3){om570c5a8b4f4a3=new OptinMonsterApp();return om570c5a8b4f4a3.init({"s":"6776.570c5a8b4f4a3","staging":0,"dev":0,"beta":0});}}},25);return;}var d=false,o=e.createElement(t);o.id=n,o.src="//a.optnmnstr.com/app/js/api.min.js",o.onload=o.onreadystatechange=function(){if(!d){if(!this.readyState||this.readyState==="loaded"||this.readyState==="complete"){try{d=om_loaded=true;om570c5a8b4f4a3=new OptinMonsterApp();om570c5a8b4f4a3.init({"s":"6776.570c5a8b4f4a3","staging":0,"dev":0,"beta":0});o.onload=o.onreadystatechange=null;}catch(t){}}}};(document.getElementsByTagName("head")[0]||document.documentElement).appendChild(o)}(document,"script","omapi-script");</script><!-- / OptinMonster -->
+<!-- END OPTIN MONSTER - INLINE -->
 <!-- START SHARE THIS -->
 <div style="font-family: Tahoma, Geneva, sans-serif; font-size: 14pt; font-weight: bold; font-style:italic;">Wake The Flock Up! Please Share With Sheeple Far &amp; Wide:</div>
 <div style="padding: 5px 0px 15px 0px; text-align: center;">

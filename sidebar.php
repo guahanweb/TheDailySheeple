@@ -15,30 +15,55 @@
 
           <!-- START DIRECT AD JMB -->
           <div class="ad ad-JMB">
-            <a href="http://www.jmbullion.com/silver/" target="_blank" rel="nofollow" onClick="_gaq.push(['_trackEvent', 'Banner', 'Click', 'JMB-banner-bison']);"><img border="0" src="/images/banners/JMB-fast-free-shipping-250x250.jpg" width=300 height=300 /></a>
+            <a href="http://www.jmbullion.com/silver/" target="_blank" rel="nofollow" onClick="_gaq.push(['_trackEvent', 'Banner', 'Click', 'JMB-banner-bison']);"><img border="0" src="http://www.thedailysheeple.com/wp-content/uploads/2016/03/JM-Bullion-Gold-And-Silver1.jpg" width=300 height=250 /></a>
           </div>
           <!-- END DIRECT AD JMB -->
-          <!-- FMT Ad Through MAR 18, 2016 -->
-          <div class="ad ad-FMT">
-            <a href="http://FutureMoneyTrends.com/GoldStock" target="_blank" rel="nofollow" onClick="_gaq.push(['_trackEvent', 'Banner', 'Click', 'FMT-BRI-Banner1']);"><img border="0" src="http://www.thedailysheeple.com/wp-content/uploads/2016/03/BRI-300.jpg" /></a>
-          </div>
-          <!-- End FMT Ad -->
+          <!-- PREMIER SHUFFLING ADS -->
+<?php
+$ads = array();
 
-          <div class="ad ad-TTG">
-            <a href="http://toptiergearusa.com/?utm_source=thedailysheeple.com&utm_medium=banner&utm_content=Sidebar-Right&utm_campaign=TTG-Sidebar-Right-Banner" target="_blank" rel="nofollow" onClick="_gaq.push(['_trackEvent', 'Banner', 'Click', 'TTG-RightBannerTop']);"><img src="http://www.thedailysheeple.com/wp-content/uploads/2016/03/biomask2-300.png" alt="" width="300" height="300" border="0" /></a>
+
+// Second Ad
+$ads[] = <<<EOA
+         <div class="ad ad-FMT">
+            <a href="http://www.futuremoneytrends.com/goldipo" target="_blank" rel="nofollow" onClick="_gaq.push(['_trackEvent', 'Banner', 'Click', 'FMT-K92-Banner-OSTO']);"><img border="0" src="http://www.thedailysheeple.com/wp-content/uploads/2016/05/K92-300x300-B.png" /></a>
           </div>
+EOA;
+
+// Third Ad
+$ads[] = <<<EOA
+         <div class="ad ad-FMT">
+            <a href="http://www.futuremoneytrends.com/investright" target="_blank" rel="nofollow" onClick="_gaq.push(['_trackEvent', 'Banner', 'Click', 'FMT-FF-Banner']);"><img border="0" src="http://www.thedailysheeple.com/wp-content/uploads/2016/04/FF-300-ReadNow-b.jpg" /></a>
+          </div>
+EOA;
+
+// Shuffle and output
+shuffle($ads);
+foreach ($ads as $ad) {
+    echo $ad;
+}
+?>
+   
+          <!-- End PREMIER SHUFFLING ADS  -->
+
+        
 
           <!-- SHUFFLING AD UNITS -->
           <div id="region-sidebarrightshuffle">
 
+<!-- TTG -->
+  <div class="sidebar_right_ad">
+            <a href="http://toptiergearusa.com/?utm_source=thedailysheeple.com&utm_medium=banner&utm_content=Sidebar-Right&utm_campaign=TTG-Sidebar-Right-Banner-AYR" target="_blank" rel="nofollow" onClick="_gaq.push(['_trackEvent', 'Banner', 'Click', 'TTG-RightBannerTopAYR']);"><img src="http://www.thedailysheeple.com/wp-content/uploads/2016/03/300x300.gif" alt="" width="300" height="300" border="0" /></a>
+          </div>
+<!-- END TTG -->
             <!-- START Direct Ads JHL CAMPING SUPPLY -->
             <div class="sidebar_right_ad">
-              <a href="http://www.campingsurvival.com/fishantibiotics.html" target="_blank" rel="nofollow" onClick="_gaq.push(['_trackEvent', 'Banner', 'Click', 'CampingSurvival-banner2']);"><img src="/images/banners/campingsurvival-fishmox2.jpg" alt="" BORDER=0 WIDTH=300 HEIGHT=300 /></a>
+              <a href="https://www.campingsurvival.com/dailysheeple_ad1.html" target="_blank" rel="nofollow" onClick="_gaq.push(['_trackEvent', 'Banner', 'Click', 'CampingSurvival-banner']);"><img src="https://www.campingsurvival.com/media/adverts/dailysheeple_ad1.jpg" alt="" BORDER=0 WIDTH=300 HEIGHT=300 /></a>
             </div>
 
             <div class="sidebar_right_ad">
-              <A HREF="http://www.campingsurvival.com/lifestraw.html" target="_blank" rel="nofollow" onClick="_gaq.push(['_trackEvent', 'Banner', 'Click', 'CampingSurvival-banner']);">
-                <IMG SRC="http://www.thedailysheeple.com/wp-content/uploads/2015/12/lifestraw2.jpg" BORDER=0 WIDTH=300 HEIGHT=300>
+              <A HREF="https://www.campingsurvival.com/dailysheeple_ad2.html" target="_blank" rel="nofollow" onClick="_gaq.push(['_trackEvent', 'Banner', 'Click', 'CampingSurvival-banner2']);">
+                <IMG SRC="https://www.campingsurvival.com/media/adverts/dailysheeple_ad2.jpg" BORDER=0 WIDTH=300 HEIGHT=300>
               </A>
             </div>
             <!-- END  Direct Ads JHL CAMPING SUPPLY -->
@@ -68,15 +93,8 @@
               </A>
             </div>
             <!-- END Direct Ads Directive21 -->
-
-
-
-          </div>
-          <!-- END region-sidebarrightshuffle DIV -->
-
-          <!-- END SHUFFLING AD UNITS -->
-          <!-- AMAZON CPM -->
-          <div class="ad ad-AmazonMain">
+<!-- AMAZON -->
+            <div class="sidebar_right_ad">
             <script type="text/javascript" language="javascript" src="//c.amazon-adsystem.com/aax2/getads.js"></script>
             <script type="text/javascript" language="javascript">
               //<![CDATA[
@@ -85,8 +103,15 @@
               });
               //]]>
             </script>
+            </div>
+<!-- END AMAZON -->
+
+
           </div>
-          <!-- END AMAZON CPM -->
+          <!-- END region-sidebarrightshuffle DIV -->
+
+          <!-- END SHUFFLING AD UNITS -->
+
 
         </div>
     </section>

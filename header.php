@@ -221,7 +221,7 @@
       <section class="third-party">
         <div class="ads">
           <!-- FRAMED AD -->
-          <iframe src="http://dcmr.sitescoutadserver.com/disp?pid=8F0825501A&rnd=[CACHE-BUSTING-ID-HERE]" width="740" height="100" marginwidth="0" marginheight="0" scrollbars="0" scrolling="no" frameborder="0" bordercolor="#000000" vspace="0" hspace="0"></iframe>
+        <a href="http://toptiergearusa.com/?utm_source=thedailysheeple.com&utm_medium=banner&utm_content=Header&utm_campaign=TTG-Header-Top-Banner" target="_blank" onClick="_gaq.push(['_trackEvent', 'Banner', 'Click', 'TTG-TopBanner1']);"><img src="http://www.thedailysheeple.com/wp-content/uploads/2016/03/TTG-CBRN-970x90.png" alt="Check Out The World's Most Advanced Tactical Gas Mask" border="0" /></a>
           <!-- END FRAMED AD -->
         </div>
       </section>
