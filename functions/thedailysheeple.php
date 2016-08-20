@@ -16,6 +16,9 @@ class thedailysheeple {
    * Add contributor information to the end of the content
    */
   public function add_author_content($content) {
+    // return immediately if page
+    if (is_page()) return $content;
+
     if (!is_page_template()) {
       $authorID  = get_the_author_ID();
       $authName  = get_the_author();
@@ -48,6 +51,9 @@ class thedailysheeple {
   }
 
   public function insertTDSdelivery($content) {
+    // return immediately if page
+    if (is_page()) return $content;
+
     $content .= "<p class=\"delivered-by\">Delivered by <a href=\"http://www.thedailysheeple.com\" target=\"_blank\">The Daily Sheeple</a></p><p class=\"delivered-by\">We encourage you to share and republish our reports, analyses, breaking news and videos (<a href=\"http://www.thedailysheeple.com/about#share\" target=\"_blank\">Click for details</a>). </p><hr>\n";
     return $content;
   }
