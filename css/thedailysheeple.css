@@ -108,7 +108,6 @@ table {
 
 .container > .column:first-child {
   padding-left: 0; }
-
 .container > .column:last-child {
   padding-right: 0; }
 
@@ -182,7 +181,6 @@ span.edit-link {
   text-transform: none; }
   #main-column .news-streams .articles.discussion h1 strong {
     font-weight: 600; }
-
 #main-column .news-streams .articles.discussion > article {
   padding: 10px; }
   #main-column .news-streams .articles.discussion > article h1 {
@@ -205,17 +203,13 @@ strong, b {
   padding: 20px;
   background-color: #f4f4f4;
   border-left: 4px solid #ccc; }
-
 #main ul {
   list-style-type: square;
   margin: 10px 30px; }
-
 #main ol {
   margin: 10px 30px; }
-
 #main li {
   line-height: 1.2em; }
-
 #main small {
   font-size: 10pt; }
 
@@ -486,11 +480,9 @@ strong, b {
 @keyframes showmasthead {
   100% {
     transform: translateY(0); } }
-
 @keyframes showadminmasthead {
   100% {
     transform: translateY(32px); } }
-
 .icon {
   width: 30px;
   height: 30px;
@@ -749,7 +741,6 @@ footer {
   #main > .entry-content .delivered-by {
     font-weight: bold;
     font-style: italic; }
-
 #main > nav.navigation.post-navigation {
   border-top: 1px solid #b3b3b3;
   border-bottom: 1px solid #b3b3b3;
@@ -814,16 +805,14 @@ footer {
       display: inline-block;
       padding: 0 3px;
       font-size: 9px; }
-
 .articles.articles-side > article.post-mini {
   min-height: 0; }
   .articles.articles-side > article.post-mini h1 {
     font-family: "PT Serif", serif;
     font-size: 16px; }
-
 .articles.articles-side > article.ad {
   min-height: 240px;
-  border: 1px solid gray;
-  background-color: #e6e6e6;
   padding: 10px;
   margin: 8px 10px; }
+
+/*# sourceMappingURL=thedailysheeple.css.map */
