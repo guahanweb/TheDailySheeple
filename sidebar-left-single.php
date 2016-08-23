@@ -19,7 +19,7 @@
             <article class="ad ad-holder">
               
 <div style="padding-top:10px;"><a href="http://www.silver.com/" target="_blank" rel="nofollow" onClick="_gaq.push(['_trackEvent', 'Banner', 'Click', 'JMBullion-LeftSidebar-Banner']);"><img border="0" src="http://www.thedailysheeple.com/wp-content/uploads/2015/11/silverdotcom-ad-250x250.jpg" /></a></div>
-<div style="padding-top:10px;"><a href="http://www.futuremoneytrends.com/Callinex-mines" target="_blank" rel="nofollow" onClick="_gaq.push(['_trackEvent', 'Banner', 'Click', 'CNX-LeftSidebar-Banner']);"><img border="0" src="http://www.thedailysheeple.com/wp-content/uploads/2016/06/callinex-250-a.jpg" /></a></div>
+
 
 <div style="padding-top:10px;"><a href="http://amzn.to/1HZkbSD" target="_blank" rel="nofollow" onClick="_gaq.push(['_trackEvent', 'Banner', 'Click', 'PreppersBlueprint-LeftSidebar-Banner']);"><img border="0" src="http://www.thedailysheeple.com/wp-content/uploads/2015/11/preppersblueprint-250.jpg" /></a></div>
 <!-- START AMAZON AD CODE -->

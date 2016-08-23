@@ -36,6 +36,12 @@ $ads[] = <<<EOA
             <a href="http://www.futuremoneytrends.com/investright" target="_blank" rel="nofollow" onClick="_gaq.push(['_trackEvent', 'Banner', 'Click', 'FMT-FF-Banner']);"><img border="0" src="http://www.thedailysheeple.com/wp-content/uploads/2016/04/FF-300-ReadNow-b.jpg" /></a>
           </div>
 EOA;
+// Fourth Ad
+$ads[] = <<<EOA
+         <div class="ad ad-FMT">
+            <a href="http://www.futuremoneytrends.com/Callinex-mines" target="_blank" rel="nofollow" onClick="_gaq.push(['_trackEvent', 'Banner', 'Click', 'FMT-CNX-Banner']);"><img border="0" src="http://www.thedailysheeple.com/wp-content/uploads/2016/03/300_2501.jpg" /></a>
+          </div>
+EOA;
 
 // Shuffle and output
 shuffle($ads);
