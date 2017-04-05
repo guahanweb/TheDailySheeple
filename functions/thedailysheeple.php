@@ -129,6 +129,10 @@ class thedailysheeple {
   }
 
   public function show_contributor_logo() {
-    echo '<!-- Contrib LOGO -->';
+    $author_id = get_the_author_meta('ID');
+    $logo_url = get_usermeta($author_id, 'profilelogourl');
+    if (!empty($logo_url)) {
+      sprintf('<!-- LOGO: %s -->', $logo_url);
+    }
   }
 }
