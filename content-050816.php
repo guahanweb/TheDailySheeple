@@ -12,6 +12,7 @@
 if (is_single()):
     edit_post_link( __('Edit', 'thedailysheeple'), '<span class="edit-link">[', ']</span>');
     the_title('<header><h1 class="entry-title single-title">', '</h1></header>');
+    do_action('tds_article_after_title');
     if ('post' == get_post_type()) { ?>
     <h2 class="posted"><?php thedailysheeple_posted_on(true); ?></h2>
     <?php } ?>
