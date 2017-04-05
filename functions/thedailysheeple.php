@@ -83,7 +83,13 @@ class thedailysheeple {
       <span class="description">Special Handling Instructions</span>
     </td>
   </tr>
-
+  <tr>
+    <th><label for="profilelogourl">Logo URL</label></th>
+    <td>
+      <input type="text" name="profilelogourl" id="profilelogourl" value="<?php echo esc_attr(get_the_author_meta('profilelogourl', $user->ID ) ); ?>" class="regular-text" /><br />
+      <span class="description">URL to the logo representing you or your organization</span>
+    </td>
+  </tr>
 </table>
   <?php }
 
@@ -93,6 +99,7 @@ class thedailysheeple {
     update_user_meta( $user_id, 'profilewebsitename', $_POST['profilewebsitename'] );
     update_user_meta( $user_id, 'profilewebsiteRSS', $_POST['profilewebsiteRSS'] );
     update_user_meta( $user_id, 'profilehandlinginstructions', $_POST['profilehandlinginstructions'] );
+    update_user_meta( $user_id, 'profilelogourl', $_POST['profilelogourl'] );
   }
 
   public function get_the_featured_excerpt() {
