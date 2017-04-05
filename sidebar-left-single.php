@@ -1,4 +1,4 @@
-  
+
 <header><h1>Featured</h1></header>
 <div class="articles articles-side articles-featured">
     <?php
@@ -17,9 +17,12 @@
     ?>
     <!-- AD AREA -->
             <article class="ad ad-holder">
-              
+   
+             
 <div style="padding-top:10px;"><a href="http://www.silver.com/" target="_blank" rel="nofollow" onClick="_gaq.push(['_trackEvent', 'Banner', 'Click', 'JMBullion-LeftSidebar-Banner']);"><img border="0" src="http://www.thedailysheeple.com/wp-content/uploads/2015/11/silverdotcom-ad-250x250.jpg" /></a></div>
 
+
+<div style="padding-top:10px;"><a href="http://www.futuremoneytrends.com/silverone" target="_blank" rel="nofollow" onClick="_gaq.push(['_trackEvent', 'Banner', 'Click', 'SVE-LeftSidebar-Banner']);"><img border="0" src="http://www.thedailysheeple.com/wp-content/uploads/2017/02/Silver-One-250x250.jpg" width=250 height=250 /></a></div>
 
 <div style="padding-top:10px;"><a href="http://amzn.to/1HZkbSD" target="_blank" rel="nofollow" onClick="_gaq.push(['_trackEvent', 'Banner', 'Click', 'PreppersBlueprint-LeftSidebar-Banner']);"><img border="0" src="http://www.thedailysheeple.com/wp-content/uploads/2015/11/preppersblueprint-250.jpg" /></a></div>
 <!-- START AMAZON AD CODE -->

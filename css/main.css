@@ -576,3 +576,7 @@ span.edit-link {
 
 em { font-style: italic; }
 strong, b { font-weight: 600; }
+
+.aligncenter {
+text-align: center;	
+}

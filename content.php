@@ -29,15 +29,14 @@ if (is_single()):
 <!-- END SHARE THIS -->
 <!-- AD -->
 <div style="text-align: center; padding: 10px 0px 10px 0px;">
-<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-<!-- TDS 2.0 - Article Top - 468x60 -->
-<ins class="adsbygoogle"
-     style="display:inline-block;width:468px;height:60px"
-     data-ad-client="ca-pub-8010023987911623"
-     data-ad-slot="2505014164"></ins>
-<script>
-(adsbygoogle = window.adsbygoogle || []).push({});
-</script>
+<!-- Direct Ad Code -->
+
+<a href="http://toptiergearusa.com/?utm_source=thedailysheeple.com&utm_medium=SponsoredAd&utm_campaign=TTG-SA" target="_blank" onClick="_gaq.push(['_trackEvent', 'Banner', 'Click', 'TTG-ArticleBanner']);"><img src="http://www.thedailysheeple.com/wp-content/uploads/2017/03/TTG-560.jpg" alt="Top Tier Gear USA" width="560" height="138" border="0" /></a>
+
+
+
+<!-- End Direct Ad Code -->
+
 </div>
 <!-- AD -->
 

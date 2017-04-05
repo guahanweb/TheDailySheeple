@@ -47,19 +47,33 @@ get_header();
 <!-- START LOCKERDOME -->
 <div id="ld-2433-1238"></div><script>(function(w,d,s,i){w.ldAdInit=w.ldAdInit||[];w.ldAdInit.push({slot:8263805645904743,size:[0, 0],id:"ld-2433-1238"});if(!d.getElementById(i)){var j=d.createElement(s),p=d.getElementsByTagName(s)[0];j.async=true;j.src="//cdn2.lockerdome.com/_js/ajs.js";j.id=i;p.parentNode.insertBefore(j,p);}})(window,document,"script","ld-ajs");</script>
 <!-- END LOCKERDOME -->
-<!-- START TABOOLA -->
-<div id='taboola-bottom-main-column'></div>
-           <script type="text/javascript">
-               window._taboola = window._taboola || [];
-               _taboola.push({mode:'autosized-generated-2r', container:'taboola-bottom-main-column', placement:'bottom-main-column'});
-            </script>
-<div id='taboola-text-2-columns'></div>
-<script type="text/javascript">
-window._taboola = window._taboola || [];
-_taboola.push({mode:'text-links-2c', container:'taboola-text-2-columns', placement:'text-2-columns'});
-</script>
 
-<!-- END TABOOLA -->
+                <!-- TOP VIDEO FEATURED AREA -->
+<div class="container feature-holder" >
+<!-- START YOTTI ELEMENTS -->
+<style>
+.yottie-widget-video-info-title {
+white-space: normal;
+font-family: "PT Serif",serif;
+text-transform: uppercase
+}
+.yottie-widget-contents, .yottie-widget-header-channel-title {
+	font-family: "PT Serif",serif;
+}
+.yottie-widget-nav-list-item yottie-active {
+	font-size: 20px;
+    line-height: 24px
+}
+.yottie-widget-video-info {
+	height: 90px;
+}
+</style>
+<?php echo do_shortcode( '[yottie id="4"]' ); ?>
+<!-- END YOTTI ELEMENTS -->
+
+</div>
+<!-- END VIDEO FEATURED AREA -->
+
 <!-- POST NAV -->
 <?php // Previous/next post navigation.
 thedailysheeple_post_nav();

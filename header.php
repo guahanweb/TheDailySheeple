@@ -221,7 +221,15 @@
       <section class="third-party">
         <div class="ads">
           <!-- FRAMED AD -->
-        <a href="http://toptiergearusa.com/?utm_source=thedailysheeple.com&utm_medium=banner&utm_content=Header&utm_campaign=TTG-Header-Top-Banner" target="_blank" onClick="_gaq.push(['_trackEvent', 'Banner', 'Click', 'TTG-TopBanner1']);"><img src="http://www.thedailysheeple.com/wp-content/uploads/2016/03/TTG-CBRN-970x90.png" alt="Check Out The World's Most Advanced Tactical Gas Mask" border="0" /></a>
+<script type="text/javascript" language="javascript" src="//c.amazon-adsystem.com/aax2/getads.js"></script>
+<script type="text/javascript" language="javascript">
+  //<![CDATA[
+    aax_getad_mpb({
+      "slot_uuid":"5e48f6ac-54c5-4dc7-b6cf-db87d0798975"
+    });
+  //]]>
+</script>
+
           <!-- END FRAMED AD -->
         </div>
       </section>

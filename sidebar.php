@@ -18,42 +18,15 @@
             <a href="http://www.jmbullion.com/silver/" target="_blank" rel="nofollow" onClick="_gaq.push(['_trackEvent', 'Banner', 'Click', 'JMB-banner-bison']);"><img border="0" src="http://www.thedailysheeple.com/wp-content/uploads/2016/03/JM-Bullion-Gold-And-Silver1.jpg" width=300 height=250 /></a>
           </div>
           <!-- END DIRECT AD JMB -->
-          <!-- PREMIER SHUFFLING ADS -->
-<?php
-$ads = array();
-
-
-// Second Ad
-$ads[] = <<<EOA
-         <div class="ad ad-FMT">
-            <a href="http://www.futuremoneytrends.com/goldipo" target="_blank" rel="nofollow" onClick="_gaq.push(['_trackEvent', 'Banner', 'Click', 'FMT-K92-Banner-OSTO']);"><img border="0" src="http://www.thedailysheeple.com/wp-content/uploads/2016/05/K92-300x300-B.png" /></a>
+              <!-- START First Majestic Through Feb 1, 2018-->
+          <div class="ad ad-ag">
+            <a href="http://www.futuremoneytrends.com/ag" target="_blank" rel="nofollow" onClick="_gaq.push(['_trackEvent', 'Banner', 'Click', 'AG-banner']);"><img border="0" src="http://www.thedailysheeple.com/wp-content/uploads/2017/02/firstmajestic-300.jpg" width=300 height=300 /></a>
           </div>
-EOA;
-
-// Third Ad
-$ads[] = <<<EOA
-         <div class="ad ad-FMT">
-            <a href="http://www.futuremoneytrends.com/investright" target="_blank" rel="nofollow" onClick="_gaq.push(['_trackEvent', 'Banner', 'Click', 'FMT-FF-Banner']);"><img border="0" src="http://www.thedailysheeple.com/wp-content/uploads/2016/04/FF-300-ReadNow-b.jpg" /></a>
-          </div>
-EOA;
-// Fourth Ad
-$ads[] = <<<EOA
-         <div class="ad ad-FMT">
-            <a href="http://www.futuremoneytrends.com/Callinex-mines" target="_blank" rel="nofollow" onClick="_gaq.push(['_trackEvent', 'Banner', 'Click', 'FMT-CNX-Banner']);"><img border="0" src="http://www.thedailysheeple.com/wp-content/uploads/2016/03/300_2501.jpg" /></a>
-          </div>
-EOA;
-
-// Shuffle and output
-shuffle($ads);
-foreach ($ads as $ad) {
-    echo $ad;
-}
-?>
-   
-          <!-- End PREMIER SHUFFLING ADS  -->
-
-        
-
+          <!-- END DIRECT First Majestic -->     
+         <!-- START FF Through May 30, 2017-->
+              <div class="ad ad-ff"><a href="http://www.futuremoneytrends.com/investright" target="_blank" rel="nofollow" onClick="_gaq.push(['_trackEvent', 'Banner', 'Click', 'FMT-FF-Banner']);"><img border="0" src="http://www.thedailysheeple.com/wp-content/uploads/2016/04/FF-300-ReadNow-b.jpg" /></a></div>
+  <!-- END FF 
+  -->
           <!-- SHUFFLING AD UNITS -->
           <div id="region-sidebarrightshuffle">
 
@@ -64,7 +37,7 @@ foreach ($ads as $ad) {
 <!-- END TTG -->
             <!-- START Direct Ads JHL CAMPING SUPPLY -->
             <div class="sidebar_right_ad">
-              <a href="https://www.campingsurvival.com/dailysheeple_ad1.html" target="_blank" rel="nofollow" onClick="_gaq.push(['_trackEvent', 'Banner', 'Click', 'CampingSurvival-banner']);"><img src="https://www.campingsurvival.com/media/adverts/dailysheeple_ad1.jpg" alt="" BORDER=0 WIDTH=300 HEIGHT=300 /></a>
+              <a href="https://www.campingsurvival.com/fish-and-bird-antibiotics.html" target="_blank" rel="nofollow" onClick="_gaq.push(['_trackEvent', 'Banner', 'Click', 'CampingSurvival-banner']);"><img src="http://www.thedailysheeple.com/wp-content/uploads/2016/12/campingsurvival-dec16b.jpg" alt="" BORDER=0 WIDTH=300 HEIGHT=300 /></a>
             </div>
 
             <div class="sidebar_right_ad">
@@ -82,7 +55,15 @@ foreach ($ads as $ad) {
 
             <!-- START Direct Ad DOTCOMMER -->
             <div class="sidebar_right_ad">
-              <iframe src="http://dcmr.sitescoutadserver.com/disp?pid=8C31C68DDF&rnd=[CACHE-BUSTING-ID-HERE]" width='300' height='300' marginwidth='0' marginheight='0' scrollbars='0' scrolling='no' frameborder='0' bordercolor='#000000' vspace='0' hspace='0'></iframe>
+            <!-- Sidebar [async] -->
+<script type="text/javascript">if (!window.AdButler){(function(){var s = document.createElement("script"); s.async = true; s.type = "text/javascript";s.src = 'http://ab168402.adbutler-zino.com/app.js';var n = document.getElementsByTagName("script")[0]; n.parentNode.insertBefore(s, n);}());}</script>
+<script type="text/javascript">
+var AdButler = AdButler || {}; AdButler.ads = AdButler.ads || [];
+var abkw = window.abkw || '';
+var plc212521 = window.plc212521 || 0;
+document.write('<'+'div id="placement_212521_'+plc212521+'"></'+'div>');
+AdButler.ads.push({handler: function(opt){ AdButler.register(168402, 212521, [300,250], 'placement_212521_'+opt.place, opt); }, opt: { place: plc212521++, keywords: abkw, domain: 'ab168402.adbutler-zino.com', click:'CLICK_MACRO_PLACEHOLDER' }});
+</script>
             </div>
             <!-- END Direct Ad DOTTCOMMER -->
 
@@ -99,6 +80,11 @@ foreach ($ads as $ad) {
               </A>
             </div>
             <!-- END Direct Ads Directive21 -->
+            <!-- START Direct Ad Statgear -->
+            <div class="sidebar_right_ad">
+               <a href="http://www.statgeartools.com/pocket-samurai/" target="_blank" rel="nofollow" onClick="_gaq.push(['_trackEvent', 'Banner', 'Click', 'Statgear']);"><img src="http://www.thedailysheeple.com/wp-content/uploads/2016/11/statgear-pocketsamurai-300.jpg" alt="" width="300" height="300" border="0" /></a>
+            </div>
+            <!-- END Direct Ad Statgear -->
 <!-- AMAZON -->
             <div class="sidebar_right_ad">
             <script type="text/javascript" language="javascript" src="//c.amazon-adsystem.com/aax2/getads.js"></script>
