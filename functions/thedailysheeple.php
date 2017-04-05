@@ -10,6 +10,9 @@ class thedailysheeple {
     add_action('edit_user_profile', array($this, 'my_show_extra_profile_fields'));
     add_action('personal_options_update', array($this, 'my_save_extra_profile_fields'));
     add_action('edit_user_profile_update', array($this, 'my_save_extra_profile_fields'));
+
+    // Custom Actions
+    add_action('tds_article_after_title', array($this, 'show_contributor_logo'));
   }
 
   /**
@@ -123,5 +126,9 @@ class thedailysheeple {
         return $title;
       }
     }
+  }
+
+  public function show_contributor_logo() {
+    echo '<!-- Contrib LOGO -->';
   }
 }

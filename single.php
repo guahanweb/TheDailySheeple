@@ -58,14 +58,14 @@ font-family: "PT Serif",serif;
 text-transform: uppercase
 }
 .yottie-widget-contents, .yottie-widget-header-channel-title {
-	font-family: "PT Serif",serif;
+  font-family: "PT Serif",serif;
 }
 .yottie-widget-nav-list-item yottie-active {
-	font-size: 20px;
-    line-height: 24px
+  font-size: 20px;
+  line-height: 24px
 }
 .yottie-widget-video-info {
-	height: 90px;
+  height: 90px;
 }
 </style>
 <?php echo do_shortcode( '[yottie id="4"]' ); ?>
