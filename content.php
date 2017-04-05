@@ -69,8 +69,9 @@ if (is_single()):
         </p><!-- .published -->
         <?php
             endif;
-
             the_title( '<h1 class="entry-title"><a href="' . esc_url( get_permalink() ) . '" rel="bookmark">', '</a></h1>' );
+            do_action('tds_article_after_title');
+
         ?>
         </header><!-- .entry-header -->
 
