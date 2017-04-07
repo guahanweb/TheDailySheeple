@@ -132,7 +132,11 @@ class thedailysheeple {
     $author_id = get_the_author_meta('ID');
     $logo_url = get_usermeta($author_id, 'profilelogourl');
     if (!empty($logo_url)) {
-      sprintf('<!-- LOGO: %s -->', $logo_url);
+      echo '<div class="contrib-logo">';
+      echo '<div class="logo-image">';
+      printf('<img src="%s" />', $logo_url);
+      echo '</div>';
+      echo '</div>';
     }
   }
 }
