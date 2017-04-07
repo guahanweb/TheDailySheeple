@@ -131,10 +131,16 @@ class thedailysheeple {
   public function show_contributor_logo() {
     $author_id = get_the_author_meta('ID');
     $logo_url = get_usermeta($author_id, 'profilelogourl');
+    $website = get_usermeta($author_id, 'user_url');
+
     if (!empty($logo_url)) {
       echo '<div class="contrib-logo">';
       echo '<div class="logo-image">';
-      printf('<img src="%s" />', $logo_url);
+      if (!empty($website)) {
+        printf('<a href="%s" target="_blank"><img src="%s" /></a>', $website, $logo_url);
+      } else {
+        printf('<img src="%s" />', $logo_url);
+      }
       echo '</div>';
       echo '</div>';
     }
