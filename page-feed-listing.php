@@ -269,10 +269,15 @@ div#main_content_area .feed .feed-menu a.edit-feed:hover {
 }
 
 .list-grid td .item-title {
-    max-width: 300px;
-    text-overflow: ellipse;
+    max-width: 320px;
     font-size: 12px;
     line-height: 16px;
+}
+
+.list-grid td .item-title a {
+    text-overflow: ellipsis;
+    display: block;
+    max-width: 320px;
 }
 
 .list-grid td .item-site {
