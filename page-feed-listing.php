@@ -271,7 +271,7 @@ if (FALSE !== $last_fetch) {
             <div class="list-heading">
                 <h1>50 Recent Posts</h1>
             </div>
-            <div class="list-grid">
+            <div class="list-grid" id="list-grid">
                 <?php printf('<img src="%s/rss-feed-manager/images/loading-spinner.gif" alt="loading" />', plugins_url()); ?>
             </div>
         </div>
@@ -291,6 +291,17 @@ foreach ($categories as $cat) {
 
 	<div class="clearing"></div>
 </div>
+<script type="text/template" id="tpl-recent">
+<% if (type == 'contributors') { %>
+    <table border="0" cellpadding="0" cellspacing="0">
+    <% _.each(items, function (item, i) { %>
+        <tr>
+            <td><%= item.title %></td>
+        </tr>
+    <% }); %>
+    </table>
+<% } %>
+</script>
 <script type="text/template" id="tpl-feed">
 	<% if (type == 'contributors') { %>
 	<div class="feed">
@@ -332,15 +343,32 @@ foreach ($categories as $cat) {
 		$cards = $('.card', '#feed-list'),
 		api = '<?php echo plugins_url(); ?>/rss-feed-manager/api.php',
 		tpl_feed = _.template($('#tpl-feed').html()),
+        tpl_recent = _.template($('#tpl-recent').html()),
 		cache = {}; // cache simple lets us load each feed ONCE per page load
 
 	function handleResponse(data) {
+        // recent list
+        var $list_container = $('.recent-list'),
+            $list_grid = $('.recent-list', '#list-grid');
+
+        // sections
 		var $container = $('.feeds', '#' + data.category),
 			feed, $feed, item, $item, id;
 			
 		if (data.success == false) {
 			$container.html('ERROR: ' + data.errmsg);
 		} else {
+            if (data.category == 'contributors') {
+                $list_grid.empty();
+                $list_grid.append($(tpl_recent({
+                    type: data.category,
+                    items: data.list
+                }));
+            } else {
+                // hide this block
+                $list_container.hide();
+            }
+
 			$container.empty();
 			for (id in data.feeds) {
 				feed = data.feeds[id];
