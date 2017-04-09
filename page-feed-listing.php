@@ -272,7 +272,7 @@ if (FALSE !== $last_fetch) {
                 <h1>50 Recent Posts</h1>
             </div>
             <div class="list-grid">
-                list grid
+                <?php printf('<img src="%s/rss-feed-manager/images/loading-spinner.gif" alt="loading" />', plugins_url()); ?>
             </div>
         </div>
 		<div class="feeds"><img src="<?php echo plugins_url(); ?>/rss-feed-manager/images/loading-spinner.gif" alt="loading" /></div>
