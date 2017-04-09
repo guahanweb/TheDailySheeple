@@ -255,6 +255,10 @@ div#main_content_area .feed .feed-menu a.edit-feed:hover {
     border: 1px solid #aaa;
 }
 
+.list-grid table {
+    width: 100%;
+}
+
 .list-grid td {
     background-color: #fff;
     padding: 5px;
@@ -262,6 +266,18 @@ div#main_content_area .feed .feed-menu a.edit-feed:hover {
 
 .list-grid .even td {
     background-color: #ececec;
+}
+
+.list-grid td .item-title {
+    max-width: 300px;
+    text-overflow: ellipse;
+    font-size: 12px;
+    line-height: 16px;
+}
+
+.list-grid td .item-site {
+    font-size: 10px;
+    line-height: 12px;
 }
 /* END style for long list */
 </style>
@@ -321,7 +337,10 @@ foreach ($categories as $cat) {
         cls = cls === 'even' ? 'odd' : 'even';
     %>
         <tr class="<%= cls %>">
-            <td><%= item.title %></td>
+            <td>
+            <div class="item-title"><a href="#"><%= item.title %></a></div>
+            <div class="item-site">(<a href="<%= item.author.authorurl %>" target="_blank"><%= item.author.author %></a>)</div>
+            </td>
         </tr>
     <% }); %>
     </table>
