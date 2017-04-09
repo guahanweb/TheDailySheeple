@@ -363,7 +363,7 @@ foreach ($categories as $cat) {
                 $list_grid.append($(tpl_recent({
                     type: data.category,
                     items: data.list
-                }));
+                })));
             } else {
                 // hide this block
                 $list_container.hide();
