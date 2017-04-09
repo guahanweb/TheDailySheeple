@@ -294,8 +294,12 @@ foreach ($categories as $cat) {
 <script type="text/template" id="tpl-recent">
 <% if (type == 'contributors') { %>
     <table border="0" cellpadding="0" cellspacing="0">
-    <% _.each(items, function (item, i) { %>
-        <tr>
+    <% 
+    var cls = 'even';
+    _.each(items, function (item, i) { 
+        cls = cls === 'even' ? 'odd' : 'even';
+    %>
+        <tr class="<%= cls %>">
             <td><%= item.title %></td>
         </tr>
     <% }); %>
