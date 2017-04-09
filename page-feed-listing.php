@@ -267,6 +267,7 @@ if (FALSE !== $last_fetch) {
 	<div class="hide card" id="contributors">
 		<h1>Contributor Listing</h1>
 		<div class="create-link"><a href="http://www.thedailysheeple.com/wp-admin/user-new.php" target="_blank" class="btn btn-primary brn-small">Add Contributor</a></div>
+        <div class="recent-list">Recent List Coming Here</div>
 		<div class="feeds"><img src="<?php echo plugins_url(); ?>/rss-feed-manager/images/loading-spinner.gif" alt="loading" /></div>
 	</div>
 <?php
