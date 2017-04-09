@@ -243,6 +243,27 @@ div#main_content_area .feed .feed-menu a.edit-feed:hover {
 	text-decoration:none;
 
 }
+
+/* START style for long list */
+.list-grid {
+    max-height: 360px;
+    overflow: auto;
+    font-family: sans-serif;
+    font-size: 12px;
+    line-height: 18px;
+    margin: 10px 0;
+    border: 1px solid #aaa;
+}
+
+.list-grid td {
+    background-color: #fff;
+    padding: 5px;
+}
+
+.list-grid .even td {
+    background-color: #ececec;
+}
+/* END style for long list */
 </style>
 <div id="ass-menu">
 <?php
