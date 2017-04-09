@@ -348,8 +348,8 @@ foreach ($categories as $cat) {
 
 	function handleResponse(data) {
         // recent list
-        var $list_container = $('.recent-list'),
-            $list_grid = $('.recent-list', '#list-grid');
+        var $list_container = $('.recent-list', '#contributors'),
+            $list_grid = $('.list-grid', '#contributors');
 
         // sections
 		var $container = $('.feeds', '#' + data.category),
