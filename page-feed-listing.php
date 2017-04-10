@@ -269,20 +269,39 @@ div#main_content_area .feed .feed-menu a.edit-feed:hover {
 }
 
 .list-grid td .item-title {
-    max-width: 320px;
-    font-size: 12px;
-    line-height: 16px;
+    font-size: 14px;
+    line-height: 18px;
 }
 
 .list-grid td .item-title a {
     text-overflow: ellipsis;
     display: block;
-    max-width: 320px;
+    white-space: nowrap;
+    overflow: hidden;
+    color: #0089c0;
+}
+
+.list-grid td .item-title a:hover {
+    color: #00b0ed;
 }
 
 .list-grid td .item-site {
     font-size: 10px;
-    line-height: 12px;
+    line-height: 14px;
+    color: #aaa;
+    font-style: italic;
+    font-weight: 300;
+}
+
+.list-grid td .item-site .pub-date {
+    font-weight: 400;
+    font-size: 11px;
+    color: #666;
+}
+
+.list-grid td .item-site .pub-name {
+    font-weight: 400;
+    font-size: 11px;
 }
 /* END style for long list */
 </style>
@@ -343,8 +362,11 @@ foreach ($categories as $cat) {
     %>
         <tr class="<%= cls %>">
             <td>
-            <div class="item-title"><a href="#"><%= item.title %></a></div>
-            <div class="item-site">(<a href="<%= item.author.authorurl %>" target="_blank"><%= item.author.author %></a>)</div>
+            <div class="item-title"><a href="<%= item.link %>" target="_blank"><%= item.title %></a></div>
+            <div class="item-site">
+                published <span class="pub-date"><%= item.postDate %></span>
+                by <span class="pub-name"><a href="<%= item.author.authorurl %>" target="_blank"><%= item.author.author %></a></span>
+            </div>
             </td>
         </tr>
     <% }); %>
