@@ -435,9 +435,6 @@ foreach ($categories as $cat) {
                     type: data.category,
                     items: data.list
                 })));
-            } else {
-                // hide this block
-                $list_container.hide();
             }
 
 			$container.empty();
