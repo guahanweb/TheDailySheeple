@@ -42,7 +42,7 @@ class thedailysheeple {
         $link = sprintf('<a href="%s" target="_blank">%s</a>', $websiteUrl, $websiteName);
         $desc = '';
       } else {
-        $displayName = $authName;
+        $displayName = thedailysheeple_get_authorname($post);
         $link = sprintf('<a href="%s" target="_blank">%s</a>', $profileUrl, $profileWebsite);
         $desc = get_the_author_meta('description');
       }
