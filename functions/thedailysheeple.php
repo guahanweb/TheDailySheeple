@@ -149,7 +149,7 @@ class thedailysheeple {
 
   public function add_author_meta_box() {
     $user = wp_get_current_user();
-    if (in_array('contributor', (array) $user->roles)) {
+    if (in_array('contributor', (array) $user->roles) || in_array('administrator', (array) $user->roles)) {
       add_meta_box('contrib-author-meta-box', 'Author Override', array($this, 'author_meta_markup'), 'post', 'side', 'high', null);
     }
   }
