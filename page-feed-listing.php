@@ -277,6 +277,7 @@ div#main_content_area .feed .feed-menu a.edit-feed:hover {
     white-space: nowrap;
     overflow: hidden;
     color: #0089c0;
+    max-width: 1000px;
 }
 
 .list-grid td .item-title a:hover {
