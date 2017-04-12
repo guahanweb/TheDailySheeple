@@ -11,6 +11,7 @@ class thedailysheeple {
     add_action('personal_options_update', array($this, 'my_save_extra_profile_fields'));
     add_action('edit_user_profile_update', array($this, 'my_save_extra_profile_fields'));
     add_action('add_meta_boxes', array($this, 'add_author_meta_box'));
+    add_action('save_post', array($this, 'save_author_meta_box'), 10, 3);
 
     // Custom Actions
     add_action('tds_article_after_title', array($this, 'show_contributor_logo'));
@@ -154,7 +155,44 @@ class thedailysheeple {
     }
   }
 
-  public function author_meta_markup() {
-    echo 'Working on override logic here';
+  public function save_author_meta_box($post_id, $post, $update) {
+    if (!isset($_POST['author-meta-box-nonce']) || !wp_verify_nonce($_POST['author-meta-box-nonce'], basename(__FILE__)))
+      return $post_id;
+
+    if (!current_user_can('edit_post', $post_id))
+      return $post_id;
+
+    if (defined('DOING_AUTOSAVE') && DOING_AUTOSAVE)
+      return $post_id;
+
+    $slug = 'post';
+    if ($slug != $post->post_type)
+      return $post_id;
+
+    $name_value = isset($_POST['author-override-name']) ? $_POST['author-override-name'] : '';
+    $link_value = isset($_POST['author-override-link']) ? $_POST['author-override-link'] : '';
+
+    update_post_meta($post_id, 'author-override-name', $name_value);
+    update_post_meta($post_id, 'author-override-link', $link_value);
+  }
+
+  public function author_meta_markup($object) {
+    wp_nonce_field(basename(__FILE__), 'author-meta-box-nonce');
+    $tpl = <<<EOT
+<div class="custom-meta meta-side">
+  <div class="custom-field">
+    <label for="author-override-name">Author Name</label>
+    <input name="author-override-name" id="author-override-name" type="text" value="%s" />
+  </div>
+  <div class="custom-field">
+    <label for="author-override-link">Author Link</label>
+    <input name="author-override-link" id="author-override-link" type="text" value="%s" />
+  </div>
+</div>
+EOT;
+
+    printf($tpl,
+      get_post_meta($object->ID, 'author-override-name', true),
+      get_post_meta($object->ID, 'author-override-link', true));
   }
 }

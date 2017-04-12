@@ -131,17 +131,36 @@ function thedailysheeple_get_post_image_url($id) {
 }
 endif;
 
+/**
+ * Retrieve the visual author URL for a post. This looks for any
+ * custom overrides at both the post and author level.
+ */
 function thedailysheeple_get_authorurl($post) {
-    $author_id = get_usermeta($post->post_author, 'ID');
-    $contrib = in_array($author_id, array(2, 3));
-    $url = $contrib ? get_post_meta($post->ID, 'websiteurl', true) : get_usermeta($post->post_author, 'user_url');
-    return $url;
+  $author_id = get_usermeta($post->post_author, 'ID');
+  if (in_array($author_id, array(2, 3))) {
+    return get_post_meta($post->ID, 'websiteurl', true);
+  } else {
+    // look for post level override
+    $url = get_usermeta($post->post_author, 'user_url');
+    $override = get_post_meta($post->ID, 'author-override-link', true);
+    return !empty($override) ? $override : $url;
+  }
 }
 
+/**
+ * Retrieve the visual author name for a post. This looks for any
+ * custom overrides at both the post and author level.
+ */
 function thedailysheeple_get_authorname($post) {
-    $author_id = get_usermeta($post->post_author, 'ID');
-    $author = in_array($author_id, array(2, 3)) ? get_post_meta($post->ID, "Author", true) : get_usermeta($post->post_author, 'display_name');
-    return $author;
+  $author_id = get_usermeta($post->post_author, 'ID');
+  if (in_array($author_id, array(2, 3))) {
+    return get_post_meta($post->ID, 'Author', true);
+  } else {
+    // look for post level override
+    $author = get_usermeta($post->post_author, 'display_name');
+    $override = get_post_meta($post->ID, 'author-override-name', true);
+    return !empty($override) ? $override : $author;
+  }
 }
 
 function thedailysheeple_get_authorwebsite($post) {
