@@ -155,6 +155,6 @@ class thedailysheeple {
   }
 
   public function author_meta_markup() {
-    echo 'foo';
+    echo 'Working on override logic here';
   }
 }
