@@ -10,6 +10,7 @@ class thedailysheeple {
     add_action('edit_user_profile', array($this, 'my_show_extra_profile_fields'));
     add_action('personal_options_update', array($this, 'my_save_extra_profile_fields'));
     add_action('edit_user_profile_update', array($this, 'my_save_extra_profile_fields'));
+    add_action('add_meta_boxes', array($this, 'add_author_meta_box'));
 
     // Custom Actions
     add_action('tds_article_after_title', array($this, 'show_contributor_logo'));
@@ -144,5 +145,16 @@ class thedailysheeple {
       echo '</div>';
       echo '</div>';
     }
+  }
+
+  public function add_author_meta_box() {
+    $user = wp_get_current_user();
+    if (in_array('contributor', (array) $user->roles)) {
+      add_meta_box('contrib-author-meta-box', 'Author Override', array($this, 'author_meta_markup'), 'post', 'side', 'high', null);
+    }
+  }
+
+  public function author_meta_markup() {
+    echo 'foo';
   }
 }
