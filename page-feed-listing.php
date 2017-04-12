@@ -330,16 +330,27 @@ if (FALSE !== $last_fetch) {
             <div class="list-heading">
                 <h1>50 Recent Posts</h1>
             </div>
-            <div class="list-grid" id="list-grid">
+            <div class="list-grid">
                 <?php printf('<img src="%s/rss-feed-manager/images/loading-spinner.gif" alt="loading" />', plugins_url()); ?>
             </div>
         </div>
 		<div class="feeds"><img src="<?php echo plugins_url(); ?>/rss-feed-manager/images/loading-spinner.gif" alt="loading" /></div>
 	</div>
 <?php
+$img = sprintf('<img src="%s/rss-feed-manager/images/loading-spinner.gif" alt="loading" />', plugins_url());
 foreach ($categories as $cat) {
 	echo "<div class=\"hide card\" id=\"{$cat->slug}\">\n";
 	echo "<h1>{$cat->name}</h1>\n";
+    echo <<<EOH
+<div class="recent-list">
+    <div class="list-heading">
+        <h1>50 Recent Posts</h1>
+    </div>
+    <div class="list-grid">
+        $img
+    </div>
+</div>
+EOH;
 	echo "<div class=\"feeds\">\n";
 	echo sprintf('<img src="%s/rss-feed-manager/images/loading-spinner.gif" alt="loading" />', plugins_url());
 	echo "</div>\n";
@@ -351,7 +362,6 @@ foreach ($categories as $cat) {
 	<div class="clearing"></div>
 </div>
 <script type="text/template" id="tpl-recent">
-<% if (type == 'contributors') { %>
     <table border="0" cellpadding="0" cellspacing="0">
     <% 
     var cls = 'even';
@@ -360,16 +370,15 @@ foreach ($categories as $cat) {
     %>
         <tr class="<%= cls %>">
             <td>
-            <div class="item-title"><a href="<%= item.link %>" target="_blank"><%= item.title %></a></div>
-            <div class="item-site">
-                published <span class="pub-date"><%= item.postDate %></span>
-                by <span class="pub-name"><a href="<%= item.author.authorurl %>" target="_blank"><%= item.author.author %></a></span>
-            </div>
+                <div class="item-title"><a href="<%= item.link %>" target="_blank"><%= item.title %></a></div>
+                <div class="item-site">
+                    published <span class="pub-date"><%= item.postDate %></span>
+                    by <span class="pub-name"><a href="<%= item.author.authorurl %>" target="_blank"><%= item.author.author %></a></span>
+                </div>
             </td>
         </tr>
     <% }); %>
     </table>
-<% } %>
 </script>
 <script type="text/template" id="tpl-feed">
 	<% if (type == 'contributors') { %>
@@ -416,24 +425,22 @@ foreach ($categories as $cat) {
 		cache = {}; // cache simple lets us load each feed ONCE per page load
 
 	function handleResponse(data) {
-        // recent list
-        var $list_container = $('.recent-list', '#contributors'),
-            $list_grid = $('.list-grid', '#contributors');
-
         // sections
 		var $container = $('.feeds', '#' + data.category),
 			feed, $feed, item, $item, id;
+
+        // recent list
+        var $list_container = $('.recent-list', '#' + data.category),
+            $list_grid = $('.list-grid', '#' + data.category);
 			
 		if (data.success == false) {
 			$container.html('ERROR: ' + data.errmsg);
 		} else {
-            if (data.category == 'contributors') {
-                $list_grid.empty();
-                $list_grid.append($(tpl_recent({
-                    type: data.category,
-                    items: data.list
-                })));
-            }
+            $list_grid.empty();
+            $list_grid.append($(tpl_recent({
+                type: data.category,
+                items: data.list
+            })));
 
 			$container.empty();
 			for (id in data.feeds) {
