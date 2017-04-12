@@ -246,8 +246,6 @@ div#main_content_area .feed .feed-menu a.edit-feed:hover {
 
 /* START style for long list */
 .list-grid {
-    max-height: 360px;
-    overflow: auto;
     font-family: sans-serif;
     font-size: 12px;
     line-height: 18px;
