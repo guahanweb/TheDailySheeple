@@ -89,7 +89,7 @@
                     console.error(res.errmsg);
                 } else {
                     // redirect to edit newly created post
-                    window.location = res.edit_link;
+                    window.location = res.post.edit_link;
                 }
             }
         });
