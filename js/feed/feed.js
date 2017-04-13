@@ -73,6 +73,24 @@
         var author = $(this).data('author');
         var title = $(this).closest('tr').find('.item-title > a').html();
         console.log(author, title);
+
+        $.ajax({
+            url: api,
+            type: 'POST',
+            dataType: 'json',
+            data: {
+                'author': author,
+                'title': title
+            },
+            success: function (res) {
+                if (res.success == false) {
+                    console.error(res.errmsg);
+                } else {
+                    // redirect to edit newly created post
+                    window.location = res.edit_link;
+                }
+            }
+        });
     });
 }(jQuery));
 
