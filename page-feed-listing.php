@@ -33,7 +33,7 @@ $rss->set_cache_location(dirname(__FILE__) . '/lib/SimplePie/cache/');
 get_header();
 ?>
 <link type="text/css" rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/feed-list.css" />
-<link type="text/css" rel="stylesheet" href="/wp-content/themes/TDS-1/styles/contributorlist.css" />
+<link type="text/css" rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/contributorlist.css" />
 <script type="text/JavaScript">
 <!--
 function timedRefresh(timeoutPeriod) {
