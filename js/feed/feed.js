@@ -1,7 +1,7 @@
 ;(function($) {
     var $menu = $('#category-filter'),
         $cards = $('.card', '#feed-list'),
-        api = '<?php echo plugins_url(); ?>/rss-feed-manager/api.php',
+        api = API_URL,
         tpl_feed = _.template($('#tpl-feed').html()),
         tpl_recent = _.template($('#tpl-recent').html()),
         cache = {}; // cache simple lets us load each feed ONCE per page load

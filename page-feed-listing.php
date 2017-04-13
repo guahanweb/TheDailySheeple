@@ -40,6 +40,8 @@ function timedRefresh(timeoutPeriod) {
     setTimeout("location.reload(true);",timeoutPeriod);
 }
 //   -->
+//
+var API_URL = '<?php echo plugins_url(); ?>/rss-feed-manager/api.php';
 </script>
 <tr>
 	<td>
