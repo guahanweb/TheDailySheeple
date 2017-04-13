@@ -41,7 +41,7 @@ function timedRefresh(timeoutPeriod) {
 }
 //   -->
 //
-var API_URL = '<?php echo plugins_url(); ?>/rss-feed-manager/api.php';
+var API_URL = '<?php echo plugins_url(); ?>/rss-feed-manager';
 </script>
 <tr>
 	<td>

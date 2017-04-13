@@ -1,7 +1,8 @@
 ;(function($) {
     var $menu = $('#category-filter'),
         $cards = $('.card', '#feed-list'),
-        api = API_URL,
+        api = API_URL + '/api.php',
+        repost = API_URL + '/repost.php',
         tpl_feed = _.template($('#tpl-feed').html()),
         tpl_recent = _.template($('#tpl-recent').html()),
         cache = {}; // cache simple lets us load each feed ONCE per page load
@@ -75,7 +76,7 @@
         console.log(author, title);
 
         $.ajax({
-            url: api,
+            url: repost,
             type: 'POST',
             dataType: 'json',
             data: {
