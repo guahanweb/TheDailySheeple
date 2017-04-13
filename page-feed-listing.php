@@ -158,8 +158,8 @@ EOH;
 	</div>
 	<% } %>
 </script>
-<script src="<?php echo get_template_directory_uri(); ?>/js/feed/feed.js"></script>
 <script src="<?php echo plugins_url(); ?>/rss-feed-manager/js/underscore-min.js"></script>
+<script src="<?php echo get_template_directory_uri(); ?>/js/feed/feed.js"></script>
 <script src="http://bubble.websnapr.com/3X4p5G200t9F/swh/" type="text/javascript"></script>
 <?php
 get_footer();
