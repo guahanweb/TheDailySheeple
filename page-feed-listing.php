@@ -122,6 +122,11 @@ EOH;
                     by <span class="pub-name"><a href="<%= item.author.authorurl %>" target="_blank"><%= item.author.author %></a></span>
                 </div>
             </td>
+            <% if (type == 'contributors') { %>
+            <td>
+                <a href="#" class="btn btn-secondary btn-small">repost</a>
+            </td>
+            <% } %>
         </tr>
     <% }); %>
     </table>
