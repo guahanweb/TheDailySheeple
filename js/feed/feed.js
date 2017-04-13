@@ -70,7 +70,9 @@
     });
 
     $cards.on('click', 'a[data-action="repost"]', function (e) {
-        console.log(e.target);
+        var author = $(this).data('author');
+        var title = $(this).closest('tr').find('.item-title > a').html();
+        console.log(author, title);
     });
 }(jQuery));
 
