@@ -80,6 +80,7 @@
             type: 'POST',
             dataType: 'json',
             data: {
+                'action': 'repost',
                 'author': author,
                 'title': title
             },
