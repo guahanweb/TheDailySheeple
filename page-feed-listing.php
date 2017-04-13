@@ -124,7 +124,7 @@ EOH;
             </td>
             <% if (type == 'contributors') { %>
             <td>
-                <a href="#" class="btn btn-secondary btn-small">repost</a>
+                <a data-action="repost" data-author="<%= item.author.id %>" href="<%= item.link %>" target="_blank" class="btn btn-secondary btn-small">repost</a>
             </td>
             <% } %>
         </tr>

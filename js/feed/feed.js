@@ -68,5 +68,9 @@
             }
         }
     });
+
+    $cards.on('click', 'a[data-action="repost"]', function (e) {
+        console.log(e.target);
+    });
 }(jQuery));
 
