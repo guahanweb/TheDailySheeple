@@ -221,13 +221,14 @@
       <section class="third-party">
         <div class="ads">
           <!-- FRAMED AD -->
-<script type="text/javascript" language="javascript" src="//c.amazon-adsystem.com/aax2/getads.js"></script>
-<script type="text/javascript" language="javascript">
-  //<![CDATA[
-    aax_getad_mpb({
-      "slot_uuid":"5e48f6ac-54c5-4dc7-b6cf-db87d0798975"
-    });
-  //]]>
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- TDS-SiteTop-970x250 -->
+<ins class="adsbygoogle"
+     style="display:inline-block;width:970px;height:250px"
+     data-ad-client="ca-pub-8010023987911623"
+     data-ad-slot="6809454507"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
 </script>
 
           <!-- END FRAMED AD -->

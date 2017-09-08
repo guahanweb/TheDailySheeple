@@ -2,8 +2,8 @@
 class thedailysheeple {
   public function __construct() {
     // Filters
-    add_filter('the_content', array($this, 'insertTDSdelivery'), '1');
-    add_filter('the_content', array($this, 'add_author_content'), '2');
+    add_filter('the_content', array($this, 'insertTDSdelivery'), 8);
+    add_filter('the_content', array($this, 'add_author_content'), 9);
 
     // Actions
     add_action('show_user_profile', array($this, 'my_show_extra_profile_fields'));
