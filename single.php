@@ -74,25 +74,19 @@ text-transform: uppercase
 </div>
 <!-- END VIDEO FEATURED AREA -->
 
+
+
 <!-- POST NAV -->
 <?php // Previous/next post navigation.
 thedailysheeple_post_nav();
    
             ?>
 <!-- END POST NAV -->            
-<!-- START GOOGLE AD -->
-<div style="padding-top: 15px;padding-bottom: 10px; text-align: center;">
-<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-<!-- TDS 2.0 - Article Bottom Large -->
-<ins class="adsbygoogle"
-     style="display:inline-block;width:336px;height:280px"
-     data-ad-client="ca-pub-8010023987911623"
-     data-ad-slot="9365583366"></ins>
-<script>
-(adsbygoogle = window.adsbygoogle || []).push({});
-</script>
-</div>
-<!-- END GOOGLE AD -->
+
+<!-- Ad Area -->
+     <!-- *** CURRENTLY EMPTY -->
+<!-- END Ad Area -->
+
 <?php
 
                     // If comments are open or we have at least one comment, load up the comment template.
