@@ -31,10 +31,10 @@ if (is_single()):
 </div>
 <!-- END SHARE THIS -->
 <!-- AD -->
-<div style="text-align: center; padding: 10px 0px 10px 0px;">
+<div style="text-align: center; padding: 10px 0px 15px 0px;">
 <!-- Direct Ad Code -->
 
-<a href="http://toptiergearusa.com/?utm_source=thedailysheeple.com&utm_medium=SponsoredAd&utm_campaign=TTG-SA" target="_blank" onClick="_gaq.push(['_trackEvent', 'Banner', 'Click', 'TTG-ArticleBanner']);"><img src="http://www.thedailysheeple.com/wp-content/uploads/2017/03/TTG-560.jpg" alt="Top Tier Gear USA" width="560" height="138" border="0" /></a>
+<a href="http://toptiergearusa.com/?utm_source=thedailysheeple.com&utm_medium=SponsoredAd&utm_campaign=TTG-SA" target="_blank" onClick="_gaq.push(['_trackEvent', 'Banner', 'Click', 'TTG-ArticleBanner']);"><img src="http://www.thedailysheeple.com/wp-content/uploads/2017/07/560x140-TTG-Shop-List.jpg" alt="Top Tier Gear USA" width="560" height="140" border="0" /></a>
 
 
 

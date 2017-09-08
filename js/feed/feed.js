@@ -1,7 +1,8 @@
 ;(function($) {
     var $menu = $('#category-filter'),
         $cards = $('.card', '#feed-list'),
-        api = API_URL,
+        api = API_URL + '/api.php',
+        repost = API_URL + '/repost.php',
         tpl_feed = _.template($('#tpl-feed').html()),
         tpl_recent = _.template($('#tpl-recent').html()),
         cache = {}; // cache simple lets us load each feed ONCE per page load
@@ -67,6 +68,31 @@
                 loadFeedsByCat($(this).data('category'), $('#' + $(this).data('category') + ' .feeds'));
             }
         }
+    });
+
+    $cards.on('click', 'a[data-action="repost"]', function (e) {
+        var author = $(this).data('author');
+        var title = $(this).closest('tr').find('.item-title > a').html();
+        console.log(author, title);
+
+        $.ajax({
+            url: repost,
+            type: 'POST',
+            dataType: 'json',
+            data: {
+                'action': 'repost',
+                'author': author,
+                'title': title
+            },
+            success: function (res) {
+                if (res.success == false) {
+                    console.error(res.errmsg);
+                } else {
+                    // redirect to edit newly created post
+                    window.location = res.post.edit_link;
+                }
+            }
+        });
     });
 }(jQuery));
 

@@ -33,7 +33,7 @@ $rss->set_cache_location(dirname(__FILE__) . '/lib/SimplePie/cache/');
 get_header();
 ?>
 <link type="text/css" rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/feed-list.css" />
-<link type="text/css" rel="stylesheet" href="/wp-content/themes/TDS-1/styles/contributorlist.css" />
+<link type="text/css" rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/contributorlist.css" />
 <script type="text/JavaScript">
 <!--
 function timedRefresh(timeoutPeriod) {
@@ -41,7 +41,7 @@ function timedRefresh(timeoutPeriod) {
 }
 //   -->
 //
-var API_URL = '<?php echo plugins_url(); ?>/rss-feed-manager/api.php';
+var API_URL = '<?php echo plugins_url(); ?>/rss-feed-manager';
 </script>
 <tr>
 	<td>
@@ -122,6 +122,11 @@ EOH;
                     by <span class="pub-name"><a href="<%= item.author.authorurl %>" target="_blank"><%= item.author.author %></a></span>
                 </div>
             </td>
+            <% if (type == 'contributors') { %>
+            <td>
+                <a data-action="repost" data-author="<%= item.author.id %>" href="<%= item.link %>" target="_blank" class="btn btn-secondary btn-small">repost</a>
+            </td>
+            <% } %>
         </tr>
     <% }); %>
     </table>

@@ -210,6 +210,7 @@ div#main_content_area .feed .feed-menu a.edit-feed:hover {
 .list-grid td {
     background-color: #fff;
     padding: 5px;
+    vertical-align: middle;
 }
 
 .list-grid .even td {
