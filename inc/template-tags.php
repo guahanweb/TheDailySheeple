@@ -121,6 +121,7 @@ function thedailysheeple_posted_on($single = false) {
     }
 
     $post = get_post(get_the_ID());
+    $is_redirect = !empty(get_post_meta($post->ID, '_redirect_posts_redirect_url', true));
 
     if ($single) {
         // Set up and print post meta information.
@@ -134,7 +135,7 @@ function thedailysheeple_posted_on($single = false) {
             $website['name']
        );
 
-        if (function_exists('the_views')) {
+        if (function_exists('the_views') && !$is_redirect) {
             echo ' | <span class="post-views">';
             the_views();
             echo '</span>';
@@ -147,7 +148,7 @@ function thedailysheeple_posted_on($single = false) {
             thedailysheeple_get_authorname($post)
         );
 
-        if (function_exists('the_views')) {
+        if (function_exists('the_views') && !$is_redirect) {
             echo ' | <span class="post-views">';
             the_views();
             echo '</span>';
